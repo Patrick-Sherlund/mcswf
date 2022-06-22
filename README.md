@@ -4,7 +4,9 @@
 <br />
 <div align="center">
   <a href="https://github.com/Patrick-Sherlund/mcswf">
-    <img src="src/assets/logo.png" alt="Logo" width="239.4" height="270">
+
+![logo.png](src/assets/readme-logo.png)
+
   </a>
 
 <h2 align="center">U.S. Marine Corps Software Factory</h2>
@@ -20,7 +22,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary style="font-size: 23px; border:.001rem solid #a9a9a9; max-width: fit-content; padding: 0 1rem; border-radius: 5px">
+  <summary style="font-size: 23px; border:.01rem solid #a9a9a9; max-width: fit-content; padding: 0 1rem; border-radius: 5px">
 Table of Contents
 </summary>
   <ol>
@@ -55,6 +57,7 @@ Table of Contents
 
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 The U.S. Marine Corps Software Factory is a static informational site built in the React Framework.
@@ -65,8 +68,6 @@ and provide an opportunity for Marines to apply to our team.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 ### Built With
 
 * [React.js (Typescript Template)](https://reactjs.org/)
@@ -75,10 +76,12 @@ and provide an opportunity for Marines to apply to our team.
 
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 We recommend having a good Integrated Development Environment installed on your machine... Some examples are:
 <br/>
+
 * [Visual Studio Code (Free)](https://code.visualstudio.com/)
 * [JetBrains WebStorm (Free 30-Day Trial)](https://www.jetbrains.com/webstorm/download/#section=windows)
 * [JetBrains IntelliJ Idea (Free)](https://www.jetbrains.com/idea/download/#section=windows)
@@ -87,6 +90,7 @@ We recommend having a good Integrated Development Environment installed on your 
 ### Prerequisites
 
 Download the Current or LTS version of Node.JS and Git
+
 * Node.JS
   ```sh
   https://nodejs.org/en/download/current/
@@ -112,18 +116,22 @@ Download the Current or LTS version of Node.JS and Git
 ## Building & Deploying Website
 
 ### Prerequisites
+
 1. Clone the mcswf static site repo
    ```sh
    git clone https://github.com/Patrick-Sherlund/mcswf.github.io.git
    ```
 2. Validate the public URL in the <b>.env</b> at the root direcetory
-   * _This is required because when the application is compiled into js, the public url variable is used when referencing all assets._ 
-    
-    </br>_<b>.env PUBLIC_URL</b>_
+    * _This is required because when the application is compiled into js, the public url variable is used when
+      referencing all assets._
+
+   </br>_<b>.env PUBLIC_URL</b>_
    ```sh
    PUBLIC_URL=https://patrick-sherlund.github.io/mcswf.github.io
    ```
+
 ### Steps
+
 1. From the mcswf repository (This repository, not the static site repo) build the React application
    ```sh
    npm run build
@@ -139,7 +147,9 @@ Download the Current or LTS version of Node.JS and Git
    git push
    ```
 4. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/mcswf.github.io/)
+
 ## Important Links
+
 * [Agile Board <b>(Pivotal Tracker)</b>](https://www.pivotaltracker.com/n/projects/2575870)
 * [Figma Design](https://www.figma.com/file/26FduvNae6jlmGjJie37AL/Marine-Corps-Software-Factory?node-id=0%3A1)
 * [Jenkins Pipeline <b>(Dev)</b>](#)
@@ -148,16 +158,19 @@ Download the Current or LTS version of Node.JS and Git
 * [AWS S3 Bucket <b>(Dev)</b>](#)
 * [AWS S3 Bucket <b>(Stage)</b>](#)
 * [AWS S3 Bucket <b>(Prod)</b>](#)
-  
-_To request access to Pivotal Tracker or Figma, please contact Patrick Sherlund at [patrick.sherlund@usmc.mil](mailto:patrick.sherlund@usmc.mil)_
+
+_To request access to Pivotal Tracker or Figma, please contact Patrick Sherlund
+at [patrick.sherlund@usmc.mil](mailto:patrick.sherlund@usmc.mil)_
 <br/>
-_For issues with any other services, please submit a ticket with MCBOSS via the [MCBOSS Support Desk](https://jira.adts.usmc.mil/servicedesk/customer/user/login?destination=portals)_
+_For issues with any other services, please submit a ticket with MCBOSS via
+the [MCBOSS Support Desk](https://jira.adts.usmc.mil/servicedesk/customer/user/login?destination=portals)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [ ] Desktop Design
@@ -169,14 +182,18 @@ _For issues with any other services, please submit a ticket with MCBOSS via the 
 - [ ] Tablet Design
     - [ ] Light Theme
     - [ ] Dark Theme
-      
-_To view a full list of stories in the backlog, please visit [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2575870)_
 
-See the [open issues](https://github.com/Patrick-Sherlund/mcswf/issues) for a full list of proposed features (and known issues).
+_To view a full list of stories in the backlog, please
+visit [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2575870)_
+
+See the [open issues](https://github.com/Patrick-Sherlund/mcswf/issues) for a full list of proposed features (and known
+issues).
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## License
+
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -184,6 +201,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
+
 ## Contact
 
 * Email: [patrick.sherlund@usmc.mil](mailto:patrick.sherlund@usmc.mil)
@@ -192,6 +210,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
 * [N/A]()
