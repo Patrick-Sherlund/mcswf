@@ -1,7 +1,6 @@
 <div id="top"></div>
 
 [![Contributors][contributors-shield]][contributors-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
@@ -105,6 +104,7 @@ Download the Current or LTS version of Node.JS on your machine.
 
 ## Important Links
 * [Agile Board <b>(Pivotal Tracker)</b>](https://www.pivotaltracker.com/n/projects/2575870)
+* [Figma Design](https://www.figma.com/file/26FduvNae6jlmGjJie37AL/Marine-Corps-Software-Factory?node-id=0%3A1)
 * [Jenkins Pipeline <b>(Dev)</b>](#)
 * [Jenkins Pipeline <b>(Stage)</b>](#)
 * [Jenkins Pipeline <b>(Prod)</b>](#)
@@ -161,8 +161,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 [contributors-shield]: https://img.shields.io/github/contributors/Patrick-Sherlund/mcswf.svg?style=for-the-badge
 [contributors-url]: https://github.com/Patrick-Sherlund/mcswf/graphs/contributors
-[stars-shield]: https://img.shields.io/github/stars/Patrick-Sherlund/mcswf.svg?style=for-the-badge
-[stars-url]: https://github.com/Patrick-Sherlund/mcswf/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Patrick-Sherlund/mcswf.svg?style=for-the-badge
 [issues-url]: https://github.com/Patrick-Sherlund/mcswf/issues
 [license-shield]: https://img.shields.io/github/license/Patrick-Sherlund/mcswf.svg?style=for-the-badge
