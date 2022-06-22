@@ -180,7 +180,7 @@ mcswf
 ```
 * ### 'app' 
     ```
-    This section encapsolates the 'components', 'models', 'modules' and 'utils'. 
+    This section encapsolates the 'components', 'global', 'models', 'modules' and 'utils'. 
     It also serves as the root director for app.tsx
   ```
 * ### 'components' 
