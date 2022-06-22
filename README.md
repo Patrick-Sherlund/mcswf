@@ -115,7 +115,7 @@ Download the Current or LTS version of Node.JS and Git
    git clone https://github.com/Patrick-Sherlund/mcswf.github.io.git
    ```
 ### Steps
-1. From the mcswf repo (This rep, not the static site repo) build the react application
+1. From the mcswf repository (This repository, not the static site repo) build the React application
    ```sh
    npm run build
    ```
