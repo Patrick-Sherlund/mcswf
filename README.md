@@ -114,17 +114,12 @@ Download the Current or LTS version of Node.JS and Git
    ```sh
    git clone https://github.com/Patrick-Sherlund/mcswf.github.io.git
    ```
-2. Validate the npm build command in the <b>package.json</b>
+2. Validate the public URL in the <b>.env</b> at the root direcetory
    * _This is required because when the application is compiled into js, the public url variable is used when referencing all assets._ 
     
-    </br>_<b>Windows build command:</b>_
+    </br>_<b>.env PUBLIC_URL</b>_
    ```sh
-   set PUBLIC_URL=https://patrick-sherlund.github.io/mcswf.github.io&&react-scripts build
-   ```
-
-    _<b>macOs build command:</b>_
-   ```sh
-   PUBLIC_URL=https://patrick-sherlund.github.io/mcswf.github.io react-scripts build
+   PUBLIC_URL=https://patrick-sherlund.github.io/mcswf.github.io
    ```
 ### Steps
 1. From the mcswf repository (This repository, not the static site repo) build the React application
