@@ -225,8 +225,8 @@ mcswf
 _To request access to Pivotal Tracker or Figma, please contact Patrick Sherlund
 at [patrick.sherlund@usmc.mil](mailto:patrick.sherlund@usmc.mil)_
 <br/>
-_For issues with any other services, please submit a ticket with MCBOSS via
-the [MCBOSS Support Desk](https://jira.adts.usmc.mil/servicedesk/customer/user/login?destination=portals)_
+_For issues with any other services, please submit a ticket to MCBOSS via
+the [MCBOSS Support service Desk](https://jira.adts.usmc.mil/servicedesk/customer/user/login?destination=portals)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
