@@ -46,6 +46,17 @@ Table of Contents
         <li><a href="#steps">Steps</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#app-folder-structure">App Folder Structure</a>
+      <ul>
+        <li><a href="#app">App</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#global">Global</a></li>
+        <li><a href="#models">Models</a></li>
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#utils">Utils</a></li>
+      </ul>
+    </li>
     <li><a href="#important-links">Important Links</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
@@ -147,6 +158,53 @@ Download the Current or LTS version of Node.JS and Git
    git push
    ```
 4. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/mcswf.github.io/)
+
+## App Folder Structure
+_The folder structure logically separates different areas of the application, to help organize development._
+    
+```
+mcswf
+├── src
+│   ├── app
+│   │   ├── components
+│   │   ├── global
+│   │   │   ├── enums
+│   │   │   ├── types
+│   │   ├── models
+│   │   │   ├── classes
+│   │   │   ├── interfaces
+│   │   ├── modules
+│   │   ├── utils
+└   └── assets
+```
+* ### 'app' 
+    ```
+    This section encapsolates the 'components', 'models', 'modules' and 'utils'. 
+    It also serves as the root director for app.tsx
+  ```
+* ### 'components' 
+    ```
+    This section contains all reusable components, all components within this section are built with reusability in mind.
+  ```
+
+* ### 'global'
+    ```
+    This section contains any type of global declaration, we use this for enums and types.
+  ```
+* ### 'models' 
+    ```
+    This section contains any type of object model, whether its an Interface or a Class.
+  ```
+* ### 'modules' 
+    ```
+    This section contains all of the pages the app uses, for example 'Home', 'About', 'Contact' etc.
+  ```
+* ### 'utils' 
+    ```
+    This section contains any utility function that could be reused across different components.
+  ```
+
+
 
 ## Important Links
 
