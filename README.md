@@ -61,7 +61,7 @@ Table of Contents
     <li>
       <a href="#test-driven-development">Test Driven Development</a>
       <ul>
-        <li><a href="#cypress-end-to-end-testing-sort-of">Cypress End-To-End Testing</a></li>
+        <li><a href="#cypress-functional-testing">Cypress Functional Testing</a></li>
         <li><a href="#jest-unit-testing">Jest Unit Testing</a></li>
         <li><a href="#regression-testing">Regression Testing</a></li>
       </ul>
@@ -220,8 +220,8 @@ mcswf
 ## Test Driven Development
 _MCSWF follows the standards of [Test Driven Development](https://www.agilealliance.org/glossary/tdd/); we will also use the following testing libraries and techniques:_
 
-### [Cypress End-To-End Testing (sort of...)](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
-* _We utilize Cypress End-To-End testing to mimic the actions a user would make, on a fully compiled application in the browser. There's no backend, so we don't validate persisting data._
+### [Cypress Functional Testing](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
+* _We utilize Cypress Functional testing to mimic the actions a user would make, on a fully compiled application in the browser. There's no backend, so we don't validate persisting data._
 ### [Jest Unit Testing](https://jestjs.io/docs/tutorial-react)
 * _Unit Testing through Jest, validating that the page loads and operates properly with the correct components and content._
 ### [Regression Testing](https://smartbear.com/learn/automated-testing/what-is-regression-testing/)
