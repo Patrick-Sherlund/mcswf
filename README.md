@@ -59,7 +59,7 @@ Table of Contents
       </ul>
     </li>
     <li>
-      <a href="#app-folder-structure">Test Driven Development</a>
+      <a href="#test-driven-development">Test Driven Development</a>
       <ul>
         <li><a href="#cypress-end-to-end-testing-sort-of">Cypress End-To-End Testing</a></li>
         <li><a href="#jest-unit-testing">Jest Unit Testing</a></li>
