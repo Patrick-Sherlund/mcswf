@@ -77,10 +77,14 @@ We recommend having a good Integrated Development Environment installed on your 
 
 ### Prerequisites
 
-Download the Current or LTS version of Node.JS on your machine.
+Download the Current or LTS version of Node.JS and Git
 * Node.JS
   ```sh
   https://nodejs.org/en/download/current/
+  ```
+* Git
+  ```sh
+  https://git-scm.com/downloads
   ```
 
 ### Installation
