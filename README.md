@@ -58,6 +58,11 @@ Table of Contents
         <li><a href="#assets">Assets</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#app-folder-structure">Test Driven Development</a>
+      <ul>
+      </ul>
+    </li>
     <li><a href="#important-links">Important Links</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
@@ -209,7 +214,15 @@ mcswf
     This section contains any assets (i.e. images, svg, videos, downloads etc) that would be used across the application.
   ```
 
+## Test Driven Development
+_MCSWF follows the standards of [Test Driven Development](https://www.agilealliance.org/glossary/tdd/); we will also use the following testing libraries and techniques:_
 
+### [Cypress End-To-End Testing (sort of...)](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
+* _We utilize Cypress End-To-End testing to mimic the actions a user would make, on a fully compiled application in the browser. There's no backend, so we don't validate persisting data._
+### [Jest Unit Testing](https://jestjs.io/docs/tutorial-react)
+* _Unit Testing through Jest, validating that the page loads and operates properly with the correct components and content._
+### [Regression Testing](https://smartbear.com/learn/automated-testing/what-is-regression-testing/)
+* _We will utilize our Staging Environment to regression test our application when changes from the Development environment have been released, prior to the application reaching production._
 
 ## Important Links
 
