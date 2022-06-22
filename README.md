@@ -55,6 +55,7 @@ Table of Contents
         <li><a href="#models">Models</a></li>
         <li><a href="#modules">Modules</a></li>
         <li><a href="#utils">Utils</a></li>
+        <li><a href="#assets">Assets</a></li>
       </ul>
     </li>
     <li><a href="#important-links">Important Links</a></li>
@@ -202,6 +203,10 @@ mcswf
 * ### 'utils' 
     ```
     This section contains any utility function that could be reused across different components.
+  ```
+* ### 'assets' 
+    ```
+    This section contains any assets (i.e. images, svg, videos, downloads etc) that would be used across the application.
   ```
 
 
