@@ -12,7 +12,7 @@
     <img src="src/assets/logo.png" alt="Logo" width="239.4" height="270">
   </a>
 
-<h3 align="center">U.S. Marine Corps Software Factory</h3>
+<h2 align="center">U.S. Marine Corps Software Factory</h2>
 
   <p align="center">
     An informational static site for Marines to gather information about the U.S. Marine Corps Software Factory and apply to join the team.
