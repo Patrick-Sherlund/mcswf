@@ -20,7 +20,9 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary style="font-size: 23px; border:.001rem solid #a9a9a9; max-width: fit-content; padding: 0 1rem; border-radius: 5px">
+Table of Contents
+</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
