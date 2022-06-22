@@ -121,7 +121,7 @@ Download the Current or LTS version of Node.JS and Git
    ```
 2. Copy the contents from the mcswf -> build folder and overwrite the content of the mcswf.github.io repository
    ```sh
-   Copy the contents of 'build' folder -> paste into mcswf.github.io repository
+   Copy the contents of the 'build' folder -> paste contents into mcswf.github.io repository and overwrite
    ```
 3. From the 'mcswf.github.io' repository add, commit and push the changes
    ```sh
