@@ -36,7 +36,7 @@
       </ul>
     </li>
     <li>
-      <a href="#building-&-deploying-website">Building & Deploying Website</a>
+      <a href="#building-%26-deploying-website">Building & Deploying Website</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#steps">Steps</a></li>
