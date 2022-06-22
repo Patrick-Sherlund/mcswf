@@ -1,9 +1,5 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -159,10 +155,3 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 * [N/A]()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-[contributors-shield]: https://img.shields.io/github/contributors/Patrick-Sherlund/mcswf.svg?style=for-the-badge
-[contributors-url]: https://github.com/Patrick-Sherlund/mcswf/graphs/contributors
-[issues-shield]: https://img.shields.io/github/issues/Patrick-Sherlund/mcswf.svg?style=for-the-badge
-[issues-url]: https://github.com/Patrick-Sherlund/mcswf/issues
-[license-shield]: https://img.shields.io/github/license/Patrick-Sherlund/mcswf.svg?style=for-the-badge
-[license-url]: https://github.com/Patrick-Sherlund/mcswf/blob/master/LICENSE
