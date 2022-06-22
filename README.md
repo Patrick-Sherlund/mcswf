@@ -35,6 +35,13 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#building-&-deploying-website">Building & Deploying Website</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#steps">Steps</a></li>
+      </ul>
+    </li>
     <li><a href="#important-links">Important Links</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
@@ -100,7 +107,29 @@ Download the Current or LTS version of Node.JS and Git
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Building & Deploying Website
 
+### Prerequisites
+1. Clone the mcswf static site repo
+   ```sh
+   git clone https://github.com/Patrick-Sherlund/mcswf.github.io.git
+   ```
+### Steps
+1. From the mcswf repo (This rep, not the static site repo) build the react application
+   ```sh
+   npm run build
+   ```
+2. Copy the contents from the mcswf -> build folder and overwrite the content of the mcswf.github.io repository
+   ```sh
+   Copy the contents of 'build' folder -> paste into mcswf.github.io repository
+   ```
+3. From the 'mcswf.github.io' repository add, commit and push the changes
+   ```sh
+   git add -A
+   git commit -m "COMMIT MESSAGE"
+   git push
+   ```
+4. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/mcswf.github.io/)
 ## Important Links
 * [Agile Board <b>(Pivotal Tracker)</b>](https://www.pivotaltracker.com/n/projects/2575870)
 * [Figma Design](https://www.figma.com/file/26FduvNae6jlmGjJie37AL/Marine-Corps-Software-Factory?node-id=0%3A1)
