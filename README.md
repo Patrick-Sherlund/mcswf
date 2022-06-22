@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Patrick-Sherlund/mcswf">
-    <img src="src/assets/logo.png" alt="Logo" width="240" height="240">
+    <img src="src/assets/logo.png" alt="Logo" width="239.4" height="270">
   </a>
 
 <h3 align="center">project_title</h3>
