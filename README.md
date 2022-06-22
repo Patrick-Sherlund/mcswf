@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The U.S. Marine Corps Software Factory is a static informational site built in the React TS Framework.
+The U.S. Marine Corps Software Factory is a static informational site built in the React Framework.
 <br/>
 The goal of the website is to disseminate information about the Software Factory to the Fleet Marine Force
 <br>
