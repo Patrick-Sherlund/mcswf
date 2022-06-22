@@ -178,12 +178,12 @@ mcswf
 │   │   ├── components
 │   │   ├── global
 │   │   │   ├── enums
-│   │   │   ├── types
+│   │   │   └── types
 │   │   ├── models
 │   │   │   ├── classes
-│   │   │   ├── interfaces
+│   │   │   └── interfaces
 │   │   ├── modules
-│   │   ├── utils
+│   │   └── utils
 └   └── assets
 ```
 * ### 'app' 
