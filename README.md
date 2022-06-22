@@ -127,14 +127,14 @@ _For issues with any other services, please submit a ticket with MCBOSS via the 
 - [ ] Tablet Design
     - [ ] Light Theme
     - [ ] Dark Theme
+      
+_To view a full list of stories in the backlog, please visit [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2575870)_
 
 See the [open issues](https://github.com/Patrick-Sherlund/mcswf/issues) for a full list of proposed features (and known issues).
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
-
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
