@@ -227,6 +227,12 @@ _MCSWF follows the standards of [Test Driven Development](https://www.agileallia
 ### [Regression Testing](https://smartbear.com/learn/automated-testing/what-is-regression-testing/)
 * _We will utilize our Staging Environment to regression test our application when changes from the Development environment have been released, prior to the application reaching production._
 
+## Feature Branching
+_Feature Branching info here_
+
+### [Feature Branching](#)
+* _Add content about feature branching._
+
 ## Important Links
 
 * [Agile Board <b>(Pivotal Tracker)</b>](https://www.pivotaltracker.com/n/projects/2575870)
