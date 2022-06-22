@@ -111,8 +111,10 @@ Download the Current or LTS version of Node.JS on your machine.
 * [AWS S3 Bucket <b>(Dev)</b>](#)
 * [AWS S3 Bucket <b>(Stage)</b>](#)
 * [AWS S3 Bucket <b>(Prod)</b>](#)
-
-_For issues with any of these services, please submit a ticket with MCBOSS via the [MCBOSS Support Desk](https://jira.adts.usmc.mil/servicedesk/customer/user/login?destination=portals)_
+  
+_To request access to Pivotal Tracker or Figma, please contact Patrick Sherlund at [patrick.sherlund@usmc.mil](mailto:patrick.sherlund@usmc.mil)_
+<br/>
+_For issues with any other services, please submit a ticket with MCBOSS via the [MCBOSS Support Desk](https://jira.adts.usmc.mil/servicedesk/customer/user/login?destination=portals)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
