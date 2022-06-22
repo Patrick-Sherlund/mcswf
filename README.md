@@ -1,5 +1,10 @@
 <div id="top"></div>
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -7,7 +12,7 @@
     <img src="src/assets/logo.png" alt="Logo" width="239.4" height="270">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">U.S. Marine Corps Software Factory</h3>
 
   <p align="center">
     project_description
@@ -185,3 +190,11 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+[contributors-shield]: https://img.shields.io/github/contributors/Patrick-Sherlund/mcswf.svg?style=for-the-badge
+[contributors-url]: https://github.com/Patrick-Sherlund/mcswf/graphs/contributors
+[stars-shield]: https://img.shields.io/github/stars/Patrick-Sherlund/mcswf.svg?style=for-the-badge
+[stars-url]: https://github.com/Patrick-Sherlund/mcswf/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Patrick-Sherlund/mcswf.svg?style=for-the-badge
+[issues-url]: https://github.com/Patrick-Sherlund/mcswf/issues
+[license-shield]: https://img.shields.io/github/license/Patrick-Sherlund/mcswf.svg?style=for-the-badge
+[license-url]: https://github.com/Patrick-Sherlund/mcswf/blob/master/LICENSE
