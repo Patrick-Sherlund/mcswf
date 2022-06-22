@@ -104,14 +104,13 @@ Download the Current or LTS version of Node.JS on your machine.
 
 
 ## Important Links
-* [Agile Board <b>(Pivotal Tracker)</b>](https://code.visualstudio.com/)
-* [Jenkins Pipeline <b>(Dev)</b>](https://www.jetbrains.com/webstorm/download/#section=windows)
-* [Jenkins Pipeline <b>(Stage)</b>](https://www.jetbrains.com/webstorm/download/#section=windows)
-* [Jenkins Pipeline <b>(Prod)</b>](https://www.jetbrains.com/webstorm/download/#section=windows)
-* [AWS S3 Bucket <b>(Dev)</b>](https://www.jetbrains.com/idea/download/#section=windows)
-* [AWS S3 Bucket <b>(Stage)</b>](https://www.jetbrains.com/idea/download/#section=windows)
-* [AWS S3 Bucket <b>(Prod)</b>](https://www.jetbrains.com/idea/download/#section=windows)
-* [xCode (MacOS) <b>(Free)</b>](https://developer.apple.com/xcode/)
+* [Agile Board <b>(Pivotal Tracker)</b>](https://www.pivotaltracker.com/n/projects/2575870)
+* [Jenkins Pipeline <b>(Dev)</b>](#)
+* [Jenkins Pipeline <b>(Stage)</b>](#)
+* [Jenkins Pipeline <b>(Prod)</b>](#)
+* [AWS S3 Bucket <b>(Dev)</b>](#)
+* [AWS S3 Bucket <b>(Stage)</b>](#)
+* [AWS S3 Bucket <b>(Prod)</b>](#)
 
 _For issues with any of these services, please submit a ticket with MCBOSS via the [MCBOSS Support Desk](https://jira.adts.usmc.mil/servicedesk/customer/user/login?destination=portals)_
 
