@@ -98,7 +98,7 @@ and provide an opportunity for Marines to apply to our team.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Built With
+# Built With
 
 * [React.js (Typescript Template)](https://reactjs.org/)
 
