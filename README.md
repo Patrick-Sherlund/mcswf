@@ -66,8 +66,18 @@ Table of Contents
         <li><a href="#regression-testing">Regression Testing</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#feature-branching">Feature Branching</a>
+      <ul>
+        <li><a href="#steps">Steps</a></li>
+        <li><a href="#pull-the-latest-from-the-master-branch">Pull the latest from the master branch</a></li>
+        <li><a href="#checkout-the-feature-branch">Checkout the feature branch</a></li>
+        <li><a href="#validate-branch-status-before-coding">Validate branch status before coding</a></li>
+        <li><a href="#optional-rebase-with-origin-master-daily">(Optional) Rebase with origin/master daily</a></li>
+        <li><a href="#merge-the-feature-branch-into-develop">Merge the feature branch into develop</a></li>
+      </ul>
+    </li>
     <li><a href="#important-links">Important Links</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -78,7 +88,7 @@ Table of Contents
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+# About The Project
 
 The U.S. Marine Corps Software Factory is a static informational site built in the React Framework.
 <br/>
@@ -88,7 +98,7 @@ and provide an opportunity for Marines to apply to our team.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Built With
+^## Built With
 
 * [React.js (Typescript Template)](https://reactjs.org/)
 
@@ -97,7 +107,7 @@ and provide an opportunity for Marines to apply to our team.
 
 <!-- GETTING STARTED -->
 
-## Getting Started
+# Getting Started
 
 We recommend having a good Integrated Development Environment installed on your machine... Some examples are:
 <br/>
@@ -107,7 +117,7 @@ We recommend having a good Integrated Development Environment installed on your 
 * [JetBrains IntelliJ Idea (Free)](https://www.jetbrains.com/idea/download/#section=windows)
 * [xCode (MacOS) (Free)](https://developer.apple.com/xcode/)
 
-### Prerequisites
+^## Prerequisites
 
 Download the Current or LTS version of Node.JS and Git
 
@@ -120,7 +130,7 @@ Download the Current or LTS version of Node.JS and Git
   https://git-scm.com/downloads
   ```
 
-### Installation
+^## Installation
 
 1. Clone the repo
    ```sh
@@ -133,9 +143,9 @@ Download the Current or LTS version of Node.JS and Git
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Building & Deploying Website
+# Building & Deploying Website
 
-### Prerequisites
+^## Prerequisites
 
 1. Clone the mcswf static site repo
    ```sh
@@ -150,7 +160,7 @@ Download the Current or LTS version of Node.JS and Git
    PUBLIC_URL=https://patrick-sherlund.github.io/mcswf.github.io
    ```
 
-### Steps
+^## Steps
 
 1. From the mcswf repository (This repository, not the static site repo) build the React application
    ```sh
@@ -168,7 +178,7 @@ Download the Current or LTS version of Node.JS and Git
    ```
 4. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/mcswf.github.io/)
 
-## App Folder Structure
+# App Folder Structure
 _The folder structure logically separates different areas of the application, to help organize development._
     
 ```
@@ -217,23 +227,89 @@ mcswf
     This section contains any assets (i.e. images, svg, videos, downloads etc) that would be used across the application.
   ```
 
-## Test Driven Development
-_MCSWF follows the standards of [Test Driven Development](https://www.agilealliance.org/glossary/tdd/); we will also use the following testing libraries and techniques:_
+# [Test Driven Development](https://www.agilealliance.org/glossary/tdd/)
 
-### [Cypress Functional Testing](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
-* _We utilize Cypress Functional testing to mimic the actions a user would make, on a fully compiled application in the browser. There's no backend, so we don't validate persisting data._
-### [Jest Unit Testing](https://jestjs.io/docs/tutorial-react)
-* _Unit Testing through Jest, validating that the page loads and operates properly with the correct components and content._
-### [Regression Testing](https://smartbear.com/learn/automated-testing/what-is-regression-testing/)
-* _We will utilize our Staging Environment to regression test our application when changes from the Development environment have been released, prior to the application reaching production._
+* ### [Integration Testing Through Cypress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
+* ### [Unit Testing Through Jest](https://jestjs.io/docs/tutorial-react)
+* ### [Manual Regression Testing](https://smartbear.com/learn/automated-testing/what-is-regression-testing/)
 
-## Feature Branching
-_Feature Branching info here_
+# Feature Branching
+_The process that the MCSWF uses for feature branching is pretty simple. Below you'll find the steps we take throughout the workflow_
 
-### [Feature Branching](#)
-* _Add content about feature branching._
+# Steps
 
-## Important Links
+## Pull the latest from the master branch 
+```sh
+    git checkout master
+    git pull origin master
+```
+_The process will reduce the amount of conflicts dealt with when the feature branch is merged back in to the master branch._
+
+## Checkout the feature branch
+_The naming convention for feature branches will be: 'MCSWF-STORY#', i.e. 'MCSWF-1'_
+
+```sh
+    git checkout -b MCSWF-#
+```
+## Validate branch status before coding
+_This is just insurance that the branch was created successfully and that git is pointed towards that branch_
+
+```sh
+    git status
+```
+## (Optional) Rebase with origin/master daily
+_In order to reduce the amount of conflicts dealt with when the feature branch is ready to be merged in to master, we will rebase the feature branch with the latest code from origin/master._
+
+```sh
+    git checkout master
+    git pull origin master
+    git checkout MCSWF-STORY#
+    git rebase -i develop
+```
+If there are several commits that need to be picked / squashed, we will always pick the commit at the TOP of the list, and squash the rest via VIM
+<br/>
+<br/>
+_Example:_
+```sh
+    pick 0253dc894f WIP
+    squash 5a1e86933c remove dependency
+    squash bffoffb395 Added some more tests
+    squash 222fabf5e0 Removed unneeded logic
+    squash 726a2f9a10 MCSWF-1: Create Homepage
+```
+_There may be some conflicts when rebasing with develop, you can resolve those conflicts and continue the rebasing_
+<br/>
+_Example: (After all conflicts are resolved)_
+```sh
+    git rebase --continue
+```
+Once all conflicts are resolved, your feature branch has successfully been rebased with origin/master! You can then push your new code to remote.
+
+## Merge the feature branch into develop
+_Important: In order to reduce conflicts, ensure the above step (Rebasing origin/master into the feature branch) has been completed._
+<br/>
+### 1. Checkout origin/master and pull the latest code
+```sh
+    git checkout master
+    git pull origin/master
+```
+### 2. Merge the feature branch into develop
+```sh
+    git merge MCSWF-#
+```
+_If there are any merge conflicts, you'll be asked to resolve. This not happen due to the rebasing step required before step 1._
+<br/>
+<br/>
+### 3. Re-run all test suites
+Re-running all test suites will ensure that there were no anomalies during the merge, and that everything still performs appropriately. 
+
+### 4. Push local master to origin/master
+The final step is to push the tested (local) master branch to origin/master.
+```sh
+    git push
+```
+
+# Important Links
 
 * [Agile Board <b>(Pivotal Tracker)</b>](https://www.pivotaltracker.com/n/projects/2575870)
 * [Figma Design](https://www.figma.com/file/26FduvNae6jlmGjJie37AL/Marine-Corps-Software-Factory?node-id=0%3A1)
@@ -252,32 +328,9 @@ the [MCBOSS Support service Desk](https://jira.adts.usmc.mil/servicedesk/custome
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] Desktop Design
-    - [ ] Light Theme
-    - [ ] Dark Theme
-- [ ] Mobile Design
-    - [ ] Light Theme
-    - [ ] Dark Theme
-- [ ] Tablet Design
-    - [ ] Light Theme
-    - [ ] Dark Theme
-
-_To view a full list of stories in the backlog, please
-visit [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/2575870)_
-
-See the [open issues](https://github.com/Patrick-Sherlund/mcswf/issues) for a full list of proposed features (and known
-issues).
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- LICENSE -->
 
-## License
+# License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -287,7 +340,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 
-## Contact
+# Contact
 
 * Email: [patrick.sherlund@usmc.mil](mailto:patrick.sherlund@usmc.mil)
 * Project Link: [https://github.com/Patrick-Sherlund/mcswf](https://github.com/Patrick-Sherlund/mcswf)
@@ -296,7 +349,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+# Acknowledgments
 
 * [N/A]()
 
