@@ -73,7 +73,7 @@ Table of Contents
         <li><a href="#pull-the-latest-from-the-master-branch">Pull the latest from the master branch</a></li>
         <li><a href="#checkout-the-feature-branch">Checkout the feature branch</a></li>
         <li><a href="#validate-branch-status-before-coding">Validate branch status before coding</a></li>
-        <li><a href="#optional-rebase-with-origin-master-daily">(Optional) Rebase with origin/master daily</a></li>
+        <li><a href="#optional-rebase-with-originmaster-daily">(Optional) Rebase with origin/master daily</a></li>
         <li><a href="#merge-the-feature-branch-into-develop">Merge the feature branch into develop</a></li>
       </ul>
     </li>
