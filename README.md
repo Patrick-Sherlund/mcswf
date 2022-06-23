@@ -264,7 +264,7 @@ _In order to reduce the amount of conflicts dealt with when the feature branch i
     git checkout master
     git pull origin master
     git checkout MCSWF-STORY#
-    git rebase -i develop
+    git rebase -i master
 ```
 If there are several commits that need to be picked / squashed, we will always pick the commit at the TOP of the list, and squash the rest via VIM
 <br/>
