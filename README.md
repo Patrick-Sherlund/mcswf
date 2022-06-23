@@ -236,28 +236,28 @@ mcswf
 # Feature Branching
 _The process that the MCSWF uses for feature branching is pretty simple. Below you'll find the steps we take throughout the workflow_
 
-# Steps
+## Steps
 
-## Pull the latest from the master branch 
+### Pull the latest from the master branch 
 ```sh
     git checkout master
     git pull origin master
 ```
 _The process will reduce the amount of conflicts dealt with when the feature branch is merged back in to the master branch._
 
-## Checkout the feature branch
+### Checkout the feature branch
 _The naming convention for feature branches will be: 'MCSWF-STORY#', i.e. 'MCSWF-1'_
 
 ```sh
     git checkout -b MCSWF-#
 ```
-## Validate branch status before coding
+### Validate branch status before coding
 _This is just insurance that the branch was created successfully and that git is pointed towards that branch_
 
 ```sh
     git status
 ```
-## (Optional) Rebase with origin/master daily
+### (Optional) Rebase with origin/master daily
 _In order to reduce the amount of conflicts dealt with when the feature branch is ready to be merged in to master, we will rebase the feature branch with the latest code from origin/master._
 
 ```sh
@@ -285,25 +285,25 @@ _Example: (After all conflicts are resolved)_
 ```
 Once all conflicts are resolved, your feature branch has successfully been rebased with origin/master! You can then push your new code to remote.
 
-## Merge the feature branch into develop
+### Merge the feature branch into develop
 _Important: In order to reduce conflicts, ensure the above step (Rebasing origin/master into the feature branch) has been completed._
 <br/>
-### 1. Checkout origin/master and pull the latest code
+#### 1. Checkout origin/master and pull the latest code
 ```sh
     git checkout master
     git pull origin/master
 ```
-### 2. Merge the feature branch into develop
+#### 2. Merge the feature branch into develop
 ```sh
     git merge MCSWF-#
 ```
 _If there are any merge conflicts, you'll be asked to resolve. This not happen due to the rebasing step required before step 1._
 <br/>
 <br/>
-### 3. Re-run all test suites
+#### 3. Re-run all test suites
 Re-running all test suites will ensure that there were no anomalies during the merge, and that everything still performs appropriately. 
 
-### 4. Push local master to origin/master
+#### 4. Push local master to origin/master
 The final step is to push the tested (local) master branch to origin/master.
 ```sh
     git push
