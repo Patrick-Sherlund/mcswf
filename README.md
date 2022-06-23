@@ -297,7 +297,7 @@ _Important: In order to reduce conflicts, ensure the above step (Rebasing origin
 ```sh
     git merge MCSWF-#
 ```
-_If there are any merge conflicts, you'll be asked to resolve. This not happen due to the rebasing step required before step 1._
+_If there are any merge conflicts, you'll be asked to resolve. This should not happen if you've completed the rebasing step required before step 1._
 <br/>
 <br/>
 #### 3. Re-run all test suites
