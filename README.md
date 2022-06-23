@@ -98,7 +98,7 @@ and provide an opportunity for Marines to apply to our team.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-^## Built With
+## Built With
 
 * [React.js (Typescript Template)](https://reactjs.org/)
 
@@ -117,7 +117,7 @@ We recommend having a good Integrated Development Environment installed on your 
 * [JetBrains IntelliJ Idea (Free)](https://www.jetbrains.com/idea/download/#section=windows)
 * [xCode (MacOS) (Free)](https://developer.apple.com/xcode/)
 
-^## Prerequisites
+## Prerequisites
 
 Download the Current or LTS version of Node.JS and Git
 
@@ -130,7 +130,7 @@ Download the Current or LTS version of Node.JS and Git
   https://git-scm.com/downloads
   ```
 
-^## Installation
+## Installation
 
 1. Clone the repo
    ```sh
@@ -145,7 +145,7 @@ Download the Current or LTS version of Node.JS and Git
 
 # Building & Deploying Website
 
-^## Prerequisites
+## Prerequisites
 
 1. Clone the mcswf static site repo
    ```sh
@@ -160,7 +160,7 @@ Download the Current or LTS version of Node.JS and Git
    PUBLIC_URL=https://patrick-sherlund.github.io/mcswf.github.io
    ```
 
-^## Steps
+## Steps
 
 1. From the mcswf repository (This repository, not the static site repo) build the React application
    ```sh
