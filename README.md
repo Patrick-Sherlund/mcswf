@@ -74,7 +74,7 @@ Table of Contents
         <li><a href="#checkout-the-feature-branch">Checkout the feature branch</a></li>
         <li><a href="#validate-branch-status-before-coding">Validate branch status before coding</a></li>
         <li><a href="#optional-rebase-with-originmaster-daily">(Optional) Rebase with origin/master daily</a></li>
-        <li><a href="#merge-the-feature-branch-into-develop">Merge the feature branch into develop</a></li>
+        <li><a href="#merge-the-feature-branch-into-master">Merge the feature branch into master</a></li>
       </ul>
     </li>
     <li><a href="#important-links">Important Links</a></li>
@@ -277,7 +277,7 @@ _Example:_
     squash 222fabf5e0 Removed unneeded logic
     squash 726a2f9a10 MCSWF-1: Create Homepage
 ```
-_There may be some conflicts when rebasing with develop, you can resolve those conflicts and continue the rebasing_
+_There may be some conflicts when rebasing with master, you can resolve those conflicts and continue the rebasing_
 <br/>
 _Example: (After all conflicts are resolved)_
 ```sh
@@ -285,7 +285,7 @@ _Example: (After all conflicts are resolved)_
 ```
 Once all conflicts are resolved, your feature branch has successfully been rebased with origin/master! You can then push your new code to remote.
 
-### Merge the feature branch into develop
+### Merge the feature branch into master
 _Important: In order to reduce conflicts, ensure the above step (Rebasing origin/master into the feature branch) has been completed._
 <br/>
 #### 1. Checkout origin/master and pull the latest code
@@ -293,7 +293,7 @@ _Important: In order to reduce conflicts, ensure the above step (Rebasing origin
     git checkout master
     git pull origin/master
 ```
-#### 2. Merge the feature branch into develop
+#### 2. Merge the feature branch into master
 ```sh
     git merge MCSWF-#
 ```
