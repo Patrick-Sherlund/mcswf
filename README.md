@@ -301,7 +301,7 @@ _If there are any merge conflicts, you'll be asked to resolve. This not happen d
 <br/>
 <br/>
 #### 3. Re-run all test suites
-Re-running all test suites will ensure that there were no anomalies during the merge, and that everything still performs appropriately. 
+Re-running all test suites will ensure that there were no undiscovered issues during the merge, and that everything still performs appropriately. 
 
 #### 4. Push local master to origin/master
 The final step is to push the tested (local) master branch to origin/master.
