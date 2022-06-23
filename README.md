@@ -61,9 +61,9 @@ Table of Contents
     <li>
       <a href="#test-driven-development">Test Driven Development</a>
       <ul>
-        <li><a href="#cypress-functional-testing">Cypress Functional Testing</a></li>
-        <li><a href="#jest-unit-testing">Jest Unit Testing</a></li>
-        <li><a href="#regression-testing">Regression Testing</a></li>
+        <li><a href="#integration-testing-through-cypress">Integration Testing Through Cypress</a></li>
+        <li><a href="#unit-testing-through-jest">Unit Testing Through Jest</a></li>
+        <li><a href="#manual-regression-testing">Manual Regression Testing</a></li>
       </ul>
     </li>
     <li>
