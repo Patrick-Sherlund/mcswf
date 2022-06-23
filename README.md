@@ -9,10 +9,10 @@
 
   </a>
 
-<h2 align="center">U.S. Marine Corps Software Factory</h2>
+<h2 align="center">U.S. Marine Corps Software Factory Static Site</h2>
 
   <p align="center">
-    An informational static site for Marines to gather information about the U.S. Marine Corps Software Factory and apply to join the team.
+    An informational static site for Marines to gather details about the U.S. Marine Corps Software Factory, and apply to join the team.
     <br />
     <a href="https://github.com/Patrick-Sherlund/mcswf"><strong>Explore the docs »</strong></a>
     <br />
