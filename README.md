@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Patrick-Sherlund/mcswf">
+  <a href="https://github.com/Patrick-Sherlund/MCSWF">
 
 ![logo.png](src/assets/readme-logo.png)
 
@@ -14,7 +14,7 @@
   <p align="center">
     An informational static site for Marines to gather details about the U.S. Marine Corps Software Factory, and apply to join the team.
     <br />
-    <a href="https://github.com/Patrick-Sherlund/mcswf"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Patrick-Sherlund/MCSWF"><strong>Explore the docs »</strong></a>
     <br />
     <br />
   </p>
@@ -134,7 +134,7 @@ Download the Current or LTS version of Node.JS and Git
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Patrick-Sherlund/mcswf.git
+   git clone https://github.com/Patrick-Sherlund/MCSWF.git
    ```
 2. Install NPM packages
    ```sh
@@ -147,9 +147,9 @@ Download the Current or LTS version of Node.JS and Git
 
 ## Prerequisites
 
-1. Clone the mcswf static site repo
+1. Clone the MCSWF static site repo
    ```sh
-   git clone https://github.com/Patrick-Sherlund/mcswf.github.io.git
+   git clone https://github.com/Patrick-Sherlund/MCSWF.github.io.git
    ```
 2. Validate the public URL in the <b>.env</b> at the root direcetory
     * _This is required because when the application is compiled into js, the public url variable is used when
@@ -157,32 +157,32 @@ Download the Current or LTS version of Node.JS and Git
 
    </br>_<b>.env PUBLIC_URL</b>_
    ```sh
-   PUBLIC_URL=https://patrick-sherlund.github.io/mcswf.github.io
+   PUBLIC_URL=https://patrick-sherlund.github.io/MCSWF.github.io
    ```
 
 ## Steps
 
-1. From the mcswf repository (This repository, not the static site repo) build the React application
+1. From the MCSWF repository (This repository, not the static site repo) build the React application
    ```sh
    npm run build
    ```
-2. Copy the contents from the mcswf -> build folder and overwrite the content of the mcswf.github.io repository
+2. Copy the contents from the MCSWF -> build folder and overwrite the content of the MCSWF.github.io repository
    ```sh
-   Copy the contents of the 'build' folder -> paste contents into mcswf.github.io repository and overwrite
+   Copy the contents of the 'build' folder -> paste contents into MCSWF.github.io repository and overwrite
    ```
-3. From the 'mcswf.github.io' repository add, commit and push the changes
+3. From the 'MCSWF.github.io' repository add, commit and push the changes
    ```sh
    git add -A
    git commit -m "COMMIT MESSAGE"
    git push
    ```
-4. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/mcswf.github.io/)
+4. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/MCSWF.github.io/)
 
 # App Folder Structure
 _The folder structure logically separates different areas of the application, to help organize development._
     
 ```
-mcswf
+MCSWF
 ├── src
 │   ├── app
 │   │   ├── components
@@ -197,35 +197,21 @@ mcswf
 └   └── assets
 ```
 * ### 'app' 
-    ```
-    This section encapsolates the 'components', 'global', 'models', 'modules' and 'utils'. 
-    It also serves as the root directory for the app component
-  ```
+    _This section encapsulates the 'components', 'global', 'models', 'modules' and 'utils'. 
+    It also serves as the root directory for the app component_
 * ### 'components' 
-    ```
-    This section contains all reusable components, all components within this section are built with reusability in mind.
-  ```
+    _This section contains all reusable components, all components within this section are built with reusability in mind._
 
 * ### 'global'
-    ```
-    This section contains any type of global declaration, we use this for enums and types.
-  ```
+    _This section contains any type of global declaration, we use this for enums and types._
 * ### 'models' 
-    ```
-    This section contains any type of object model, whether its an Interface or a Class.
-  ```
+    _This section contains any type of object model, whether it's an Interface, or a Class._
 * ### 'modules' 
-    ```
-    This section contains all of the pages the app uses, for example 'Home', 'About', 'Contact' etc.
-  ```
+    _This section contains all the pages the app uses, for example 'Home', 'About', 'Contact' etc._
 * ### 'utils' 
-    ```
-    This section contains any utility function that could be reused across different components.
-  ```
+    _This section contains any utility function that could be reused across different components._
 * ### 'assets' 
-    ```
-    This section contains any assets (i.e. images, svg, videos, downloads etc) that would be used across the application.
-  ```
+    _This section contains any assets (i.e. images, svg, videos, downloads etc) that would be used across the application._
 
 # [Test Driven Development](https://www.agilealliance.org/glossary/tdd/)
 
@@ -343,7 +329,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 # Contact
 
 * Email: [patrick.sherlund@usmc.mil](mailto:patrick.sherlund@usmc.mil)
-* Project Link: [https://github.com/Patrick-Sherlund/mcswf](https://github.com/Patrick-Sherlund/mcswf)
+* Project Link: [https://github.com/Patrick-Sherlund/MCSWF](https://github.com/Patrick-Sherlund/MCSWF)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

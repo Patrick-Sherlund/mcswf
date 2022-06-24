@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from '../assets/logo.png';
-import './App.css';
+import Home from "./modules/Home/Home";
+import { AppContainer } from "./App.styles";
+import NavBar from "./components/NavBar/NavBar";
+import LearnMore from "./modules/LearnMore/LearnMore";
+import Disciplines from "./modules/Disciplines/Disciplines";
+import TheTeam from "./modules/TheTeam/TheTeam";
+import GetInvolved from "./modules/GetInvolved/GetInvolved";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          U.S. Marine Corps Software Factory Hello World
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/Patrick-Sherlund/mcswf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Docs
-        </a>
-      </header>
-    </div>
-  );
+
+
+    return (
+        <AppContainer>
+                <NavBar/>
+                <Home/>
+                <LearnMore/>
+                <Disciplines/>
+                <TheTeam/>
+                <GetInvolved/>
+                <Footer/>
+        </AppContainer>
+    );
 }
 
 export default App;
