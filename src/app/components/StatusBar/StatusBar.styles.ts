@@ -1,4 +1,4 @@
-import styled from "styled-components/macro";
+import styled from "styled-components";
 
 export const StatusBarOutline = styled.div`
   width: 100%;
@@ -16,6 +16,24 @@ export const StatusBarEmpty = styled(StatusBarOutline)`
   background-color: #DADADA;
   display: flex;
   flex-direction: row;
+  
+  progress[value] {
+    width: 100%;
+    appearance: none;
+    height: .25rem;
+    ::-webkit-progress-bar{
+      background-color: #DADADA;
+    }
+    ::-webkit-progress-value{
+      background-color: #C20000;
+      -webkit-transition : width .215s ease;
+      -moz-transition : width .215s ease;
+      -o-transition : width .215s ease;
+      transition : width .215s ease;
+
+    }
+    
+  }
 `
 
 
