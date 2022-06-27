@@ -31,7 +31,7 @@ export const StyledH2 = styled.h2`
 `
 
 export const TitleTop = styled(StyledH2)`
-    margin-top: -.7rem;
+    margin-top: 0;
 `;
 
 export const Divider = styled.div`
