@@ -12,7 +12,7 @@ import {darkTheme} from "./global/themes/DarkTheme";
 import {lightTheme} from "./global/themes/LightTheme";
 
 function App() {
-    const [theme, setTheme] = useState(lightTheme)
+    const [theme, setTheme] = useState(darkTheme)
 
     return (
         <ThemeProvider theme={theme}>
