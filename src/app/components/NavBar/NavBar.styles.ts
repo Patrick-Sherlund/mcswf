@@ -38,6 +38,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   margin: 1rem;
+  font-size: 1.325rem;
   color: ${props => props.theme.inactiveTextColor};
   font-weight: lighter;
   list-style-type: none;
