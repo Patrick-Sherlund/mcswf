@@ -7,7 +7,7 @@ import twitterSvg from "../../../assets/svg/light/twitter.svg";
 import youtubeSvg from "../../../assets/svg/light/youtube.svg";
 
 export const lightTheme: Theme = {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#c6c6c6",
     backgroundImage: backgroundLight,
     textColor: "#2E333F",
     inactiveTextColor: "#555353",
@@ -19,7 +19,7 @@ export const lightTheme: Theme = {
         youtube: youtubeSvg
     },
     navBar: {
-        backgroundColor: "#f3f3f3",
+        backgroundColor: "#eaeaea",
         statusBar: {
             backgroundColor: "#f6f6f6"
         }
