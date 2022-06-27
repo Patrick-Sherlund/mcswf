@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
-
+import {FooterContainer} from "./Footer.styles";
 
 interface FooterProps {}
 
 const Footer: FC<FooterProps> = () => (
-  <div data-testid="Footer">
+  <FooterContainer data-testid="Footer">
     Footer Component
-  </div>
+  </FooterContainer>
 );
 
 export default Footer;

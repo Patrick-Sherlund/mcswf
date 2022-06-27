@@ -5,9 +5,8 @@ import {HomeContainer} from "./Home.styles";
 interface HomeProps {}
 
 const Home: FC<HomeProps> = () => (
-  <HomeContainer>
-
-
+  <HomeContainer id={'Home'}>
+    Home Component
   </HomeContainer>
 );
 

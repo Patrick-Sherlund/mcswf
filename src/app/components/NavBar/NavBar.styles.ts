@@ -1,7 +1,10 @@
 import styled from "styled-components/macro";
 import {devices} from "../../../index.styles";
+import * as Scroll from 'react-scroll';
 
 export const DesktopNavBar = styled.div`
+  position: fixed;
+  width: 100%;
   @media screen and ${devices.tablet}{
     display: none;
   }
@@ -12,10 +15,10 @@ export const NavBarContainer = styled.nav`
   flex-direction: row;
   justify-content: center;
   height: max-content;
-  background-color: #292929;
+  background-color: ${props => props.theme.navBar.backgroundColor};
 `;
 
-export const Link = styled.a`
+export const Link = styled(Scroll.Link)`
   text-decoration: none;
 `
 
@@ -34,7 +37,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   margin: 1rem;
-  color: #CFCFCF;
+  color: ${props => props.theme.inactiveTextColor};
   font-weight: lighter;
   list-style-type: none;
   align-content: center;
@@ -43,7 +46,7 @@ export const ListItem = styled.li`
 
 export const SelectedListItem = styled(ListItem)`
   font-weight: 600;
-  color: white;
+  color: ${props => props.theme.textColor};
 `
 
 export const UnderLine = styled.div`

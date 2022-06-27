@@ -18,7 +18,10 @@ const NavBar: FC<NavBarProps> = () => {
                     {
                         Object.values(PageName).map(
                             (pageName, index) => (
-                                <Link key={'link-' + pageName + index} onClick={() => setSelectedPage(pageName)} href={`#${encodeURIComponent(pageName)}`}>
+                                <Link key={'link-' + pageName + index} onSetActive={() => {
+                                    console.log(pageName)
+                                    setSelectedPage(pageName)
+                                }} to={pageName.replace(' ', '-')} spy={true} smooth={true} offset={-30} duration={500}>
                                     {(selectedPage === pageName)
                                         ? <SelectedListItem key={pageName + index} data-testid={pageName}>
                                             {pageName}

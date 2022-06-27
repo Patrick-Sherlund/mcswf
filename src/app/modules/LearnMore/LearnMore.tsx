@@ -4,7 +4,7 @@ import {LearnMoreContainer} from "./LearnMore.styles";
 interface LearnMoreProps {}
 
 const LearnMore: FC<LearnMoreProps> = () => (
-  <LearnMoreContainer data-testid="LearnMore">
+  <LearnMoreContainer data-testid="LearnMore" id={'Learn-More'}>
       LearnMore Component
   </LearnMoreContainer>
 );

@@ -4,7 +4,7 @@ import {TheTeamContainer} from "./TheTeam.styles";
 interface TheTeamProps {}
 
 const TheTeam: FC<TheTeamProps> = () => (
-  <TheTeamContainer data-testid="TheTeam">
+  <TheTeamContainer data-testid="TheTeam" id={"The-Team"}>
       TheTeam Component
   </TheTeamContainer>
 );
