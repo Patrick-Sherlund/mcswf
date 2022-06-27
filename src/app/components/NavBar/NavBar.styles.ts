@@ -5,6 +5,7 @@ import * as Scroll from 'react-scroll';
 export const DesktopNavBar = styled.div`
   position: fixed;
   width: 100%;
+  z-index: 1;
   @media screen and ${devices.tablet}{
     display: none;
   }
