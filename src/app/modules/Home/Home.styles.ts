@@ -1,9 +1,4 @@
 import styled from "styled-components";
-import facebookSvg from "../../../assets/svg/facebook.svg"
-import instagramSvg from "../../../assets/svg/instagram.svg"
-import linkedinSvg from "../../../assets/svg/linkedin.svg"
-import twitterSvg from "../../../assets/svg/twitter.svg"
-import youtubeSvg from "../../../assets/svg/youtube.svg"
 
 export const HomeContainer = styled.div`
   padding-top: 12rem;
@@ -14,7 +9,7 @@ export const HomeContainer = styled.div`
 `;
 
 export const HomeHeader = styled.header`
-  margin: 8rem auto 2rem;
+  margin: 10rem auto 2rem;
   display: flex;
   flex-direction: row;
 `
@@ -22,7 +17,7 @@ export const HomeHeader = styled.header`
 export const StyledH2 = styled.h2`
   font-family: DIN Next LT Pro, Inter, "Segoe UI", sans-serif;
   padding: 0 1rem;
-  color: #EDEDED;
+  color: ${props => props.theme.textColor};
   font-size: 5rem;
   
   @media screen and (max-width: 1315px) {
@@ -45,14 +40,14 @@ export const Divider = styled.div`
 `;
 
 export const HomeContent = styled.div`
-  margin: 0 auto 5rem;
+  margin: 0 auto 6rem;
   display: flex;
   flex-direction: row;
 `;
 
 export const StyledH3 = styled.h3`
   font-family: DIN Next LT Pro, Inter, "Segoe UI", sans-serif;
-  color: #EDEDED;
+  color: ${props => props.theme.textColor};
   font-size: 2rem;
   padding-left: .5rem;
 
@@ -86,31 +81,31 @@ const SocialButton = styled.div`
 
 export const FacebookButton = styled(SocialButton)`
   position: relative;
-  background-image: url(${facebookSvg});
+  background-image: url(${prop => prop.theme.socials.facebook});
   background-repeat: no-repeat;
   background-position: 50% 50%
 `;
 export const LinkedInButton = styled(SocialButton)`
   position: relative;
-  background-image: url(${linkedinSvg});
+  background-image: url(${prop => prop.theme.socials.linkedin});
   background-repeat: no-repeat;
   background-position: 50% 50%
 `;
 export const InstagramButton = styled(SocialButton)`
   position: relative;
-  background-image: url(${instagramSvg});
+  background-image: url(${prop => prop.theme.socials.instagram});
   background-repeat: no-repeat;
   background-position: 50% 50%
 `;
 export const TwitterButton = styled(SocialButton)`
   position: relative;
-  background-image: url(${twitterSvg});
+  background-image: url(${prop => prop.theme.socials.twitter});
   background-repeat: no-repeat;
   background-position: 50% 50%
 `;
 export const YoutubeButton = styled(SocialButton)`
   position: relative;
-  background-image: url(${youtubeSvg});
+  background-image: url(${prop => prop.theme.socials.youtube});
   background-repeat: no-repeat;
   background-position: 50% 50%
 `;
