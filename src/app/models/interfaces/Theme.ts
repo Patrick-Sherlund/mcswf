@@ -8,7 +8,9 @@ export interface Theme {
         instagram: string,
         linkedin: string,
         twitter: string,
-        youtube: string
+        youtube: string,
+        backgroundColor: string,
+        borderColor: string
     }
     navBar: {
         backgroundColor: string,

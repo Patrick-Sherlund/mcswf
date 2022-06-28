@@ -12,12 +12,14 @@ import {darkTheme} from "./global/themes/DarkTheme";
 import {lightTheme} from "./global/themes/LightTheme";
 
 function App() {
-    const [theme, setTheme] = useState(lightTheme)
+    const [theme, setTheme] = useState(darkTheme)
+
+    const updateState = () => setTheme((theme) => theme === darkTheme ? lightTheme : darkTheme)
 
     return (
         <ThemeProvider theme={theme}>
             <AppContainer>
-                <NavBar/>
+                <NavBar themeHandler={updateState} />
                 <Home/>
                 <LearnMore/>
                 <Disciplines/>

@@ -10,4 +10,5 @@ export const AppContainer = styled.div`
   background-size: contain;
   color: ${props => props.theme.textColor};
   font-family: DINNextLTPro, Inter, Segoe UI, sans-serif;
+  transition: background 0.5s;
 `;

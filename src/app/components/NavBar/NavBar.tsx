@@ -3,11 +3,14 @@ import {PageName} from "../../global/enums/global";
 import logo from "../../../assets/logo.png"
 import {Logo, DesktopNavBar, NavBarContainer, List, SelectedListItem, ListItem, UnderLine, Link} from "./NavBar.styles";
 import StatusBar from "../StatusBar/StatusBar";
+import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 
 interface NavBarProps {
+    themeHandler: (state: any) => void
 }
 
-const NavBar: FC<NavBarProps> = () => {
+
+const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
     const [selectedPage, setSelectedPage] = useState(PageName.HOME);
 
     return (
@@ -32,6 +35,7 @@ const NavBar: FC<NavBarProps> = () => {
                         )
                     }
                 </List>
+                <ToggleSwitch themeHandler={props.themeHandler}/>
             </NavBarContainer>
             <StatusBar pageName={selectedPage}/>
         </DesktopNavBar>

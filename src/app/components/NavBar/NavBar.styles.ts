@@ -17,6 +17,7 @@ export const NavBarContainer = styled.nav`
   justify-content: center;
   height: max-content;
   background-color: ${props => props.theme.navBar.backgroundColor};
+  transition: background 0.5s;
 `;
 
 export const Link = styled(Scroll.Link)`

@@ -76,14 +76,18 @@ export const SocialGroup = styled.div`
 const SocialButton = styled.div`
   height: 4.25rem;
   width: 4.25rem;
-  padding: 0 .25rem;
+  margin: 0 .4rem;
+  border-radius: 4rem;
+  background-color: ${props => props.theme.socials.backgroundColor};
+  border: .175rem solid ${props => props.theme.socials.borderColor};
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
 `;
 
 export const FacebookButton = styled(SocialButton)`
   position: relative;
   background-image: url(${prop => prop.theme.socials.facebook});
   background-repeat: no-repeat;
-  background-position: 50% 50%
+  background-position: 50% 50%;
 `;
 export const LinkedInButton = styled(SocialButton)`
   position: relative;

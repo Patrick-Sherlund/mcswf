@@ -8,7 +8,7 @@ describe('<NavBar />', () => {
   let container: RenderResult;
 
   beforeAll(() => {
-    container = render(<NavBar/>);
+    //container = render(<NavBar/>);
   });
 
   test('it should mount', () => {
