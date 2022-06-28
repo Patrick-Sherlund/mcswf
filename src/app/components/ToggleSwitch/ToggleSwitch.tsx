@@ -3,7 +3,7 @@ import {ToggleSwitchContainer, CheckBox, CheckBoxLabel, CheckBoxWrapper, Moon, S
 
 
 interface ToggleSwitchProps {
-    themeHandler: (state: any) => void,
+    themeEventHandler: () => void,
     toggleOnSvg?: string,
     toggleOffSvg?: string
 }
@@ -11,7 +11,7 @@ interface ToggleSwitchProps {
 const ToggleSwitch: FC<ToggleSwitchProps> = (props: ToggleSwitchProps) => (
     <ToggleSwitchContainer>
         <CheckBoxWrapper>
-            <CheckBox id="checkbox" type="checkbox" onChange={props.themeHandler}/>
+            <CheckBox id="checkbox" type="checkbox" onChange={props.themeEventHandler}/>
             <CheckBoxLabel htmlFor="checkbox" >
                 <Moon/><Sun/>
             </CheckBoxLabel>

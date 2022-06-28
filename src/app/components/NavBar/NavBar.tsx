@@ -6,7 +6,7 @@ import StatusBar from "../StatusBar/StatusBar";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 
 interface NavBarProps {
-    themeHandler: (state: any) => void
+    themeEventHandler: () => void
 }
 
 
@@ -35,7 +35,7 @@ const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
                         )
                     }
                 </List>
-                <ToggleSwitch themeHandler={props.themeHandler}/>
+                <ToggleSwitch themeEventHandler={props.themeEventHandler}/>
             </NavBarContainer>
             <StatusBar pageName={selectedPage}/>
         </DesktopNavBar>
