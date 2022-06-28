@@ -8,7 +8,7 @@ describe('<NavBar />', () => {
   let container: RenderResult;
 
   beforeAll(() => {
-    //container = render(<NavBar/>);
+    container = render(<NavBar themeEventHandler={() => {}}/>);
   });
 
   test('it should mount', () => {

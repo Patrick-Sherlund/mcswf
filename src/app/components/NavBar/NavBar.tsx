@@ -21,7 +21,16 @@ const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
                     {
                         Object.values(PageName).map(
                             (pageName, index) => (
-                                <Link ignoreCancelEvents={true} isDynamic={true} key={'link-' + pageName + index} onSetActive={() => setSelectedPage(() => pageName)} to={pageName.replace(' ', '-')} spy={true} smooth={'easeInQuad'} offset={-50} delay={-500} duration={300}>
+                                <Link ignoreCancelEvents={true}
+                                      isDynamic={true}
+                                      key={'link-' + pageName + index}
+                                      onSetActive={() => setSelectedPage(() => pageName)} to={pageName.replace(' ', '-')}
+                                      spy={true}
+                                      smooth={'easeInQuad'}
+                                      offset={-50}
+                                      delay={-500}
+                                      duration={300}
+                                >
                                     {(selectedPage === pageName)
                                         ? <SelectedListItem key={pageName + index} data-testid={pageName}>
                                             {pageName}

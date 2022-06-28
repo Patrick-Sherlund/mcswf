@@ -5,7 +5,7 @@ import ToggleSwitch from './ToggleSwitch';
 
 describe('<ToggleSwitch />', () => {
   test('it should mount', () => {
-    //render(<ToggleSwitch />);
+    render(<ToggleSwitch themeEventHandler={() => {}} />);
 
     const toggleSwitch = screen.getByTestId('ToggleSwitch');
 
