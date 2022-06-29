@@ -10,7 +10,9 @@ export interface Theme {
         twitter: string,
         youtube: string,
         backgroundColor: string,
+        hoverBackgroundColor: string,
         borderColor: string
+        hoverBorderColor: string
     }
     navBar: {
         backgroundColor: string,

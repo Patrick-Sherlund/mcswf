@@ -86,17 +86,30 @@ const screenSizes = {
     mobileL: '425px',
     tablet: '768px',
     laptop: '1024px',
+    laptopM: '1280px',
     laptopL: '1440px',
     desktop: '2560px',
 };
 
-export const devices = {
+export const devicesMaxWidth = {
     mobileS: `(max-width: ${screenSizes.mobileS})`,
     mobileM: `(max-width: ${screenSizes.mobileM})`,
     mobileL: `(max-width: ${screenSizes.mobileL})`,
     tablet: `(max-width: ${screenSizes.tablet})`,
     laptop: `(max-width: ${screenSizes.laptop})`,
+    laptopM: `(max-width: ${screenSizes.laptopM})`,
     laptopL: `(max-width: ${screenSizes.laptopL})`,
     desktop: `(max-width: ${screenSizes.desktop})`,
     desktopL: `(max-width: ${screenSizes.desktop})`
+};
+export const devicesMinWidth = {
+    mobileS: `(min-width: ${screenSizes.mobileS})`,
+    mobileM: `(min-width: ${screenSizes.mobileM})`,
+    mobileL: `(min-width: ${screenSizes.mobileL})`,
+    tablet: `(min-width: ${screenSizes.tablet})`,
+    laptop: `(min-width: ${screenSizes.laptop})`,
+    laptopM: `(min-width: ${screenSizes.laptopM})`,
+    laptopL: `(min-width: ${screenSizes.laptopL})`,
+    desktop: `(min-width: ${screenSizes.desktop})`,
+    desktopL: `(min-width: ${screenSizes.desktop})`
 };

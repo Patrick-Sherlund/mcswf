@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import {devices} from "../../../index.styles";
+import {devicesMaxWidth} from "../../../index.styles";
 import * as Scroll from 'react-scroll';
 import {motion} from "framer-motion";
 
@@ -7,7 +7,7 @@ export const DesktopNavBar = styled(motion.div)`
   position: fixed;
   width: 100%;
   z-index: 1;
-  @media screen and ${devices.tablet}{
+  @media screen and ${devicesMaxWidth.tablet}{
     display: none;
   }
 `;

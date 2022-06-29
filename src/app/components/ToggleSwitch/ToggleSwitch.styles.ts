@@ -15,24 +15,24 @@ export const CheckBoxWrapper = styled.div`
 
 export const Moon = styled.div`
   position: absolute;
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   background-image: url(${moon});
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  margin-left: 3.05rem;
-  margin-top: .25rem;
+  margin-left: 2.35rem;
+  margin-top: .05rem;
 `;
 
 export const Sun = styled.div`
   position: absolute;
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   background-image: url(${sun});
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  margin-top: .31rem;
-  margin-left: .5rem;
+  margin-top: .2rem;
+  margin-left: .2rem;
   
 `;
 
@@ -40,8 +40,8 @@ export const CheckBoxLabel = styled.label`
   position: absolute;
   top: 0;
   left: 0;
-  width: 5.5rem;
-  height: 2.7rem;
+  width: 4rem;
+  height: 1.96rem;
   border-radius: 1.5rem;
   background: #2B2B2B;
   border: 1px solid #d4d4d4;
@@ -55,9 +55,9 @@ export const CheckBoxLabel = styled.label`
     content: "";
     display: block;
     border-radius: 50%;
-    width: 1.95rem;
-    height: 1.95rem;
-    margin: 5.3px;
+    width: 1.55rem;
+    height: 1.55rem;
+    margin: 2.2px;
     background: #d6d6d6;
     border: 1px solid #EAEAEA;
     box-shadow: inset -2px 2px 8px rgba(0, 0, 0, 0.25);
@@ -91,13 +91,13 @@ export const CheckBox = styled.input`
       content: "";
       display: block;
       border-radius: 50%;
-      width: 1.95rem;
-      height: 1.95rem;
+      width: 1.55rem;
+      height: 1.55rem;
       background: #323232;
       border: 1px solid #eaeaea;
       box-shadow: inset 0px 0px 16px rgba(255, 255, 255, 0.55);
       transition: 0.2s;
-      margin-left: 3.2rem;
+      margin-left: 2.2rem;
     }
   }
 `;

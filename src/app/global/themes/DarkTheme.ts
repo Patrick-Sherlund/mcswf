@@ -18,7 +18,9 @@ export const darkTheme: Theme = {
         twitter: twitterSvgDark,
         youtube: youtubeSvgDark,
         backgroundColor: "#3E3E3E",
-        borderColor: "#7D7D7D"
+        hoverBackgroundColor: "#4c4c4c",
+        borderColor: "#7D7D7D",
+        hoverBorderColor: "#8d8d8d"
     },
     navBar: {
         backgroundColor: "#262626",

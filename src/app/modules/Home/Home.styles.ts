@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import {devicesMaxWidth, devicesMinWidth} from "../../../index.styles";
 
 export const HomeContainer = styled(motion.div)`
+  position: relative;
   padding-top: 12rem;
   height: 100vh;
   width: 100%;
@@ -11,9 +13,14 @@ export const HomeContainer = styled(motion.div)`
 `;
 
 export const HomeHeader = styled.header`
-  margin: 10rem auto 2rem;
+  margin: 5% auto 1.4%;
   display: flex;
   flex-direction: row;
+  transition: width 500ms, height 500ms, margin 500ms;
+
+  @media screen and ${devicesMaxWidth.laptopM}{{
+    margin: 4% auto 0;
+  }
 `
 
 export const StyledH2 = styled(motion.h2)`
@@ -21,6 +28,7 @@ export const StyledH2 = styled(motion.h2)`
   padding: 0 1rem;
   color: ${props => props.theme.textColor};
   font-size: 5rem;
+  transition: font-size 500ms;
   
   @media screen and (max-width: 1315px) {
     font-size: 3rem;
@@ -35,6 +43,7 @@ export const Divider = styled(motion.div)`
   height: 10rem;
   width: .15rem;
   background-color: #C20000;
+  transition: width 500ms, height 500ms;
 
   @media screen and (max-width: 1315px) {
     height: 6rem;
@@ -42,9 +51,14 @@ export const Divider = styled(motion.div)`
 `;
 
 export const HomeContent = styled.div`
-  margin: 0 auto 6rem;
+  margin: 0 auto 4%;
   display: flex;
   flex-direction: row;
+  transition: width 500ms, height 500ms, margin 500ms;
+
+  @media screen and ${devicesMaxWidth.laptopM}{{
+    margin: 0 auto 3%;
+  }
 `;
 
 export const StyledH3 = styled(motion.h3)`
@@ -52,6 +66,7 @@ export const StyledH3 = styled(motion.h3)`
   color: ${props => props.theme.textColor};
   font-size: 2rem;
   padding-left: .5rem;
+  transition: width 500ms, height 500ms, font-size 500ms;
 
   @media screen and (max-width: 1315px) {
     font-size: 1.25rem;
@@ -67,11 +82,10 @@ export const BoldContent = styled(StyledH3)`
   font-weight: bold;
 `;
 
-export const SocialGroup = styled.div`
+export const SocialGroup = styled(motion.div)`
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  width: max-content;
   align-content: space-evenly;
 `;
 
@@ -83,10 +97,26 @@ const SocialButton = styled(motion.div)`
   background-color: ${props => props.theme.socials.backgroundColor};
   border: .175rem solid ${props => props.theme.socials.borderColor};
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: width 500ms, height 500ms;
+  
+  &:hover{
+    background-color: ${props => props.theme.socials.hoverBackgroundColor};
+    border: .175rem solid ${props => props.theme.socials.hoverBorderColor};
+  }
+
+  @media screen and (max-width: 1315px) {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  @media screen and ${devicesMaxWidth.laptopM}{{
+    height: 3rem;
+    width: 3rem;
+  }
 `;
 
 export const FacebookButton = styled(SocialButton)`
-  position: relative;
   background-image: url(${prop => prop.theme.socials.facebook});
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -95,23 +125,20 @@ export const LinkedInButton = styled(SocialButton)`
   position: relative;
   background-image: url(${prop => prop.theme.socials.linkedin});
   background-repeat: no-repeat;
-  background-position: 50% 50%
+  background-position: 50% 50%;
 `;
 export const InstagramButton = styled(SocialButton)`
-  position: relative;
   background-image: url(${prop => prop.theme.socials.instagram});
   background-repeat: no-repeat;
-  background-position: 50% 50%
+  background-position: 50% 50%;
 `;
 export const TwitterButton = styled(SocialButton)`
-  position: relative;
   background-image: url(${prop => prop.theme.socials.twitter});
   background-repeat: no-repeat;
-  background-position: 50% 50%
+  background-position: 50% 50%;
 `;
 export const YoutubeButton = styled(SocialButton)`
-  position: relative;
   background-image: url(${prop => prop.theme.socials.youtube});
   background-repeat: no-repeat;
-  background-position: 50% 50%
+  background-position: 50% 50%;
 `;

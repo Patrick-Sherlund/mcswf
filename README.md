@@ -216,7 +216,15 @@ MCSWF
 # [Test Driven Development](https://www.agilealliance.org/glossary/tdd/)
 
 * ### [Integration Testing Through Cypress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
+Cypress Run Command
+```sh
+npm run e2e
+```
 * ### [Unit Testing Through Jest](https://jestjs.io/docs/tutorial-react)
+  Jest Run Command
+```sh
+npm run test
+```
 * ### [Manual Regression Testing](https://smartbear.com/learn/automated-testing/what-is-regression-testing/)
 
 # Feature Branching

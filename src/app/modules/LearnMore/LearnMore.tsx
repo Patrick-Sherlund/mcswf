@@ -7,7 +7,7 @@ const LearnMore: FC<LearnMoreProps> = () => (
   <LearnMoreContainer initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: .3 }}
-                      viewport={{ once: true }} data-testid="LearnMore" id={'Learn-More'}>
+                      viewport={{ once: true }} data-testid="learn-more-container" id={'Learn-More'}>
       LearnMore Component
   </LearnMoreContainer>
 );

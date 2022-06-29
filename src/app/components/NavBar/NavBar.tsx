@@ -17,7 +17,7 @@ const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
         <DesktopNavBar initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{delay: .1}} viewport={{once: true}}>
             <NavBarContainer data-testid={'NavBar'}>
                 <Logo src={logo} data-testid={'main-logo'}  whileTap={{
-                    scale: [1, .2, 1.35],
+                    scale: [1, .5, 1.25],
                     rotate: [0, 360]
                 }} drag whileDrag={{ scale: 1.2 }} dragConstraints={{top: 0, bottom: 0, left: 0, right: 0 }}/>
                 <List>

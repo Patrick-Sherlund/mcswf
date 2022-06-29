@@ -18,7 +18,9 @@ export const lightTheme: Theme = {
         twitter: twitterSvgLight,
         youtube: youtubeSvgLight,
         backgroundColor: "#E6E6E6",
-        borderColor: "#D7D7D7"
+        hoverBorderColor: "#ffffff",
+        borderColor: "#D7D7D7",
+        hoverBackgroundColor: "#e7e7e7"
     },
     navBar: {
         backgroundColor: "#eaeaea",
