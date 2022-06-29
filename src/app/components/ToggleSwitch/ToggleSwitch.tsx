@@ -15,7 +15,6 @@ const ToggleSwitch: FC<ToggleSwitchProps> = (props: ToggleSwitchProps) => (
             <CheckBoxLabel htmlFor="checkbox" >
                 <Moon/><Sun/>
             </CheckBoxLabel>
-
         </CheckBoxWrapper>
     </ToggleSwitchContainer>
 );

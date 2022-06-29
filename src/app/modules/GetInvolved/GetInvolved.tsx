@@ -1,11 +1,13 @@
 import React, { FC } from 'react';
 import {GetInvolvedContainer} from "./GetInvolved.styles";
-import {DisciplinesContainer} from "../Disciplines/Disciplines.styles";
 
 interface GetInvolvedProps {}
 
 const GetInvolved: FC<GetInvolvedProps> = () => (
-  <GetInvolvedContainer data-testid="GetInvolved"  id={'Get-Involved'}>
+  <GetInvolvedContainer initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ delay: .3 }}
+                        viewport={{ once: true }} data-testid="GetInvolved"  id={'Get-Involved'}>
       GetInvolved Template
   </GetInvolvedContainer>
 );

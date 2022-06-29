@@ -1,11 +1,13 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const HomeContainer = styled.div`
+export const HomeContainer = styled(motion.div)`
   padding-top: 12rem;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  
 `;
 
 export const HomeHeader = styled.header`
@@ -14,7 +16,7 @@ export const HomeHeader = styled.header`
   flex-direction: row;
 `
 
-export const StyledH2 = styled.h2`
+export const StyledH2 = styled(motion.h2)`
   font-family: DIN Next LT Pro, Inter, "Segoe UI", sans-serif;
   padding: 0 1rem;
   color: ${props => props.theme.textColor};
@@ -26,10 +28,10 @@ export const StyledH2 = styled.h2`
 `
 
 export const TitleTop = styled(StyledH2)`
-    margin-top: 0;
+  margin-top: 0;
 `;
 
-export const Divider = styled.div`
+export const Divider = styled(motion.div)`
   height: 10rem;
   width: .15rem;
   background-color: #C20000;
@@ -45,7 +47,7 @@ export const HomeContent = styled.div`
   flex-direction: row;
 `;
 
-export const StyledH3 = styled.h3`
+export const StyledH3 = styled(motion.h3)`
   font-family: DIN Next LT Pro, Inter, "Segoe UI", sans-serif;
   color: ${props => props.theme.textColor};
   font-size: 2rem;
@@ -73,7 +75,7 @@ export const SocialGroup = styled.div`
   align-content: space-evenly;
 `;
 
-const SocialButton = styled.div`
+const SocialButton = styled(motion.div)`
   height: 4.25rem;
   width: 4.25rem;
   margin: 0 .4rem;

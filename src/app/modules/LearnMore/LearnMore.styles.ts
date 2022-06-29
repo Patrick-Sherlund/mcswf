@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const LearnMoreContainer = styled.div`
+export const LearnMoreContainer = styled(motion.div)`
   padding-top: 10rem;
   height: 100vh;
   width: 100%;

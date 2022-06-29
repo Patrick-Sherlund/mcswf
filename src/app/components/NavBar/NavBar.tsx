@@ -6,7 +6,7 @@ import StatusBar from "../StatusBar/StatusBar";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 
 interface NavBarProps {
-    themeEventHandler: () => void
+    themeEventHandler: () => void;
 }
 
 

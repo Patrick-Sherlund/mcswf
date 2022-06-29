@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const TheTeamContainer = styled.div`
+export const TheTeamContainer = styled(motion.div)`
   padding-top: 10rem;
   height: 100vh;
   width: 100%;

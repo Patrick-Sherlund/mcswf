@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const DisciplinesContainer = styled.div`
+export const DisciplinesContainer = styled(motion.div)`
   padding-top: 10rem;
   height: 100vh;
   width: 100%;

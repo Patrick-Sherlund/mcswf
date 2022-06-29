@@ -11,4 +11,5 @@ export const AppContainer = styled.div`
   color: ${props => props.theme.textColor};
   font-family: DINNextLTPro, Inter, Segoe UI, sans-serif;
   transition: background 0.5s;
+  overflow-x: hidden;
 `;
