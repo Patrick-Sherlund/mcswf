@@ -21,7 +21,7 @@ export const darkTheme: Theme = {
         borderColor: "#7D7D7D"
     },
     navBar: {
-        backgroundColor: "#2B2B2B",
+        backgroundColor: "#262626",
         statusBar: {
             backgroundColor: "#3E3E3E"
         }

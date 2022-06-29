@@ -39,56 +39,46 @@ const Home: FC<HomeProps> = () => {
                         x: {stiffness: 100},
                         default: {duration: 1},
                     }}
-                    viewport={{once: true}}
                 >{titleTopPrimary}</TitleTop>
-                <Divider animate={{translateY: '350%', opacity: 1, y: '-350%', scale: [0, 1], rotate: [0, 360, 180]}}
+                <Divider animate={{translateY: '350%', opacity: 1, y: '-350%', scale: [0, 1], rotate: [0, 360]}}
                          transition={{
                              y: {stiffness: 100},
                              default: {duration: 1},
-                         }}
-                         viewport={{once: true}}/>
+                         }}/>
                 <StyledH2
                     animate={{translateX: '-350%', opacity: 1, x: '350%'}}
                     transition={{
                         x: {stiffness: 100},
                         default: {duration: 1},
                     }}
-                    viewport={{once: true}}
                 >{titleTopSecondary}</StyledH2>
             </HomeHeader>
             <HomeContent>
                 <LightContent initial={{opacity: 0}}
                               whileInView={{opacity: 1}}
                               transition={{delay: 1.2}}
-                              viewport={{once: true}}
                 >{subMessageLight}</LightContent>
                 <BoldContent initial={{opacity: 0}}
                              whileInView={{opacity: 1}}
                              transition={{delay: 1.7}}
-                             viewport={{once: true}}
                 >{subMessageBold}</BoldContent>
             </HomeContent>
             <SocialGroup>
                 <FacebookButton initial={{opacity: 0}}
                                 whileInView={{opacity: 1}}
-                                transition={{delay: 2.3}}
-                                viewport={{once: true}}/>
+                                transition={{delay: 2.3}}/>
                 <InstagramButton initial={{opacity: 0}}
                                  whileInView={{opacity: 1}}
-                                 transition={{delay: 2.35}}
-                                 viewport={{once: true}}/>
+                                 transition={{delay: 2.32}}/>
                 <LinkedInButton initial={{opacity: 0}}
                                 whileInView={{opacity: 1}}
-                                transition={{delay: 2.4}}
-                                viewport={{once: true}}/>
+                                transition={{delay: 2.34}}/>
                 <TwitterButton initial={{opacity: 0}}
                                whileInView={{opacity: 1}}
-                               transition={{delay: 2.45}}
-                               viewport={{once: true}}/>
+                               transition={{delay: 2.36}}/>
                 <YoutubeButton initial={{opacity: 0}}
                                whileInView={{opacity: 1}}
-                               transition={{delay: 2.5}}
-                               viewport={{once: true}}/>
+                               transition={{delay: 2.38}}/>
             </SocialGroup>
         </HomeContainer>
     );
