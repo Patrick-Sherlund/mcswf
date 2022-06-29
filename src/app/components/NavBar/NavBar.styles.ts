@@ -1,8 +1,9 @@
 import styled from "styled-components/macro";
 import {devices} from "../../../index.styles";
 import * as Scroll from 'react-scroll';
+import {motion} from "framer-motion";
 
-export const DesktopNavBar = styled.div`
+export const DesktopNavBar = styled(motion.div)`
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -24,7 +25,7 @@ export const Link = styled(Scroll.Link)`
   text-decoration: none;
 `
 
-export const Logo = styled.img`
+export const Logo = styled(motion.img)`
   padding: 1rem;
   width: 7.75rem;
   height: 8.75rem;
@@ -37,7 +38,7 @@ export const List = styled.ul`
   margin: auto 0 auto 0;
 `
 
-export const ListItem = styled.li`
+export const ListItem = styled(motion.li)`
   margin: 1rem;
   font-size: 1.325rem;
   color: ${props => props.theme.inactiveTextColor};
