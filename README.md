@@ -63,8 +63,8 @@ Table of Contents
       <ul>
         <li><a href="#integration-testing-through-cypress">Integration Testing Through Cypress</a></li>
         <li><a href="#unit-testing-through-jest">Unit Testing Through Jest</a></li>
-        <li><a href="#manual-regression-testing">Manual Regression Testing</a></li>
         <li><a href="#uiux-testing-desktop--tablet--mobile">UI/UX Testing (Desktop / Tablet / Mobile)</a></li>
+        <li><a href="#manual-regression-testing">Manual Regression Testing</a></li>
       </ul>
     </li>
     <li>
@@ -230,7 +230,7 @@ npm run e2e
 ```sh
 npm run test
 ```
-* ### UI/UX Testing (Desktop / Tablet / Mobile)
+* ### UI/UX Testing (Desktop, Tablet and Mobile)
   [Click this Figma Link](https://www.figma.com/file/26FduvNae6jlmGjJie37AL/Marine-Corps-Software-Factory?node-id=797%3A584) to be directed to the test validation archive
 
 * ### [Manual Regression Testing](https://smartbear.com/learn/automated-testing/what-is-regression-testing/)
