@@ -52,6 +52,10 @@ export const Logo = styled(motion.img)`
     width: 5.12rem;
     height: 5.8rem;
   }
+  @media ${screenMediaQuery.tabletSmallLandscape}{
+    width: 5.3rem;
+    height: 6rem;
+  }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
     width: 5.3rem;
     height: 6rem;

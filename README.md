@@ -47,7 +47,7 @@ Table of Contents
       </ul>
     </li>
     <li>
-      <a href="#app-folder-structure">App Folder Structure</a>
+      <a href="#app-directory-structure">App Directory Structure</a>
       <ul>
         <li><a href="#app">App</a></li>
         <li><a href="#components">Components</a></li>
@@ -182,8 +182,8 @@ Download the Current or LTS version of Node.JS and Git
    ```
 4. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/MCSWF.github.io/)
 
-# App Folder Structure
-_The folder structure logically separates different areas of the application, to help organize development._
+# App Directory Structure
+_The current Directory structure logically separates different areas of the application, to help organize development._
     
 ```
 MCSWF

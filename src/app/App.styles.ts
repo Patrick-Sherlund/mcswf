@@ -45,15 +45,17 @@ export const NavigationArrow = styled(motion.div)`
   @media ${screenMediaQuery.iPadMiniPortrait}{
     height: 4.5rem;
     width: 10rem;
-    margin: 30% auto 0;
+    margin: 28% auto 0;
   }
-  @media ${screenMediaQuery.iPadMiniPortrait}{
-
-  }  
   @media ${screenMediaQuery.tabletSmallPortrait}{
     height: 4.05rem;
     width: 9rem;
     margin: 35% auto 0;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape}{
+    height: 4.05rem;
+    width: 9rem;
+    margin: 7% auto 0;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
 

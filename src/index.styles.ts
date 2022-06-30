@@ -93,6 +93,7 @@ const screenSize = {
     desktop: '1280px',
     desktopL: '1281px',
     tabletS: '600px',
+    tabletSLandscape: '900px',
     tabletL: '1367px',
 };
 
@@ -100,9 +101,11 @@ export const screenMediaQuery = {
     mobilePortrait: `(min-width: ${screenSize.mobileS}) and (max-width: ${screenSize.mobileL})`,
     tabletAndMobilePortrait: `(min-width: ${screenSize.tabletLowRes}) and (max-width: ${screenSize.mobileSLandscape}) and (orientation: portrait)`,
     tabletAndMobileLandscape: `(min-width: ${screenSize.tabletLowRes}) and (max-width: ${screenSize.mobileLandscape}) and (orientation: landscape)`,
-    tabletAndiPadLandscape: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: landscape)`,
+    tabletAndiPadLandscape: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.tabletSLandscape}) and (orientation: landscape)`,
     tabletSmallPortrait: `(min-width: ${screenSize.tabletS}) and (max-width: ${screenSize.mobileLandscape}) and (orientation: portrait)`,
+    tabletSmallLandscape: `(min-width: ${screenSize.tabletSLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: landscape)`,
     iPadMiniPortrait: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.samsungSurface}) and (orientation: portrait)`,
+    iPadMiniLandscape: `(min-width: ${screenSize.iPadLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: landscape)`,
     tabletAndiPadPortrait: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: portrait)`,
     laptopAndDesktop: `(min-width: ${screenSize.laptop}) and (max-width: ${screenSize.desktop})`,
     desktopLarge: `(min-width: ${screenSize.desktopL}) and (max-width: ${screenSize.tabletL})`,

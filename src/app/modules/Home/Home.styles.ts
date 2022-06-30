@@ -16,6 +16,7 @@ export const HomeHeader = styled.header`
   display: flex;
   flex-direction: row;
   transition: width 500ms, height 500ms, margin 500ms;
+  margin: 5% auto 0;
 
   @media ${screenMediaQuery.tabletLarge}{
     margin: 5% auto 0;
@@ -34,6 +35,9 @@ export const HomeHeader = styled.header`
   }
   @media ${screenMediaQuery.tabletSmallPortrait}{
     margin: 20% auto 1.4%;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape}{
+    margin: 2% auto 0;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
     margin: 3% auto 0;
@@ -78,6 +82,10 @@ export const StyledH2 = styled(motion.h2)`
   }
   @media ${screenMediaQuery.tabletSmallPortrait}{
     font-size: 2rem;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape}{
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
 
@@ -124,6 +132,9 @@ export const Divider = styled(motion.div)`
   @media ${screenMediaQuery.tabletSmallPortrait}{
     height: 3.9rem;
   }
+  @media ${screenMediaQuery.tabletSmallLandscape}{
+    height: 4rem;
+  }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
 
   }
@@ -161,6 +172,9 @@ export const HomeContent = styled.div`
   }
   @media ${screenMediaQuery.tabletSmallPortrait}{
     margin: 0 auto 8%;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape}{
+    margin: 0 auto 1%;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
 
@@ -258,6 +272,10 @@ const SocialButton = styled(motion.div)`
     width: 3.5rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait}{
+    height: 3rem;
+    width: 3rem;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape}{
     height: 3rem;
     width: 3rem;
   }
