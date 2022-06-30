@@ -64,7 +64,7 @@ Table of Contents
         <li><a href="#integration-testing-through-cypress">Integration Testing Through Cypress</a></li>
         <li><a href="#unit-testing-through-jest">Unit Testing Through Jest</a></li>
         <li><a href="#manual-regression-testing">Manual Regression Testing</a></li>
-        <li><a href="#UIUX-Testing-Desktop-Tablet-Mobile)">UI/UX Testing (Desktop / Tablet / Mobile)</a></li>
+        <li><a href="#uiux-testing-desktop--tablet--mobile)">UI/UX Testing (Desktop / Tablet / Mobile)</a></li>
       </ul>
     </li>
     <li>
