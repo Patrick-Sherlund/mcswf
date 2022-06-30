@@ -76,6 +76,35 @@ export const ListItem = styled(motion.li)`
   list-style-type: none;
   align-content: center;
   cursor: pointer;
+  
+  
+  @media ${screenMediaQuery.tabletLarge}{
+    
+  }
+  @media ${screenMediaQuery.desktopLarge}{
+    
+  }
+  @media ${screenMediaQuery.laptopAndDesktop}{
+    
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait}{
+    
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait}{
+    font-size: 1.1rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape}{
+    
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait}{
+    
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+    
+  }
+  @media ${screenMediaQuery.mobilePortrait}{
+    
+  }
 `
 
 export const SelectedListItem = styled(ListItem)`
