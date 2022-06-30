@@ -133,7 +133,7 @@ export const Divider = styled(motion.div)`
     height: 3.9rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape}{
-    height: 4rem;
+    height: 6rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
 
