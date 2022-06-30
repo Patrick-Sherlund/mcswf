@@ -32,6 +32,9 @@ export const HomeHeader = styled.header`
   @media ${screenMediaQuery.iPadMiniPortrait}{
     margin: 15% auto 1.4%;
   }
+  @media ${screenMediaQuery.tabletSmallPortrait}{
+    margin: 20% auto 1.4%;
+  }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
     margin: 3% auto 0;
   }
@@ -72,6 +75,9 @@ export const StyledH2 = styled(motion.h2)`
   }
   @media ${screenMediaQuery.iPadMiniPortrait}{
     font-size: 2.2rem;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait}{
+    font-size: 2rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
 
@@ -115,6 +121,9 @@ export const Divider = styled(motion.div)`
   @media ${screenMediaQuery.iPadMiniPortrait}{
     height: 4.2rem;
   }
+  @media ${screenMediaQuery.tabletSmallPortrait}{
+    height: 3.9rem;
+  }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
 
   }
@@ -149,6 +158,9 @@ export const HomeContent = styled.div`
   }
   @media ${screenMediaQuery.iPadMiniPortrait}{
     
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait}{
+    margin: 0 auto 8%;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
 
@@ -190,6 +202,9 @@ export const StyledH3 = styled(motion.h3)`
   }
   @media ${screenMediaQuery.iPadMiniPortrait}{
     
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait}{
+    font-size: 1.2rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
 
@@ -241,6 +256,10 @@ const SocialButton = styled(motion.div)`
   @media screen and (max-width: 1315px) {
     height: 3.5rem;
     width: 3.5rem;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait}{
+    height: 3rem;
+    width: 3rem;
   }
 
   @media ${screenMediaQuery.laptopAndDesktop}{

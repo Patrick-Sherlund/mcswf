@@ -48,6 +48,10 @@ export const Logo = styled(motion.img)`
   @media ${screenMediaQuery.iPadMiniPortrait}{
 
   }
+  @media ${screenMediaQuery.tabletSmallPortrait}{
+    width: 5.12rem;
+    height: 5.8rem;
+  }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
     width: 5.3rem;
     height: 6rem;
@@ -92,6 +96,9 @@ export const ListItem = styled(motion.li)`
   }
   @media ${screenMediaQuery.iPadMiniPortrait}{
     font-size: 1.1rem;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait}{
+    font-size: .85rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape}{
     
