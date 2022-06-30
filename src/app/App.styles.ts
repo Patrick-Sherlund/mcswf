@@ -35,7 +35,7 @@ export const NavigationArrow = styled(motion.div)`
   @media ${screenMediaQuery.laptopAndDesktop}{
     height: 4.05rem;
     width: 9rem;
-    margin: 5% auto 0;
+    margin: 7% auto 0;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait}{
     height: 4.5rem;

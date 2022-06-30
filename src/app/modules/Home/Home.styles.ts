@@ -24,7 +24,7 @@ export const HomeHeader = styled.header`
     margin: 5% auto 1.4%;
   }
   @media ${screenMediaQuery.laptopAndDesktop}{
-    margin: 4% auto 0;
+    margin: 6% auto 0;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait}{
     margin: 22% auto 1.4%;
