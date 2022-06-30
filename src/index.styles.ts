@@ -80,36 +80,28 @@ export const FontStyles = createGlobalStyle`
   }
 `;
 
-const screenSizes = {
+const screenSize = {
     mobileS: '320px',
-    mobileM: '375px',
-    mobileL: '425px',
-    tablet: '768px',
-    laptop: '1024px',
-    laptopM: '1280px',
-    laptopL: '1440px',
-    desktop: '2560px',
+    mobileL: '480px',
+    tabletLowRes: '481px',
+    mobileLandscape: '767px',
+    tabletLandscape: '768px',
+    samsungSurface: '911px',
+    iPadLandscape: '1024px',
+    laptop: '1025px',
+    desktop: '1280px',
+    desktopL: '1281px',
+    tabletL: '1367px',
 };
 
-export const devicesMaxWidth = {
-    mobileS: `(max-width: ${screenSizes.mobileS})`,
-    mobileM: `(max-width: ${screenSizes.mobileM})`,
-    mobileL: `(max-width: ${screenSizes.mobileL})`,
-    tablet: `(max-width: ${screenSizes.tablet})`,
-    laptop: `(max-width: ${screenSizes.laptop})`,
-    laptopM: `(max-width: ${screenSizes.laptopM})`,
-    laptopL: `(max-width: ${screenSizes.laptopL})`,
-    desktop: `(max-width: ${screenSizes.desktop})`,
-    desktopL: `(max-width: ${screenSizes.desktop})`
-};
-export const devicesMinWidth = {
-    mobileS: `(min-width: ${screenSizes.mobileS})`,
-    mobileM: `(min-width: ${screenSizes.mobileM})`,
-    mobileL: `(min-width: ${screenSizes.mobileL})`,
-    tablet: `(min-width: ${screenSizes.tablet})`,
-    laptop: `(min-width: ${screenSizes.laptop})`,
-    laptopM: `(min-width: ${screenSizes.laptopM})`,
-    laptopL: `(min-width: ${screenSizes.laptopL})`,
-    desktop: `(min-width: ${screenSizes.desktop})`,
-    desktopL: `(min-width: ${screenSizes.desktop})`
+export const screenMediaQuery = {
+    mobilePortrait: `(min-width: ${screenSize.mobileS}) and (max-width: ${screenSize.mobileL})`,
+    tabletAndMobilePortrait: `(min-width: ${screenSize.tabletLowRes}) and (max-width: ${screenSize.mobileLandscape}) and (orientation: portrait)`,
+    tabletAndMobileLandscape: `(min-width: ${screenSize.tabletLowRes}) and (max-width: ${screenSize.mobileLandscape}) and (orientation: landscape)`,
+    tabletAndiPadLandscape: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: landscape)`,
+    iPadMiniPortrait: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.samsungSurface}) and (orientation: portrait)`,
+    tabletAndiPadPortrait: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: portrait)`,
+    laptopAndDesktop: `(min-width: ${screenSize.laptop}) and (max-width: ${screenSize.desktop})`,
+    desktopLarge: `(min-width: ${screenSize.desktopL}) and (max-width: ${screenSize.tabletL})`,
+    tabletLarge: `(min-width: ${screenSize.tabletL})`
 };

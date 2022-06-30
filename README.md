@@ -140,6 +140,10 @@ Download the Current or LTS version of Node.JS and Git
    ```sh
    npm install
    ```
+3. Run the application
+   ```sh
+   npm start
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

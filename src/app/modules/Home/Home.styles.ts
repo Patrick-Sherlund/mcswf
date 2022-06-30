@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import {devicesMaxWidth, devicesMinWidth} from "../../../index.styles";
+import {screenMediaQuery} from "../../../index.styles";
 
 export const HomeContainer = styled(motion.div)`
   position: relative;
   padding-top: 12rem;
-  height: 100vh;
+  height: 82vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,12 +13,35 @@ export const HomeContainer = styled(motion.div)`
 `;
 
 export const HomeHeader = styled.header`
-  margin: 5% auto 1.4%;
   display: flex;
   flex-direction: row;
   transition: width 500ms, height 500ms, margin 500ms;
 
-  @media screen and ${devicesMaxWidth.laptopM}{{
+  @media ${screenMediaQuery.tabletLarge}{
+    margin: 5% auto 0;
+  }
+  @media ${screenMediaQuery.desktopLarge}{
+    margin: 5% auto 1.4%;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop}{
+    margin: 4% auto 0;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait}{
+    margin: 22% auto 1.4%;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait}{
+    margin: 15% auto 1.4%;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape}{
+    margin: 3% auto 0;
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait}{
+    margin: 8% auto 0;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+    margin: 100% auto 0;
+  }
+  @media ${screenMediaQuery.mobilePortrait}{
     margin: 4% auto 0;
   }
 `
@@ -29,9 +52,38 @@ export const StyledH2 = styled(motion.h2)`
   color: ${props => props.theme.textColor};
   font-size: 5rem;
   transition: font-size 500ms;
+  margin-bottom: 3.3rem;
   
   @media screen and (max-width: 1315px) {
     font-size: 3rem;
+  }
+  @media ${screenMediaQuery.tabletLarge}{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  @media ${screenMediaQuery.desktopLarge}{
+
+  }
+  @media ${screenMediaQuery.laptopAndDesktop}{
+
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait}{
+    font-size: 3rem;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait}{
+    font-size: 2.2rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape}{
+
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait}{
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.mobilePortrait}{
+
   }
 `
 
@@ -48,6 +100,33 @@ export const Divider = styled(motion.div)`
   @media screen and (max-width: 1315px) {
     height: 6rem;
   }
+  @media ${screenMediaQuery.tabletLarge}{
+    height: 8rem;
+  }
+  @media ${screenMediaQuery.desktopLarge}{
+
+  }
+  @media ${screenMediaQuery.laptopAndDesktop}{
+
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait}{
+
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait}{
+    height: 4.2rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape}{
+
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait}{
+    height: 4.2rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+    height: 4.2rem;
+  }
+  @media ${screenMediaQuery.mobilePortrait}{
+
+  }
 `;
 
 export const HomeContent = styled.div`
@@ -55,9 +134,33 @@ export const HomeContent = styled.div`
   display: flex;
   flex-direction: row;
   transition: width 500ms, height 500ms, margin 500ms;
+  
+  @media ${screenMediaQuery.tabletLarge}{
+    margin: 0 auto 2%;
+  }
+  @media ${screenMediaQuery.desktopLarge}{
 
-  @media screen and ${devicesMaxWidth.laptopM}{{
+  }
+  @media ${screenMediaQuery.laptopAndDesktop}{
     margin: 0 auto 3%;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait}{
+    margin: 0 auto 8%;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait}{
+    
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape}{
+
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait}{
+    margin: 0 auto 3%;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+    margin: 0 auto 3%;
+  }
+  @media ${screenMediaQuery.mobilePortrait}{
+
   }
 `;
 
@@ -71,6 +174,36 @@ export const StyledH3 = styled(motion.h3)`
   @media screen and (max-width: 1315px) {
     font-size: 1.25rem;
     padding-left: .4rem;
+  }
+  @media ${screenMediaQuery.tabletLarge}{
+
+  }
+  @media ${screenMediaQuery.desktopLarge}{
+
+  }
+  @media ${screenMediaQuery.laptopAndDesktop}{
+
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait}{
+    font-size: 1.6rem;
+    padding-left: .4rem;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait}{
+    
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape}{
+
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait}{
+    font-size: 1.1rem;
+    padding-left: .4rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+    font-size: 1.1rem;
+    padding-left: .4rem;
+  }
+  @media ${screenMediaQuery.mobilePortrait}{
+
   }
 `
 
@@ -110,7 +243,7 @@ const SocialButton = styled(motion.div)`
     width: 3.5rem;
   }
 
-  @media screen and ${devicesMaxWidth.laptopM}{{
+  @media ${screenMediaQuery.laptopAndDesktop}{
     height: 3rem;
     width: 3rem;
   }

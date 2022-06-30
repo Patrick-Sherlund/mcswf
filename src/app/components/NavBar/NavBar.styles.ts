@@ -1,13 +1,16 @@
 import styled from "styled-components/macro";
-import {devicesMaxWidth} from "../../../index.styles";
+import {screenMediaQuery} from "../../../index.styles";
 import * as Scroll from 'react-scroll';
 import {motion} from "framer-motion";
 
 export const DesktopNavBar = styled(motion.div)`
   position: fixed;
+  height: 8.75rem;
   width: 100%;
+  transition: width 500ms, height 500ms;
   z-index: 1;
-  @media screen and ${devicesMaxWidth.tablet}{
+  
+  @media ${screenMediaQuery.mobilePortrait}{
     display: none;
   }
 `;
@@ -29,6 +32,33 @@ export const Logo = styled(motion.img)`
   padding: 1rem;
   width: 7.75rem;
   height: 8.75rem;
+  transition: width 500ms, height 500ms;
+  
+  @media ${screenMediaQuery.desktopLarge}{
+    
+  }
+  @media ${screenMediaQuery.laptopAndDesktop}{
+    width: 6.2rem;
+    height: 7rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait}{
+    width: 5.76rem;
+    height: 6.5rem;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait}{
+
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape}{
+    width: 5.3rem;
+    height: 6rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait}{
+    
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+    width: 5.76rem;
+    height: 6.5rem;
+  }
 `
 
 export const List = styled.ul`

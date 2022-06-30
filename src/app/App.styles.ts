@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 import {motion} from "framer-motion";
 import navigationArrow from "../assets/svg/red-arrow.svg"
-import {devicesMaxWidth, devicesMinWidth} from "../index.styles";
+import {screenMediaQuery} from "../index.styles";
 
 export const AppContainer = styled.div`
   width: 100%;
@@ -25,11 +25,46 @@ export const NavigationArrow = styled(motion.div)`
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: width 500ms, height 500ms, margin 500ms;
+  
+  @media ${screenMediaQuery.tabletLarge}{
 
-  @media screen and ${devicesMaxWidth.laptopM}{
+  }
+  @media ${screenMediaQuery.desktopLarge}{
+
+  }
+  @media ${screenMediaQuery.laptopAndDesktop}{
     height: 4.05rem;
     width: 9rem;
     margin: 5% auto 0;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait}{
+    height: 4.5rem;
+    width: 10rem;
+    margin: 35% auto 0;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait}{
+    height: 4.5rem;
+    width: 10rem;
+    margin: 30% auto 0;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait}{
+
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape}{
+
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait}{
+    height: 4.05rem;
+    width: 9rem;
+    margin: 5% auto 0;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+    height: 4.05rem;
+    width: 9rem;
+    margin: 5% auto 0;
+  }
+  @media ${screenMediaQuery.mobilePortrait}{
+
   }
   
   
