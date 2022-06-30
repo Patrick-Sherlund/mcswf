@@ -18,11 +18,14 @@ export const HomeHeader = styled.header`
   transition: width 500ms, height 500ms, margin 500ms;
   margin: 5% auto 0;
 
+  @media ${screenMediaQuery.desktopLarge}{
+    margin: 8% auto 0;
+  }
   @media ${screenMediaQuery.tabletLarge}{
     margin: 5% auto 0;
   }
-  @media ${screenMediaQuery.desktopLarge}{
-    margin: 5% auto 1.4%;
+  @media ${screenMediaQuery.desktopMedium}{
+    margin: 2% auto 1.4%;
   }
   @media ${screenMediaQuery.laptopAndDesktop}{
     margin: 6% auto 0;
@@ -46,7 +49,7 @@ export const HomeHeader = styled.header`
     margin: 8% auto 0;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape}{
-    margin: 100% auto 0;
+    
   }
   @media ${screenMediaQuery.mobilePortrait}{
     margin: 4% auto 0;
@@ -64,12 +67,17 @@ export const StyledH2 = styled(motion.h2)`
   @media screen and (max-width: 1315px) {
     font-size: 3rem;
   }
+  @media ${screenMediaQuery.desktopLarge}{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
   @media ${screenMediaQuery.tabletLarge}{
     font-size: 4rem;
     margin-bottom: 1.5rem;
   }
-  @media ${screenMediaQuery.desktopLarge}{
-
+  @media ${screenMediaQuery.desktopMedium}{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop}{
 
@@ -114,11 +122,14 @@ export const Divider = styled(motion.div)`
   @media screen and (max-width: 1315px) {
     height: 6rem;
   }
+  @media ${screenMediaQuery.desktopLarge}{
+    height: 8rem;
+  }
   @media ${screenMediaQuery.tabletLarge}{
     height: 8rem;
   }
-  @media ${screenMediaQuery.desktopLarge}{
-
+  @media ${screenMediaQuery.desktopMedium}{
+    height: 6.4rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop}{
 
@@ -155,11 +166,15 @@ export const HomeContent = styled.div`
   flex-direction: row;
   transition: width 500ms, height 500ms, margin 500ms;
   
+  @media ${screenMediaQuery.desktopLarge}{
+    margin: 0 auto 2%;
+  }
   @media ${screenMediaQuery.tabletLarge}{
     margin: 0 auto 2%;
   }
-  @media ${screenMediaQuery.desktopLarge}{
+  @media ${screenMediaQuery.desktopMedium}{
 
+    margin: 0 auto 3%;
   }
   @media ${screenMediaQuery.laptopAndDesktop}{
     margin: 0 auto 3%;
@@ -201,11 +216,15 @@ export const StyledH3 = styled(motion.h3)`
     font-size: 1.25rem;
     padding-left: .4rem;
   }
+  @media ${screenMediaQuery.desktopLarge}{
+
+  }
   @media ${screenMediaQuery.tabletLarge}{
 
   }
-  @media ${screenMediaQuery.desktopLarge}{
-
+  @media ${screenMediaQuery.desktopMedium}{
+    font-size: 1.6rem;
+    padding-left: .4rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop}{
 
@@ -270,6 +289,10 @@ const SocialButton = styled(motion.div)`
   @media screen and (max-width: 1315px) {
     height: 3.5rem;
     width: 3.5rem;
+  }
+  @media ${screenMediaQuery.desktopMedium}{
+    height: 3rem;
+    width: 3rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait}{
     height: 3rem;

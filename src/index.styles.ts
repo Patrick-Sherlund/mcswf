@@ -91,11 +91,14 @@ const screenSize = {
     iPadLandscape: '1024px',
     laptop: '1025px',
     desktop: '1280px',
-    desktopL: '1281px',
+    desktopM: '1281px',
+    desktopL: '1599px',
+    desktopXL: '1600px',
     tabletS: '600px',
     tabletSLandscape: '900px',
-    tabletL: '1367px',
+    tabletLargeLandscape: '1367px',
 };
+// 1920
 
 export const screenMediaQuery = {
     mobilePortrait: `(min-width: ${screenSize.mobileS}) and (max-width: ${screenSize.mobileL})`,
@@ -108,6 +111,7 @@ export const screenMediaQuery = {
     iPadMiniLandscape: `(min-width: ${screenSize.iPadLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: landscape)`,
     tabletAndiPadPortrait: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: portrait)`,
     laptopAndDesktop: `(min-width: ${screenSize.laptop}) and (max-width: ${screenSize.desktop})`,
-    desktopLarge: `(min-width: ${screenSize.desktopL}) and (max-width: ${screenSize.tabletL})`,
-    tabletLarge: `(min-width: ${screenSize.tabletL})`
+    desktopMedium: `(min-width: ${screenSize.desktopM}) and (max-width: ${screenSize.tabletLargeLandscape})`,
+    tabletLarge: `(min-width: ${screenSize.tabletLargeLandscape}) and (max-width: ${screenSize.desktopL})`,
+    desktopLarge: `(min-width: ${screenSize.desktopXL})`
 };

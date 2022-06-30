@@ -34,8 +34,9 @@ export const Logo = styled(motion.img)`
   height: 8.75rem;
   transition: width 500ms, height 500ms;
   
-  @media ${screenMediaQuery.desktopLarge}{
-    
+  @media ${screenMediaQuery.desktopMedium}{
+    width: 5.12rem;
+    height: 5.8rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop}{
     width: 6.2rem;
@@ -89,8 +90,7 @@ export const ListItem = styled(motion.li)`
   @media ${screenMediaQuery.tabletLarge}{
     
   }
-  @media ${screenMediaQuery.desktopLarge}{
-    
+  @media ${screenMediaQuery.desktopMedium}{
   }
   @media ${screenMediaQuery.laptopAndDesktop}{
     

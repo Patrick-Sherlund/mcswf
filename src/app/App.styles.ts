@@ -26,10 +26,12 @@ export const NavigationArrow = styled(motion.div)`
   background-position: 50% 50%;
   transition: width 500ms, height 500ms, margin 500ms;
   
-  @media ${screenMediaQuery.tabletLarge}{
+  @media ${screenMediaQuery.desktopLarge}{
+
+  }@media ${screenMediaQuery.tabletLarge}{
 
   }
-  @media ${screenMediaQuery.desktopLarge}{
+  @media ${screenMediaQuery.desktopMedium}{
 
   }
   @media ${screenMediaQuery.laptopAndDesktop}{
