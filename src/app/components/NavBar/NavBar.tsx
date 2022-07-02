@@ -6,12 +6,15 @@ import StatusBar from "../StatusBar/StatusBar";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 
 interface NavBarProps {
-    themeEventHandler: () => void;
+    themeEventHandler: () => void,
+    navigationEventHandler: (pageName: PageName) => void,
+    selectedPageName: PageName;
 }
 
 
-const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
-    const [selectedPage, setSelectedPage] = useState(PageName.HOME);
+const NavBar: FC<NavBarProps> = (navBarProps: NavBarProps) => {
+    const navigationEventHandler: (pageName: PageName) => void = navBarProps.navigationEventHandler;
+    const selectedPageName: PageName = navBarProps.selectedPageName;
 
     return (
         <DesktopNavBar initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{delay: .1}} viewport={{once: true}}>
@@ -27,14 +30,14 @@ const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
                                 <Link ignoreCancelEvents={true}
                                       isDynamic={true}
                                       key={'link-' + pageName + index}
-                                      onSetActive={() => setSelectedPage(() => pageName)} to={pageName.replace(' ', '-')}
+                                      onSetActive={() => navigationEventHandler(pageName)} to={pageName.replace(' ', '-')}
                                       spy={true}
                                       smooth={'easeInQuad'}
                                       offset={-50}
                                       delay={-500}
                                       duration={300}
                                 >
-                                    {(selectedPage === pageName)
+                                    {(selectedPageName === pageName)
                                         ? <SelectedListItem key={pageName + index} data-testid={pageName} whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} >
                                             {pageName}
                                             <UnderLine />
@@ -47,9 +50,9 @@ const NavBar: FC<NavBarProps> = (props: NavBarProps) => {
                         )
                     }
                 </List>
-                <ToggleSwitch themeEventHandler={props.themeEventHandler}/>
+                <ToggleSwitch themeEventHandler={navBarProps.themeEventHandler}/>
             </NavBarContainer>
-            <StatusBar pageName={selectedPage}/>
+            <StatusBar pageName={selectedPageName}/>
         </DesktopNavBar>
 
     );

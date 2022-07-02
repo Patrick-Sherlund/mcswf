@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import {screenMediaQuery} from "../../../index.styles";
 
 export const TheTeamContainer = styled(motion.div)`
   padding-top: 10rem;
@@ -7,4 +8,18 @@ export const TheTeamContainer = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: row;
+
+  @media ${screenMediaQuery.mobilePortrait}{
+    margin-top: 10rem;
+    padding-top: 0;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    margin-top: 10rem;
+    padding-top: 0;
+  }
 `
+
+export const SampleText = styled.div`
+  text-align: center;
+  width: 100%;
+`;

@@ -1,12 +1,26 @@
 import styled from "styled-components/macro";
 import moon from "../../../assets/svg/dark/moon.svg"
 import sun from "../../../assets/svg/light/sun.svg"
+import {screenMediaQuery} from "../../../index.styles";
 
 export const ToggleSwitchContainer = styled.div`
   position: absolute;
   right: 0;
   margin-right: 4rem;
   margin-top: 1rem;
+
+  transition: width 500ms, height 500ms, visibility 0s, opacity 0s linear;
+  opacity: 1;
+  visibility: visible;
+
+  @media ${screenMediaQuery.mobilePortrait}{
+    opacity: 0;
+    visibility: hidden;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    opacity: 0;
+    visibility: hidden;
+  }
 `;
 
 export const CheckBoxWrapper = styled.div`

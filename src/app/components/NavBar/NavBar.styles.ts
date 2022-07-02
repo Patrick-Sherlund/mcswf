@@ -7,11 +7,18 @@ export const DesktopNavBar = styled(motion.div)`
   position: fixed;
   height: 8.75rem;
   width: 100%;
-  transition: width 500ms, height 500ms;
+  transition: width 500ms, height 500ms, visibility 0s, opacity 0s linear;
+  opacity: 1;
+  visibility: visible;
   z-index: 1;
   
   @media ${screenMediaQuery.mobilePortrait}{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    opacity: 0;
+    visibility: hidden;
   }
 `;
 

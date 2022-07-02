@@ -75,6 +75,11 @@ export const NavigationArrow = styled(motion.div)`
   @media ${screenMediaQuery.mobilePortrait}{
 
   }
+  @media ${screenMediaQuery.mobileLandscape}{
+    height: 4.05rem;
+    width: 9rem;
+    margin: 5% auto 0;
+  }
   
   
 `;

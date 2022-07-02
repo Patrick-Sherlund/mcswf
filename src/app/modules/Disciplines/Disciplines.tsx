@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import {DisciplinesContainer} from "./Disciplines.styles";
+import {DisciplinesContainer, SampleText} from "./Disciplines.styles";
 
 interface DisciplinesProps {}
 
@@ -8,7 +8,9 @@ const Disciplines: FC<DisciplinesProps> = () => (
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: .3 }}
                         viewport={{ once: true }} data-testid="Disciplines" id={'Disciplines'}>
-      Disciplines Template
+      <SampleText>
+          Disciplines Page
+      </SampleText>
   </DisciplinesContainer>
 );
 

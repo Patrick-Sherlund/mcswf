@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import {LearnMoreContainer} from "./LearnMore.styles";
+import {LearnMoreContainer, SampleText} from "./LearnMore.styles";
 
 interface LearnMoreProps {}
 
@@ -8,7 +8,9 @@ const LearnMore: FC<LearnMoreProps> = () => (
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: .3 }}
                       viewport={{ once: true }} data-testid="learn-more-container" id={'Learn-More'}>
-      LearnMore Component
+      <SampleText>
+          Learn More Page
+      </SampleText>
   </LearnMoreContainer>
 );
 

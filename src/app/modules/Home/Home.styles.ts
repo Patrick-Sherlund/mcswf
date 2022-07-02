@@ -5,10 +5,20 @@ import {screenMediaQuery} from "../../../index.styles";
 export const HomeContainer = styled(motion.div)`
   position: relative;
   padding-top: 12rem;
+  margin-top: 0;
   height: 82vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  @media ${screenMediaQuery.mobilePortrait}{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    margin-top: 2.5rem;
+    padding-top: 0;
+  }
   
 `;
 
@@ -53,6 +63,9 @@ export const HomeHeader = styled.header`
   }
   @media ${screenMediaQuery.mobilePortrait}{
     margin: 4% auto 0;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    margin: 2% auto 0;
   }
 `
 
@@ -105,7 +118,20 @@ export const StyledH2 = styled(motion.h2)`
     font-size: 2rem;
   }
   @media ${screenMediaQuery.mobilePortrait}{
-
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  @media ${screenMediaQuery.mobilePortraitSmallHeight}{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  @media ${screenMediaQuery.mobilePortraitXS}{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 `
 
@@ -156,7 +182,13 @@ export const Divider = styled(motion.div)`
     height: 4.2rem;
   }
   @media ${screenMediaQuery.mobilePortrait}{
-
+    height: 2.6rem;
+  }
+  @media ${screenMediaQuery.mobilePortraitSmallHeight}{
+    height: 2.4rem;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    height: 3.6rem;
   }
 `;
 
@@ -200,8 +232,17 @@ export const HomeContent = styled.div`
   @media ${screenMediaQuery.tabletAndMobileLandscape}{
     margin: 0 auto 3%;
   }
+  @media ${screenMediaQuery.mobilePortraitSmallHeight}{
+    margin: 6% auto 3% !important;
+  }
   @media ${screenMediaQuery.mobilePortrait}{
-
+    margin: 6% auto 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    margin: 0 auto 4%;
   }
 `;
 
@@ -250,8 +291,19 @@ export const StyledH3 = styled(motion.h3)`
     font-size: 1.1rem;
     padding-left: .4rem;
   }
+  @media ${screenMediaQuery.mobilePortraitSmallHeight}{
+    font-size: 1.1rem !important;
+    margin: 0 0 .3rem 0;
+    padding-left: .4rem;
+  }
   @media ${screenMediaQuery.mobilePortrait}{
-
+    font-size: 1.1rem;
+    margin: 0 0 .3rem 0;
+    padding-left: .4rem;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    font-size: 1.1rem;
+    padding-left: .4rem;
   }
 `
 
@@ -307,6 +359,18 @@ const SocialButton = styled(motion.div)`
     height: 3rem;
     width: 3rem;
   }
+  @media ${screenMediaQuery.mobilePortraitSmallHeight}{
+    height: 2.4rem !important;
+    width: 2.4rem !important;
+  }
+  @media ${screenMediaQuery.mobilePortrait}{
+    height: 2.7rem;
+    width: 2.7rem;
+  }
+  @media ${screenMediaQuery.mobileLandscape}{
+    height: 2.7rem;
+    width: 2.7rem;
+  }
 `;
 
 export const FacebookButton = styled(SocialButton)`
@@ -335,3 +399,23 @@ export const YoutubeButton = styled(SocialButton)`
   background-repeat: no-repeat;
   background-position: 50% 50%;
 `;
+
+export const Logo = styled(motion.img)`
+  width: 13.285rem;
+  height: 15rem;
+  padding: 5rem 0 4%;
+  margin: 0 auto;
+  transition: width 500ms, height 500ms;
+  display: none;
+  z-index: 10;
+  
+  @media ${screenMediaQuery.mobilePortraitSmallHeight}{
+    width: 11.07rem;
+    height: 12.5rem;
+    padding: 2rem 0 4%;
+  }
+  
+  @media ${screenMediaQuery.mobilePortrait}{
+    display: inherit;
+  }
+`

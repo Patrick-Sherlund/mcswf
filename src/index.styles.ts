@@ -81,9 +81,11 @@ export const FontStyles = createGlobalStyle`
 `;
 
 const screenSize = {
-    mobileS: '320px',
+    mobileXS: '320px',
+    mobileS: '360px',
     mobileSLandscape: '599px',
     mobileL: '480px',
+    mobileXL: '896px',
     tabletLowRes: '481px',
     mobileLandscape: '767px',
     tabletLandscape: '768px',
@@ -101,10 +103,13 @@ const screenSize = {
 // 1920
 
 export const screenMediaQuery = {
-    mobilePortrait: `(min-width: ${screenSize.mobileS}) and (max-width: ${screenSize.mobileL})`,
+    mobilePortraitXS: `(min-width: ${screenSize.mobileXS}) and (max-width: ${screenSize.mobileS}) and (orientation: portrait)`,
+    mobilePortraitSmallHeight: `(min-width: ${screenSize.mobileXS}) and (max-width: ${screenSize.mobileL}) and (max-height: 667px) and (orientation: portrait)`,
+    mobilePortrait: `(min-width: ${screenSize.mobileXS}) and (max-width: ${screenSize.mobileL}) and (orientation: portrait)`,
+    mobileLandscape: `(min-width: ${screenSize.mobileXS}) and (max-width: ${screenSize.mobileXL}) and (max-height: 677px) and (orientation: landscape)`,
     tabletAndMobilePortrait: `(min-width: ${screenSize.tabletLowRes}) and (max-width: ${screenSize.mobileSLandscape}) and (orientation: portrait)`,
     tabletAndMobileLandscape: `(min-width: ${screenSize.tabletLowRes}) and (max-width: ${screenSize.mobileLandscape}) and (orientation: landscape)`,
-    tabletAndiPadLandscape: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.tabletSLandscape}) and (orientation: landscape)`,
+    tabletAndiPadLandscape: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.tabletSLandscape}) and (min-height: 678px) and (orientation: landscape)`,
     tabletSmallPortrait: `(min-width: ${screenSize.tabletS}) and (max-width: ${screenSize.mobileLandscape}) and (orientation: portrait)`,
     tabletSmallLandscape: `(min-width: ${screenSize.tabletSLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: landscape)`,
     iPadMiniPortrait: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.samsungSurface}) and (orientation: portrait)`,

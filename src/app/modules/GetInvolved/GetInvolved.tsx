@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import {GetInvolvedContainer} from "./GetInvolved.styles";
+import {GetInvolvedContainer, SampleText} from "./GetInvolved.styles";
 
 interface GetInvolvedProps {}
 
@@ -8,7 +8,9 @@ const GetInvolved: FC<GetInvolvedProps> = () => (
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: .3 }}
                         viewport={{ once: true }} data-testid="GetInvolved"  id={'Get-Involved'}>
-      GetInvolved Template
+      <SampleText>
+          Get Involved Page
+      </SampleText>
   </GetInvolvedContainer>
 );
 

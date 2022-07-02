@@ -10,9 +10,12 @@ import Footer from "./components/Footer/Footer";
 import {ThemeProvider} from "styled-components";
 import {darkTheme} from "./global/themes/DarkTheme";
 import {lightTheme} from "./global/themes/LightTheme";
+import SideMenu from "./components/SideMenu/SideMenu";
+import {PageName} from "./global/enums/global";
 
 function App() {
     const [theme, setTheme] = useState(darkTheme)
+    const [selectedPageName, setSelectedPageName] = useState(PageName.HOME)
 
     const updateThemeState = () =>
         setTheme((theme) =>
@@ -22,7 +25,8 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <AppContainer>
-                <NavBar themeEventHandler={updateThemeState} />
+                <SideMenu selectedPageName={selectedPageName} navigationEventHandler={(pageName) => setSelectedPageName(() => pageName)}/>
+                <NavBar selectedPageName={selectedPageName} navigationEventHandler={(pageName) => setSelectedPageName(() => pageName)} themeEventHandler={updateThemeState} />
                 <Home/>
                 <LearnMore/>
                 <Disciplines/>

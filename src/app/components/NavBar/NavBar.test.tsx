@@ -8,7 +8,7 @@ describe('<NavBar />', () => {
   let container: RenderResult;
 
   beforeAll(() => {
-    container = render(<NavBar themeEventHandler={() => {}}/>);
+    container = render(<NavBar selectedPageName={PageName.HOME} navigationEventHandler={() => {}} themeEventHandler={() => {}}/>);
   });
 
   test('it should mount', () => {

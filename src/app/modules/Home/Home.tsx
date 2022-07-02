@@ -14,9 +14,11 @@ import {
     InstagramButton,
     LinkedInButton,
     TwitterButton,
-    YoutubeButton
+    YoutubeButton,
+    Logo
 } from "./Home.styles";
 import {Link} from "../../components/NavBar/NavBar.styles";
+import logo from "../../../assets/logo.png";
 
 interface HomeProps {
 }
@@ -30,6 +32,10 @@ const Home: FC<HomeProps> = () => {
 
     return (
         <HomeContainer initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{delay: .3}} viewport={{once: true}} id={'Home'} data-testid={'home-container'}>
+            <Logo src={logo} data-testid={'main-logo'}  whileTap={{
+                scale: [1, .7, 1.2, 1, 1.2],
+                transition: {duration: .3}
+            }} drag whileDrag={{ scale: 1.2 }} dragConstraints={{top: 0, bottom: 0, left: 0, right: 0 }}/>
             <HomeHeader>
                 <TitleTop initial={{opacity: 0}} animate={{translateX: '200%', opacity: 1, x: '-200%'}} transition={{x: {stiffness: 100}, duration: 1.4, delay: .1}} viewport={{once: true}} data-testid={'home-title-top-primary'}>
                     {titleTopPrimary}
