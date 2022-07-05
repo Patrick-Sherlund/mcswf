@@ -1,5 +1,5 @@
 import {Theme} from "../../models/interfaces/Theme";
-import backgroundDark from "../../../assets/background-dark.png"
+import backgroundDark from "../../../assets/background-dark.webp"
 import facebookSvgDark from "../../../assets/svg/dark/facebook.svg"
 import instagramSvgDark from "../../../assets/svg/dark/instagram.svg"
 import linkedinSvgDark from "../../../assets/svg/dark/linkedin.svg"

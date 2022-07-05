@@ -1,5 +1,5 @@
 import {Theme} from "../../models/interfaces/Theme";
-import backgroundLight from "../../../assets/background-light.png"
+import backgroundLight from "../../../assets/background-light.webp"
 import facebookSvgLight from "../../../assets/svg/light/facebook.svg";
 import instagramSvgLight from "../../../assets/svg/light/instagram.svg";
 import linkedinSvgLight from "../../../assets/svg/light/linkedin.svg";

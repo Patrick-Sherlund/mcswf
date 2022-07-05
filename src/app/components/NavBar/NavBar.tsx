@@ -1,6 +1,6 @@
 import React, {FC, useState} from 'react';
 import {PageName} from "../../global/enums/global";
-import logo from "../../../assets/logo.png"
+import logo from "../../../assets/logo.webp"
 import {Logo, DesktopNavBar, NavBarContainer, List, SelectedListItem, ListItem, UnderLine, Link} from "./NavBar.styles";
 import StatusBar from "../StatusBar/StatusBar";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";

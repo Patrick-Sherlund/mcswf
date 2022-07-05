@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {MenuList, NavMenuContainer, NavMenuHeader, NavMenuHeaderContent, NavMenuHeaderText, NavMenuLogo} from "./SideNav.styles";
 import MenuItem from "./MenuItem/MenuItem";
-import logo from "../../../../assets/logo.png";
+import logo from "../../../../assets/logo.webp";
 import {PageName} from "../../../global/enums/global";
 
 interface SideNav {
@@ -45,8 +45,8 @@ const SideNav: FC<SideNav> = (sideMenuProps: SideNav) => {
         }
     };
     return (
-        <NavMenuContainer >
-            <NavMenuHeader variants={framerMotionVariantsHeader}>
+        <NavMenuContainer variants={framerMotionVariantsHeader}>
+            <NavMenuHeader>
                 <NavMenuLogo src={logo}
                              data-testid={'main-logo'}
                              whileTap={{

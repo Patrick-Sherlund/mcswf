@@ -11,12 +11,11 @@ interface SideMenuProps {
     selectedPageName: PageName,
 }
 
-const sidebar = (isBlur: boolean) => {
+const sidebar = () => {
     return {
         open: (height = 1000) => ({
-            clipPath: `circle(${height * (isBlur ? 3 : 2) + 200}px at 35px 35px)`,
+            clipPath: `circle(${height + 200}px at 35px 35px)`,
             transition: {
-                type: "spring",
                 stiffness: 20,
                 restDelta: 2
             }
@@ -25,7 +24,6 @@ const sidebar = (isBlur: boolean) => {
             clipPath: "circle(25px at 35px 35px)",
             transition: {
                 delay: 0.5,
-                type: "spring",
                 stiffness: 400,
                 damping: 40
             }
@@ -51,9 +49,9 @@ const SideMenu: FC<SideMenuProps> = (sideMenuProps: SideMenuProps) => {
             custom={height}
             whileInView={{height: isOpen ? 'auto' : '0'}}
             ref={containerRef}>
-            <NavMenuBody variants={sidebar(false)}/>
+            <NavMenuBody variants={sidebar()}/>
             <SideNav selectedPageName={selectedPageName} navigationEventHandler={navigationEventHandler} closeModalHandler={() => toggleOpen()} pageNames={Object.values(PageName)}/>
-            <NavMenuBlur id={'nav-menu-blur'} variants={sidebar(true)} onClick={() => toggleOpen()}/>
+            <NavMenuBlur id={'nav-menu-blur'} variants={sidebar()} onClick={() => toggleOpen()}/>
             <MenuToggle toggleEventHandler={() => toggleOpen()}/>
         </NavMenu>
     );

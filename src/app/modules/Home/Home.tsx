@@ -18,7 +18,7 @@ import {
     Logo
 } from "./Home.styles";
 import {Link} from "../../components/NavBar/NavBar.styles";
-import logo from "../../../assets/logo.png";
+import logo from "../../../assets/logo.webp";
 
 interface HomeProps {
 }
