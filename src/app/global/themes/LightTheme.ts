@@ -23,9 +23,17 @@ export const lightTheme: Theme = {
         hoverBackgroundColor: "#e7e7e7"
     },
     navBar: {
-        backgroundColor: "#eaeaea",
+        backgroundColor: "#EAEAEA",
         statusBar: {
             backgroundColor: "#f6f6f6"
         }
+    },
+    navMenu: {
+        backgroundColor: "#EAEAEA",
+        borderColor: "#d9d9d9",
+        blurColor: "#8d8d8d7A",
+        selectedItemBackgroundColor: "#e0e0e0",
+        inactiveTextColor: "#3c404e",
+        menuToggleColor: "#2E333F"
     }
 }

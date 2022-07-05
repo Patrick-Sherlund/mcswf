@@ -20,4 +20,12 @@ export interface Theme {
             backgroundColor: string
         }
     }
+    navMenu: {
+        backgroundColor: string,
+        borderColor: string,
+        blurColor: string,
+        selectedItemBackgroundColor: string,
+        inactiveTextColor: string,
+        menuToggleColor: string
+    }
 }

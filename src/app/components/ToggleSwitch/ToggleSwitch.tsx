@@ -1,22 +1,26 @@
-import React, { FC } from 'react';
-import {ToggleSwitchContainer, CheckBox, CheckBoxLabel, CheckBoxWrapper, Moon, Sun} from "./ToggleSwitch.styles";
+import React, {FC, ReactNode, useId} from 'react';
+import {ToggleSwitchContainer, CheckBox, CheckBoxLabel, CheckBoxWrapper} from "./ToggleSwitch.styles";
 
 
 interface ToggleSwitchProps {
-    themeEventHandler: () => void,
+    toggleEventHandler: () => void,
     toggleOnSvg?: string,
-    toggleOffSvg?: string
+    toggleOffSvg?: string,
+    children: ReactNode
 }
 
-const ToggleSwitch: FC<ToggleSwitchProps> = (props: ToggleSwitchProps) => (
-    <ToggleSwitchContainer>
-        <CheckBoxWrapper>
-            <CheckBox id="checkbox" type="checkbox" onChange={props.themeEventHandler}/>
-            <CheckBoxLabel htmlFor="checkbox" >
-                <Moon/><Sun/>
-            </CheckBoxLabel>
-        </CheckBoxWrapper>
-    </ToggleSwitchContainer>
-);
+const ToggleSwitch: FC<ToggleSwitchProps> = (props: ToggleSwitchProps) => {
+    const toggleId = useId()
+    return (
+        <ToggleSwitchContainer>
+            <CheckBoxWrapper>
+                <CheckBox id={toggleId} type="checkbox" onChange={props.toggleEventHandler}/>
+                <CheckBoxLabel htmlFor={toggleId} >
+                    {props.children}
+                </CheckBoxLabel>
+            </CheckBoxWrapper>
+        </ToggleSwitchContainer>
+    );
+}
 
 export default ToggleSwitch;

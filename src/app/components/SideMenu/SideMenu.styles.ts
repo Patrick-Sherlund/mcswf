@@ -30,9 +30,9 @@ export const NavMenuBody = styled(motion.div)`
   bottom: 0;
   width: 65%;
   max-width: 18.75rem;
-  min-width: 14.959rem;
-  background: #2D2D2D;
-  border-right: 1px solid #505050;
+  min-width: 16rem;
+  background: ${props => props.theme.navMenu.backgroundColor};
+  border-right: 1px solid ${props => props.theme.navMenu.borderColor};
   box-shadow: inset -4px 4px 8px rgba(0, 0, 0, 0.25);
   z-index: 22;
 `;
@@ -42,7 +42,7 @@ export const NavMenuBlur = styled(motion.div)`
   left: 0;
   bottom: 0;
   width: 100vw;
-  background: rgba(44, 44, 44, 0.48);
+  background: ${props => props.theme.navMenu.blurColor};
   backdrop-filter: blur(10px);
   z-index: 19;
 `;

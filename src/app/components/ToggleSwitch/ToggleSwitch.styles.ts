@@ -14,12 +14,12 @@ export const ToggleSwitchContainer = styled.div`
   visibility: visible;
 
   @media ${screenMediaQuery.mobilePortrait}{
-    opacity: 0;
-    visibility: hidden;
+    margin-right: 2rem;
+    position: absolute;
   }
   @media ${screenMediaQuery.mobileLandscape}{
-    opacity: 0;
-    visibility: hidden;
+    margin-right: 2rem;
+    position: absolute;
   }
 `;
 

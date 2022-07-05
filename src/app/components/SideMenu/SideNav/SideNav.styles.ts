@@ -3,14 +3,18 @@ import styled from "styled-components/macro";
 
 export const NavMenuContainer = styled(motion.div)`
   position: inherit;
-  min-width: 65%;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  min-width: 16rem;
   max-width: 18.75rem;
   z-index: 25;
   transition: width 500ms, height 500ms;
 `;
 
 export const MenuList = styled(motion.ul)`
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin-top: 0;
   min-height: 55%;
   height: 20rem;
@@ -49,7 +53,7 @@ export const NavMenuHeaderContent = styled(motion.div)`
 export const NavMenuHeaderText = styled(motion.h2)`
   font-size: 1.1rem;
   font-weight: 600;
-  color: #EAEAEA;
+  color: ${props => props.theme.navMenu.textColor};
   text-align: center;
   margin: .1rem 0 0;
 `;

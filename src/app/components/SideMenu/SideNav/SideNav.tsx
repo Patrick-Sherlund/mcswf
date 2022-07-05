@@ -1,8 +1,16 @@
 import React, {FC} from 'react';
-import {MenuList, NavMenuContainer, NavMenuHeader, NavMenuHeaderContent, NavMenuHeaderText, NavMenuLogo} from "./SideNav.styles";
+import {
+    MenuList,
+    NavMenuContainer,
+    NavMenuHeader,
+    NavMenuHeaderContent,
+    NavMenuHeaderText,
+    NavMenuLogo
+} from "./SideNav.styles";
 import MenuItem from "./MenuItem/MenuItem";
 import logo from "../../../../assets/logo.webp";
 import {PageName} from "../../../global/enums/global";
+import {Variants} from "framer-motion";
 
 interface SideNav {
     pageNames: PageName[],
@@ -11,39 +19,41 @@ interface SideNav {
     navigationEventHandler: (pageName: PageName) => void;
 }
 
+const framerMotionVariants = {
+    open: {
+        transition: {staggerChildren: 0.07, delayChildren: 0.2}
+    },
+    closed: {
+        transition: {staggerChildren: 0.05, staggerDirection: -1}
+    }
+};
+const framerMotionVariantsHeader: Variants = {
+    open: {
+        clipPath: `circle(500px at 35px 35px)`,
+        transition: {
+            type: "spring",
+            stiffness: 20,
+            restDelta: 2
+        }
+    },
+    closed: {
+        clipPath: "circle(0px at 35px 35px)",
+        transition: {
+            delay: .2,
+            duration: .6,
+            type: "spring",
+            stiffness: 400,
+            damping: 40
+        }
+    }
+};
+
 const SideNav: FC<SideNav> = (sideMenuProps: SideNav) => {
     const pageNames: PageName[] = sideMenuProps.pageNames;
     const navigationEventHandler: (pageName: PageName) => void = sideMenuProps.navigationEventHandler;
     const closeModalHandler: () => void = sideMenuProps.closeModalHandler;
     const selectedPageName: PageName = sideMenuProps.selectedPageName;
-    const framerMotionVariants = {
-        open: {
-            transition: {staggerChildren: 0.07, delayChildren: 0.2}
-        },
-        closed: {
-            transition: {staggerChildren: 0.05, staggerDirection: -1}
-        }
-    };
-    const framerMotionVariantsHeader = {
-        open: {
-            clipPath: `circle(${500}px at 35px 35px)`,
-            transition: {
-                delay: 0.2,
-                type: "spring",
-                stiffness: 20,
-                restDelta: 2
-            }
-        },
-        closed: {
-            clipPath: "circle(0px at 35px 35px)",
-            transition: {
-                delay: 0.1,
-                type: "spring",
-                stiffness: 400,
-                damping: 40
-            }
-        }
-    };
+
     return (
         <NavMenuContainer variants={framerMotionVariantsHeader}>
             <NavMenuHeader>
@@ -68,10 +78,12 @@ const SideNav: FC<SideNav> = (sideMenuProps: SideNav) => {
                 </NavMenuHeaderContent>
             </NavMenuHeader>
 
-    <MenuList variants={framerMotionVariants}>
+            <MenuList variants={framerMotionVariants}>
                 {
                     pageNames.map((pageName, index) => (
-                        <MenuItem key={`${pageName}-${index}`} navigationEventHandler={navigationEventHandler} closeModalHandler={closeModalHandler} pageName={pageName} isSelected={pageName === selectedPageName}/>
+                        <MenuItem key={`${pageName}-${index}`} navigationEventHandler={navigationEventHandler}
+                                  closeModalHandler={closeModalHandler} pageName={pageName}
+                                  isSelected={pageName === selectedPageName}/>
                     ))
                 }
             </MenuList>

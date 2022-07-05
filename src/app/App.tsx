@@ -25,7 +25,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <AppContainer>
-                <SideMenu selectedPageName={selectedPageName} navigationEventHandler={(pageName) => setSelectedPageName(() => pageName)}/>
+                <SideMenu selectedPageName={selectedPageName} navigationEventHandler={(pageName) => setSelectedPageName(() => pageName)} />
                 <NavBar selectedPageName={selectedPageName} navigationEventHandler={(pageName) => setSelectedPageName(() => pageName)} themeEventHandler={updateThemeState} />
                 <Home/>
                 <LearnMore/>

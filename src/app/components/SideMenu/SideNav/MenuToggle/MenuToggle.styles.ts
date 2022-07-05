@@ -2,7 +2,7 @@ import {motion} from "framer-motion";
 import styled from "styled-components/macro";
 
 export const MenuPath = styled(motion.path)`
-
+  stroke: ${props => props.theme.navMenu.menuToggleColor};
 `;
 
 export const MenuButton = styled(motion.button)`

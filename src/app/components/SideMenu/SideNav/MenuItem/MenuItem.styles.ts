@@ -1,6 +1,7 @@
 import styled from "styled-components/macro";
 import {motion} from "framer-motion";
 import * as Scroll from "react-scroll";
+import {screenMediaQuery} from "../../../../../index.styles";
 
 export const MenuListItem = styled(motion.li)`
   width: 100%;
@@ -12,6 +13,16 @@ export const MenuListItem = styled(motion.li)`
   cursor: pointer;
   z-index: 23;
   transition: width 500ms, height 500ms;
+
+
+  @media ${screenMediaQuery.mobileLandscape}{
+    height: 2.8rem !important; 
+  }
+  
+  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+    height: 2.8rem !important;
+  }
+  
 `;
 
 
@@ -20,7 +31,7 @@ export const Link = styled(Scroll.Link)`
 `
 
 export const SelectedListItem = styled(MenuListItem)`
-  background: #505050;
+  background: ${props => props.theme.navMenu.selectedItemBackgroundColor};
   box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25);
   
 `;
@@ -28,13 +39,13 @@ export const SelectedListItem = styled(MenuListItem)`
 export const InactiveItemText = styled.span`
   font-size: 1.8rem;
   font-weight: lighter;
-  color: #bfbfbf;
+  color: ${props => props.theme.navMenu.inactiveTextColor};
   padding-left: 2.8rem;
 `;
 
 export const SelectedItemText = styled(InactiveItemText)`
   font-weight: 600;
-  color: #eaeaea;
+  color: ${props => props.theme.textColor};
   padding-left: .5rem;
 `;
 

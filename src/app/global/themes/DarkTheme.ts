@@ -27,5 +27,13 @@ export const darkTheme: Theme = {
         statusBar: {
             backgroundColor: "#3E3E3E"
         }
+    },
+    navMenu: {
+        backgroundColor: "#2D2D2D",
+        borderColor: "#505050",
+        blurColor: "#2C2C2C7A",
+        selectedItemBackgroundColor: "#505050",
+        inactiveTextColor: "#bfbfbf",
+        menuToggleColor: "#EAEAEA"
     }
 }

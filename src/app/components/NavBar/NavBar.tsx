@@ -4,6 +4,7 @@ import logo from "../../../assets/logo.webp"
 import {Logo, DesktopNavBar, NavBarContainer, List, SelectedListItem, ListItem, UnderLine, Link} from "./NavBar.styles";
 import StatusBar from "../StatusBar/StatusBar";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import {CheckBoxLabel, Moon, Sun} from "../ToggleSwitch/ToggleSwitch.styles";
 
 interface NavBarProps {
     themeEventHandler: () => void,
@@ -27,13 +28,14 @@ const NavBar: FC<NavBarProps> = (navBarProps: NavBarProps) => {
                     {
                         Object.values(PageName).map(
                             (pageName, index) => (
-                                <Link ignoreCancelEvents={true}
+                                <Link tab-index={index}
+                                      ignoreCancelEvents={true}
                                       isDynamic={true}
                                       key={'link-' + pageName + index}
                                       onSetActive={() => navigationEventHandler(pageName)} to={pageName.replace(' ', '-')}
                                       spy={true}
                                       smooth={'easeInQuad'}
-                                      offset={-50}
+                                      offset={-30}
                                       delay={-500}
                                       duration={300}
                                 >
@@ -50,7 +52,9 @@ const NavBar: FC<NavBarProps> = (navBarProps: NavBarProps) => {
                         )
                     }
                 </List>
-                <ToggleSwitch themeEventHandler={navBarProps.themeEventHandler}/>
+                <ToggleSwitch toggleEventHandler={navBarProps.themeEventHandler}>
+                    <Moon/><Sun/>
+                </ToggleSwitch>
             </NavBarContainer>
             <StatusBar pageName={selectedPageName}/>
         </DesktopNavBar>
