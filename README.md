@@ -5,7 +5,7 @@
 <div align="center">
   <a href="https://github.com/Patrick-Sherlund/MCSWF">
 
-![logo.png](src/assets/readme-logo.png)
+![readme-logo.webp](src/assets/readme-logo.webp)
 
   </a>
 
@@ -53,7 +53,7 @@ Table of Contents
         <li><a href="#components">Components</a></li>
         <li><a href="#global">Global</a></li>
         <li><a href="#models">Models</a></li>
-        <li><a href="#modules">Modules</a></li>
+        <li><a href="#views">Views</a></li>
         <li><a href="#utils">Utils</a></li>
         <li><a href="#assets">Assets</a></li>
       </ul>
@@ -193,30 +193,30 @@ MCSWF
 │   │   ├── components
 │   │   ├── global
 │   │   │   ├── enums
+│   │   │   ├── themes
 │   │   │   └── types
 │   │   ├── models
 │   │   │   ├── classes
 │   │   │   └── interfaces
-│   │   ├── modules
+│   │   ├── views
 │   │   └── utils
 └   └── assets
 ```
 * ### 'app' 
-    _This section encapsulates the 'components', 'global', 'models', 'modules' and 'utils'. 
+    _This section encapsulates the 'components', 'global', 'models', 'views' and 'utils'. 
     It also serves as the root directory for the app component_
 * ### 'components' 
-    _This section contains all reusable components, all components within this section are built with reusability in mind._
-
+    _This section contains all reusable components, all components within this section are built with usability in mind._
 * ### 'global'
-    _This section contains any type of global declaration, we use this for enums and types._
+    _This section contains any type of global declaration, we use this for enums, themes and types._
 * ### 'models' 
     _This section contains any type of object model, whether it's an Interface, or a Class._
-* ### 'modules' 
-    _This section contains all the pages the app uses, for example 'Home', 'About', 'Contact' etc._
+* ### 'views' 
+    _This section contains all the pages/views the app uses, for example 'Home', 'About', 'Contact' etc._
 * ### 'utils' 
     _This section contains any utility function that could be reused across different components._
 * ### 'assets' 
-    _This section contains any assets (i.e. images, svg, videos, downloads etc) that would be used across the application._
+    _This section contains any assets (i.e. images, svg, videos, downloads etc.) that would be used across the application._
 
 # [Test Driven Development](https://www.agilealliance.org/glossary/tdd/)
 
