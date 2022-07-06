@@ -34,6 +34,6 @@ export const darkTheme: Theme = {
         blurColor: "#2C2C2C7A",
         selectedItemBackgroundColor: "#505050",
         inactiveTextColor: "#bfbfbf",
-        menuToggleColor: "#EAEAEA"
+        menuSvgColor: "#EAEAEA",
     }
 }

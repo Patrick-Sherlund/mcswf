@@ -26,6 +26,6 @@ export interface Theme {
         blurColor: string,
         selectedItemBackgroundColor: string,
         inactiveTextColor: string,
-        menuToggleColor: string
+        menuSvgColor: string,
     }
 }

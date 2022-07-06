@@ -11,8 +11,7 @@ interface SideMenuProps {
     selectedPageName: PageName,
 }
 
-const sidebar = () => {
-    return {
+const sidebar = {
         open: (height = 1000) => ({
             clipPath: `circle(${height + 200}px at 35px 35px)`,
             transition: {
@@ -31,8 +30,6 @@ const sidebar = () => {
             }
         }
     }
-};
-
 const SideMenu: FC<SideMenuProps> = (sideMenuProps: SideMenuProps) => {
     const [isOpen, toggleOpen] = useCycle(false, true);
     const selectedPageName: PageName = sideMenuProps.selectedPageName;
@@ -51,9 +48,9 @@ const SideMenu: FC<SideMenuProps> = (sideMenuProps: SideMenuProps) => {
             custom={height}
             whileInView={{height: isOpen ? 'auto' : '0'}}
             ref={containerRef}>
-            <NavMenuBody variants={sidebar()}/>
+            <NavMenuBody variants={sidebar}/>
             <SideNav selectedPageName={selectedPageName} navigationEventHandler={navigationEventHandler} closeModalHandler={() => toggleOpen()} pageNames={Object.values(PageName)}/>
-            <NavMenuBlur id={'nav-menu-blur'} variants={sidebar()} onClick={() => toggleOpen()}/>
+            <NavMenuBlur id={'nav-menu-blur'} variants={sidebar} onClick={() => toggleOpen()}/>
             <MenuToggle tab-index={1} toggleEventHandler={() => toggleOpen()}/>
         </NavMenu>
     );

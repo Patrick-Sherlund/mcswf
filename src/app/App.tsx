@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Home from "./modules/Home/Home";
 import { AppContainer } from "./App.styles";
 import NavBar from "./components/NavBar/NavBar";
@@ -12,21 +12,17 @@ import {darkTheme} from "./global/themes/DarkTheme";
 import {lightTheme} from "./global/themes/LightTheme";
 import SideMenu from "./components/SideMenu/SideMenu";
 import {PageName} from "./global/enums/global";
+import {useCycle} from "framer-motion";
 
 function App() {
-    const [theme, setTheme] = useState(darkTheme)
+    const [theme, cycleTheme] = useCycle(darkTheme, lightTheme)
     const [selectedPageName, setSelectedPageName] = useState(PageName.HOME)
-
-    const updateThemeState = () =>
-        setTheme((theme) =>
-            theme === darkTheme ? lightTheme : darkTheme
-        )
 
     return (
         <ThemeProvider theme={theme}>
             <AppContainer>
                 <SideMenu selectedPageName={selectedPageName} navigationEventHandler={(pageName) => setSelectedPageName(() => pageName)} />
-                <NavBar selectedPageName={selectedPageName} navigationEventHandler={(pageName) => setSelectedPageName(() => pageName)} themeEventHandler={updateThemeState} />
+                <NavBar selectedPageName={selectedPageName} navigationEventHandler={(pageName) => setSelectedPageName(() => pageName)} themeEventHandler={cycleTheme} />
                 <Home/>
                 <LearnMore/>
                 <Disciplines/>

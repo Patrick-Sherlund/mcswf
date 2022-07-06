@@ -2,7 +2,7 @@ import {motion} from "framer-motion";
 import styled from "styled-components/macro";
 
 export const MenuPath = styled(motion.path)`
-  stroke: ${props => props.theme.navMenu.menuToggleColor};
+  stroke: ${props => props.theme.navMenu.menuSvgColor};
 `;
 
 export const MenuButton = styled(motion.button)`
@@ -18,7 +18,7 @@ export const MenuButton = styled(motion.button)`
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background: transparent;
+  background-color: transparent;
   padding-top: .45rem;
   z-index: 25;
   

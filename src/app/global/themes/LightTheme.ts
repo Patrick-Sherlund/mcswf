@@ -34,6 +34,6 @@ export const lightTheme: Theme = {
         blurColor: "#8d8d8d7A",
         selectedItemBackgroundColor: "#e0e0e0",
         inactiveTextColor: "#3c404e",
-        menuToggleColor: "#2E333F"
+        menuSvgColor: "#2E333F",
     }
 }
