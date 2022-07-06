@@ -1,8 +1,8 @@
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import styled from "styled-components/macro";
 
 export const MenuPath = styled(motion.path)`
-  stroke: ${props => props.theme.navMenu.menuSvgColor};
+  stroke: ${(props) => props.theme.navMenu.menuSvgColor};
 `;
 
 export const MenuButton = styled(motion.button)`
@@ -13,13 +13,12 @@ export const MenuButton = styled(motion.button)`
   -ms-user-select: none;
   cursor: pointer;
   position: fixed;
-  top: .95rem;
+  top: 0.95rem;
   left: 0.9375rem;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
   background-color: transparent;
-  padding-top: .45rem;
+  padding-top: 0.45rem;
   z-index: 25;
-  
 `;

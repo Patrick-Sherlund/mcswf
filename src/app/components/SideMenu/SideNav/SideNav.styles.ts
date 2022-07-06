@@ -30,8 +30,8 @@ export const NavMenuHeader = styled(motion.div)`
   max-width: 18.75rem;
   display: flex;
   flex-direction: row;
-  padding: .5rem 0rem 1rem 0;
-  background-image: url("${props => props.theme.backgroundImage}");
+  padding: 0.5rem 0rem 1rem 0;
+  background-image: url("${(props) => props.theme.backgroundImage}");
   background-size: cover;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.35));
 `;
@@ -40,7 +40,7 @@ export const NavMenuLogo = styled(motion.img)`
   width: 4.5rem;
   height: 5rem;
   transition: width 500ms, height 500ms;
-  margin: .5rem 1rem 0 .5rem
+  margin: 0.5rem 1rem 0 0.5rem;
 `;
 
 export const NavMenuHeaderContent = styled(motion.div)`
@@ -53,7 +53,7 @@ export const NavMenuHeaderContent = styled(motion.div)`
 export const NavMenuHeaderText = styled(motion.h2)`
   font-size: 1.1rem;
   font-weight: 600;
-  color: ${props => props.theme.navMenu.textColor};
+  color: ${(props) => props.theme.navMenu.textColor};
   text-align: center;
-  margin: .1rem 0 0;
+  margin: 0.1rem 0 0;
 `;

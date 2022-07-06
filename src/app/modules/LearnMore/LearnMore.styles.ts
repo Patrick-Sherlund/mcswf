@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import {screenMediaQuery} from "../../../index.styles";
+import { screenMediaQuery } from "../../../index.styles";
 
 export const LearnMoreContainer = styled(motion.div)`
   padding-top: 10rem;
@@ -10,16 +10,15 @@ export const LearnMoreContainer = styled(motion.div)`
   display: flex;
   flex-direction: row;
 
-
-  @media ${screenMediaQuery.mobilePortrait}{
+  @media ${screenMediaQuery.mobilePortrait} {
     margin-top: 10.5rem;
     padding-top: 0;
   }
-  @media ${screenMediaQuery.mobileLandscape}{
+  @media ${screenMediaQuery.mobileLandscape} {
     margin-top: 10rem;
     padding-top: 0;
   }
-`
+`;
 
 export const SampleText = styled.div`
   text-align: center;

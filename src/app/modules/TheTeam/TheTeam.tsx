@@ -1,16 +1,16 @@
-import React, { FC } from 'react';
-import {TheTeamContainer, SampleText} from "./TheTeam.styles";
+import React, { FC } from "react";
+import { TheTeamContainer, SampleText } from "./TheTeam.styles";
 
-interface TheTeamProps {}
-
-const TheTeam: FC<TheTeamProps> = () => (
-  <TheTeamContainer initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ delay: .3 }}
-                    viewport={{ once: true }} data-testid="TheTeam" id={"The-Team"}>
-      <SampleText>
-          The Team Page
-      </SampleText>
+const TheTeam: FC = () => (
+  <TheTeamContainer
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ delay: 0.3 }}
+    viewport={{ once: true }}
+    data-testid="TheTeam"
+    id={"The-Team"}
+  >
+    <SampleText>The Team Page</SampleText>
   </TheTeamContainer>
 );
 

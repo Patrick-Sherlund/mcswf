@@ -1,16 +1,16 @@
 import styled from "styled-components/macro";
-import {motion} from "framer-motion";
-import navigationArrow from "../assets/svg/red-arrow.svg"
-import {screenMediaQuery} from "../index.styles";
+import { motion } from "framer-motion";
+import navigationArrow from "../assets/svg/red-arrow.svg";
+import { screenMediaQuery } from "../index.styles";
 
 export const AppContainer = styled.div`
   width: 100%;
   height: 100%;
-  background-image: url("${props => props.theme.backgroundImage}");
-  background-color: ${props => props.theme.backgroundColor};
+  background-image: url("${(props) => props.theme.backgroundImage}");
+  background-color: ${(props) => props.theme.backgroundColor};
   background-attachment: fixed;
   background-size: contain;
-  color: ${props => props.theme.textColor};
+  color: ${(props) => props.theme.textColor};
   font-family: DINNextLTPro, Inter, Segoe UI, sans-serif;
   transition: background 0.5s;
   overflow-x: hidden;
@@ -25,61 +25,55 @@ export const NavigationArrow = styled(motion.div)`
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: width 500ms, height 500ms, margin 500ms;
-  
-  @media ${screenMediaQuery.desktopLarge}{
 
-  }@media ${screenMediaQuery.tabletLarge}{
-
+  @media ${screenMediaQuery.desktopLarge} {
   }
-  @media ${screenMediaQuery.desktopMedium}{
-
+  @media ${screenMediaQuery.tabletLarge} {
   }
-  @media ${screenMediaQuery.laptopAndDesktop}{
+  @media ${screenMediaQuery.desktopMedium} {
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
     height: 4.05rem;
     width: 9rem;
     margin: 7% auto 0;
   }
-  @media ${screenMediaQuery.tabletAndiPadPortrait}{
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
     height: 4.5rem;
     width: 10rem;
     margin: 35% auto 0;
   }
-  @media ${screenMediaQuery.iPadMiniPortrait}{
+  @media ${screenMediaQuery.iPadMiniPortrait} {
     height: 4.5rem;
     width: 10rem;
     margin: 28% auto 0;
   }
-  @media ${screenMediaQuery.tabletSmallPortrait}{
+  @media ${screenMediaQuery.tabletSmallPortrait} {
     height: 4.05rem;
     width: 9rem;
     margin: 35% auto 0;
   }
-  @media ${screenMediaQuery.tabletSmallLandscape}{
+  @media ${screenMediaQuery.tabletSmallLandscape} {
     height: 4.05rem;
     width: 9rem;
     margin: 7% auto 0;
   }
-  @media ${screenMediaQuery.tabletAndiPadLandscape}{
-
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
   }
-  @media ${screenMediaQuery.tabletAndMobilePortrait}{
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
     height: 4.05rem;
     width: 9rem;
     margin: 5% auto 0;
   }
-  @media ${screenMediaQuery.tabletAndMobileLandscape}{
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
     height: 4.05rem;
     width: 9rem;
     margin: 5% auto 0;
   }
-  @media ${screenMediaQuery.mobilePortrait}{
-
+  @media ${screenMediaQuery.mobilePortrait} {
   }
-  @media ${screenMediaQuery.mobileLandscape}{
+  @media ${screenMediaQuery.mobileLandscape} {
     height: 4.05rem;
     width: 9rem;
     margin: 5% auto 0;
   }
-  
-  
 `;

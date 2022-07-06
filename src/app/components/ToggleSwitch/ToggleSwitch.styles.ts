@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
-import moon from "../../../assets/svg/dark/moon.svg"
-import sun from "../../../assets/svg/light/sun.svg"
-import {screenMediaQuery} from "../../../index.styles";
+import moon from "../../../assets/svg/dark/moon.svg";
+import sun from "../../../assets/svg/light/sun.svg";
+import { screenMediaQuery } from "../../../index.styles";
 
 export const ToggleSwitchContainer = styled.div`
   position: absolute;
@@ -13,11 +13,11 @@ export const ToggleSwitchContainer = styled.div`
   opacity: 1;
   visibility: visible;
 
-  @media ${screenMediaQuery.mobilePortrait}{
+  @media ${screenMediaQuery.mobilePortrait} {
     margin-right: 2rem;
     position: absolute;
   }
-  @media ${screenMediaQuery.mobileLandscape}{
+  @media ${screenMediaQuery.mobileLandscape} {
     margin-right: 2rem;
     position: absolute;
   }
@@ -35,7 +35,7 @@ export const Moon = styled.div`
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin-left: 2.35rem;
-  margin-top: .05rem;
+  margin-top: 0.05rem;
 `;
 
 export const Sun = styled.div`
@@ -45,9 +45,8 @@ export const Sun = styled.div`
   background-image: url(${sun});
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  margin-top: .2rem;
-  margin-left: .2rem;
-  
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
 `;
 
 export const CheckBoxLabel = styled.label`
@@ -57,7 +56,7 @@ export const CheckBoxLabel = styled.label`
   width: 4rem;
   height: 1.96rem;
   border-radius: 1.5rem;
-  background: #2B2B2B;
+  background: #2b2b2b;
   border: 1px solid #d4d4d4;
   cursor: pointer;
 
@@ -73,10 +72,9 @@ export const CheckBoxLabel = styled.label`
     height: 1.55rem;
     margin: 2.2px;
     background: #d6d6d6;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #eaeaea;
     box-shadow: inset -2px 2px 8px rgba(0, 0, 0, 0.25);
     transition: 0.2s;
-    
   }
 `;
 
@@ -86,7 +84,7 @@ export const CheckBox = styled.input`
   border-radius: 15px;
   width: 42px;
   height: 26px;
-  
+
   &:checked + ${CheckBoxLabel} {
     background: #eaeaea;
     border: 2px solid #b3b2b2;
@@ -101,7 +99,6 @@ export const CheckBox = styled.input`
     }
 
     &::after {
-
       content: "";
       display: block;
       border-radius: 50%;
