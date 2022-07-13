@@ -1,0 +1,26 @@
+<svg viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_763_688)">
+        <path d="M13.7867 15.597C14.9628 15.597 16.0917 15.3335 17.1412 14.8137L18.9475 13.9194L18.0532 15.7257C16.5335 18.796 13.4636 20.703 10.0416 20.703C5.11436 20.703 1.10554 16.6942 1.10554 11.7669C1.10554 8.345 3.01258 5.27504 6.08287 3.75539L7.88949 2.86108L6.99518 4.6677C6.47571 5.71758 6.2122 6.84608 6.2122 8.02257C6.21224 12.199 9.61003 15.597 13.7867 15.597ZM3.08159 12.7071C3.08159 11.3938 4.65637 13.5005 5.20207 12.3979C2.47766 13.7466 6.38516 9.15199 6.38516 12.3979C6.38516 16.9572 5.81143 17.92 10.3707 17.92C13.6167 17.92 4.16256 17.7729 5.5113 15.0485C4.40903 15.5942 14.5114 18.8477 13.198 18.8477C8.94276 20.6223 3.08159 17.2664 3.08159 12.7071Z" fill="url(#paint0_radial_763_688)"/>
+        <g clip-path="url(#clip1_763_688)">
+            <path d="M11.1791 5.91939C10.9404 6.37924 11.1198 6.94547 11.5796 7.18411C11.1198 6.94547 10.5535 7.1248 10.3149 7.58466C10.5535 7.1248 10.3742 6.55857 9.91435 6.31994C10.3742 6.55857 10.9404 6.37924 11.1791 5.91939Z" fill="#FFD700" stroke="#FFD700" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g clip-path="url(#clip2_763_688)">
+            <path d="M15.1537 7.53912C14.7091 8.3957 15.0431 9.45051 15.8997 9.89509C15.0431 9.45051 13.9883 9.7845 13.5437 10.6411C13.9883 9.7845 13.6543 8.7297 12.7977 8.28512C13.6543 8.7297 14.7091 8.3957 15.1537 7.53912Z" fill="#FFD700" stroke="#FFD700" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </g>
+    <defs>
+        <radialGradient id="paint0_radial_763_688" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(10.0265 11.7821) rotate(91.1788) scale(28.9938 28.9938)">
+            <stop stop-color="#FFD700"/>
+            <stop offset="1" stop-color="#FFD700" stop-opacity="0"/>
+        </radialGradient>
+        <clipPath id="clip0_763_688">
+            <rect width="20.6746" height="20.6746" fill="white" transform="matrix(-1 0 0 1 21.5916 0.0285645)"/>
+        </clipPath>
+        <clipPath id="clip1_763_688">
+            <rect width="2.50152" height="2.50152" fill="white" transform="translate(10.2129 5.06567) rotate(27.4265)"/>
+        </clipPath>
+        <clipPath id="clip2_763_688">
+            <rect width="4.65986" height="4.65986" fill="white" transform="translate(13.1899 6.35742) rotate(27.43)"/>
+        </clipPath>
+    </defs>
+</svg>
