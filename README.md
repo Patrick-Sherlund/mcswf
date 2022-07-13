@@ -171,17 +171,11 @@ Download the Current or LTS version of Node.JS and Git
    ```sh
    npm run build
    ```
-2. Copy the contents from the MCSWF -> build folder and overwrite the content of the MCSWF.github.io repository
+2. Deploy the built application to GitHub Pages
    ```sh
-   Copy the contents of the 'build' folder -> paste contents into MCSWF.github.io repository and overwrite
+   npm run deploy
    ```
-3. From the 'MCSWF.github.io' repository add, commit and push the changes
-   ```sh
-   git add -A
-   git commit -m "COMMIT MESSAGE"
-   git push
-   ```
-4. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/MCSWF.github.io/)
+3. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/MCSWF.github.io/)
 
 # App Directory Structure
 _The current Directory structure logically separates different areas of the application, to help organize development._
