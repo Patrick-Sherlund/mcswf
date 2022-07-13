@@ -1,0 +1,53 @@
+@font-face {
+    font-family: DINNextLTPro;
+    src: url("src/assets/fonts/DINNextLTPro-Regular.eot");
+    src: url("src/assets/fonts/DINNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/DINNextLTPro-Regular.Woff2") format("woff2"), url("src/assets/fonts/DINNextLTPro-Regular.Woff") format("woff"), url("src/assets/fonts/DINNextLTPro-Regular.Ttf") format("truetype");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: DINNextLTPro;
+    src: url("src/assets/fonts/DINNextLTPro-Light.eot");
+    src: url("src/assets/fonts/DINNextLTPro-Light.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/DINNextLTPro-Light.Woff2") format("woff2"), url("src/assets/fonts/DINNextLTPro-Light.Woff") format("woff"), url("src/assets/fonts/DINNextLTPro-Light.Ttf") format("truetype");
+    font-display: swap;
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: DINNextLTPro;
+    src: url("src/assets/fonts/DINNextLTPro-LightCondensed.eot");
+    src: url("src/assets/fonts/DINNextLTPro-LightCondensed.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/DINNextLTPro-LightCondensed.woff2") format("woff2"), url("src/assets/fonts/DINNextLTPro-LightCondensed.woff") format("woff"), url("src/assets/fonts/DINNextLTPro-LightCondensed.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: DINNextLTPro;
+    src: url("src/assets/fonts/DINNextLTPro-Bold.eot");
+    src: url("src/assets/fonts/DINNextLTPro-Bold.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/DINNextLTPro-Bold.woff2") format("woff2"), url("src/assets/fonts/DINNextLTPro-Bold.woff") format("woff"), url("src/assets/fonts/DINNextLTPro-Bold.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: DINNextLTPro;
+    src: url("src/assets/fonts/DINNextLTPro-BoldCondensed.eot");
+    src: url("src/assets/fonts/DINNextLTPro-BoldCondensed.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/DINNextLTPro-BoldCondensed.woff2") format("woff2"), url("src/assets/fonts/DINNextLTPro-BoldCondensed.Woff") format("woff"), url("src/assets/fonts/DINNextLTPro-BoldCondensed.Ttf") format("truetype");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: DINNextLTPro;
+    src: url("src/assets/fonts/DINNextLTPro-Heavy.eot");
+    src: url("src/assets/fonts/DINNextLTPro-Heavy.eot?#iefix") format("embedded-opentype"), url("src/assets/fonts/DINNextLTPro-Heavy.Woff2") format("woff2"), url("src/assets/fonts/DINNextLTPro-Heavy.Woff") format("woff"), url("src/assets/fonts/DINNextLTPro-Heavy.Ttf") format("truetype");
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal
+}
