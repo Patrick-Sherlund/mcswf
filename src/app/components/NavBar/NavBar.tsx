@@ -21,11 +21,11 @@ interface NavBarProps {
   selectedPageName: PageName;
 }
 
-const NavBar: FC<NavBarProps> = (navBarProps: NavBarProps) => {
-  const navigationEventHandler: (pageName: PageName) => void =
-    navBarProps.navigationEventHandler;
-  const selectedPageName: PageName = navBarProps.selectedPageName;
-
+const NavBar: FC<NavBarProps> = React.memo(function NavBar({
+  themeEventHandler,
+  navigationEventHandler,
+  selectedPageName,
+}) {
   return (
     <DesktopNavBar
       initial={{ opacity: 0 }}
@@ -83,7 +83,7 @@ const NavBar: FC<NavBarProps> = (navBarProps: NavBarProps) => {
             </Link>
           ))}
         </List>
-        <ToggleSwitch toggleEventHandler={navBarProps.themeEventHandler}>
+        <ToggleSwitch toggleEventHandler={themeEventHandler}>
           <Moon />
           <Sun />
         </ToggleSwitch>
@@ -91,6 +91,6 @@ const NavBar: FC<NavBarProps> = (navBarProps: NavBarProps) => {
       <StatusBar pageName={selectedPageName} />
     </DesktopNavBar>
   );
-};
+});
 
 export default NavBar;

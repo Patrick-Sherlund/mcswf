@@ -30,13 +30,13 @@ const sidebar = {
     },
   },
 };
-const SideMenu: FC<SideMenuProps> = (sideMenuProps: SideMenuProps) => {
+const SideMenu: FC<SideMenuProps> = React.memo(function SideMenu({
+  navigationEventHandler,
+  selectedPageName,
+}) {
   const [isOpen, toggleOpen] = useCycle(false, true);
-  const selectedPageName: PageName = sideMenuProps.selectedPageName;
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
-  const navigationEventHandler: (pageName: PageName) => void =
-    sideMenuProps.navigationEventHandler;
 
   useEffect(() => {
     document.body.style.overflowY = isOpen ? "hidden" : "";
@@ -65,6 +65,6 @@ const SideMenu: FC<SideMenuProps> = (sideMenuProps: SideMenuProps) => {
       <MenuToggle tab-index={1} toggleEventHandler={() => toggleOpen()} />
     </NavMenu>
   );
-};
+});
 
 export default SideMenu;
