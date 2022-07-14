@@ -20,6 +20,7 @@ export const StatusBarEmpty = styled(StatusBarOutline)`
   progress[value] {
     width: 100%;
     appearance: none;
+    border: none;
     height: 0.25rem;
     ::-webkit-progress-bar {
       background-color: #dadada;

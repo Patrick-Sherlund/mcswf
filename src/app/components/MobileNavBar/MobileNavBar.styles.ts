@@ -2,9 +2,17 @@ import styled from "styled-components/macro";
 import { motion } from "framer-motion";
 import { screenMediaQuery } from "../../../index.styles";
 
+export const MiniLogo = styled(motion.img)`
+  position: absolute;
+  right: 0;
+  height: 4.52rem;
+  width: 4rem;
+  margin: 0.4rem 0.5rem 0 0;
+`;
+
 export const MobileNavBarContainer = styled(motion.div)`
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   flex-direction: column;
   text-align: center;
   background-color: ${(props) => props.theme.navBar.backgroundColor};
@@ -24,7 +32,7 @@ export const MobileNavBarContainer = styled(motion.div)`
 export const MobileNavPageName = styled.div`
   margin: auto;
   color: ${(props) => props.theme.textColor};
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   font-weight: 600;
   width: max-content;
 `;

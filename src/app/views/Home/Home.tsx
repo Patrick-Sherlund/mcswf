@@ -1,4 +1,4 @@
-import React, { FC, MutableRefObject, useRef } from "react";
+import React, { FC } from "react";
 import { NavigationArrow } from "../../App.styles";
 import {
   HomeContainer,

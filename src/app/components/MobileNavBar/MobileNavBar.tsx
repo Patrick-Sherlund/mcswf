@@ -1,12 +1,14 @@
-import { FC, useEffect } from "react";
+import React, { FC } from "react";
 import {
   MobileNavBarContainer,
   MobileNavPageName,
   MobileNavBorder,
+  MiniLogo,
 } from "./MobileNavBar.styles";
 import { PageName } from "../../global/enums/global";
-import { AnimationControls, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { AnimationControls } from "framer-motion";
+import StatusBar from "../StatusBar/StatusBar";
+import logo from "../../../assets/logo.webp";
 
 interface MobileNavBarProps {
   currentPage: PageName;
@@ -31,10 +33,12 @@ const MobileNavBar: FC<MobileNavBarProps> = (
       initial="hidden"
       variants={navBarVariants}
     >
+      <MiniLogo src={logo} />
       <MobileNavPageName>
         {currentPage}
         <MobileNavBorder />
       </MobileNavPageName>
+      <StatusBar pageName={currentPage} />
     </MobileNavBarContainer>
   );
 };
