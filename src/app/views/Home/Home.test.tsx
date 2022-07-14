@@ -12,7 +12,7 @@ describe("<Home />", () => {
   beforeEach(() => {
     container = render(
       <ThemeProvider theme={darkTheme}>
-        <Home />
+        <Home elementRef={() => null} />
       </ThemeProvider>
     );
   });

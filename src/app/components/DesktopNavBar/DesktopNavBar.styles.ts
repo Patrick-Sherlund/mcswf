@@ -3,7 +3,7 @@ import { screenMediaQuery } from "../../../index.styles";
 import * as Scroll from "react-scroll";
 import { motion } from "framer-motion";
 
-export const DesktopNavBar = styled(motion.div)`
+export const DesktopNavBarBody = styled(motion.div)`
   position: fixed;
   height: 8.75rem;
   width: 100%;

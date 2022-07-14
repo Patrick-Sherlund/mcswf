@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, MutableRefObject, useRef } from "react";
 import { NavigationArrow } from "../../App.styles";
 import {
   HomeContainer,
@@ -17,10 +17,15 @@ import {
   YoutubeButton,
   Logo,
 } from "./Home.styles";
-import { Link } from "../../components/NavBar/NavBar.styles";
+import { Link } from "../../components/DesktopNavBar/DesktopNavBar.styles";
 import logo from "../../../assets/logo.webp";
 
-const Home: FC = () => {
+interface HomeProps {
+  elementRef: (node?: Element | null | undefined) => void;
+}
+
+const Home: FC<HomeProps> = (homeProps: HomeProps) => {
+  const elementRef = homeProps.elementRef;
   const titleTopPrimary = "U.S. Marine Corps";
   const titleTopSecondary = "Software Factory";
   const subMessageLight = "World-Class Software Engineered";
@@ -34,6 +39,7 @@ const Home: FC = () => {
       transition={{ delay: 0.3 }}
       viewport={{ once: true }}
       id={"Home"}
+      ref={elementRef}
       data-testid={"home-container"}
     >
       <Logo

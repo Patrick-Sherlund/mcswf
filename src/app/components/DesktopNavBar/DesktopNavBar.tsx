@@ -3,14 +3,14 @@ import { PageName } from "../../global/enums/global";
 import logo from "../../../assets/logo.webp";
 import {
   Logo,
-  DesktopNavBar,
+  DesktopNavBarBody,
   NavBarContainer,
   List,
   SelectedListItem,
   ListItem,
   UnderLine,
   Link,
-} from "./NavBar.styles";
+} from "./DesktopNavBar.styles";
 import StatusBar from "../StatusBar/StatusBar";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import { Moon, Sun } from "../ToggleSwitch/ToggleSwitch.styles";
@@ -21,13 +21,13 @@ interface NavBarProps {
   selectedPageName: PageName;
 }
 
-const NavBar: FC<NavBarProps> = React.memo(function NavBar({
+const DesktopNavBar: FC<NavBarProps> = React.memo(function NavBar({
   themeEventHandler,
   navigationEventHandler,
   selectedPageName,
 }) {
   return (
-    <DesktopNavBar
+    <DesktopNavBarBody
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1 }}
@@ -89,8 +89,8 @@ const NavBar: FC<NavBarProps> = React.memo(function NavBar({
         </ToggleSwitch>
       </NavBarContainer>
       <StatusBar pageName={selectedPageName} />
-    </DesktopNavBar>
+    </DesktopNavBarBody>
   );
 });
 
-export default NavBar;
+export default DesktopNavBar;

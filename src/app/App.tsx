@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-import Home from "./views/Home/Home";
 import { AppContainer } from "./App.styles";
-import NavBar from "./components/NavBar/NavBar";
-import LearnMore from "./views/LearnMore/LearnMore";
-import Disciplines from "./views/Disciplines/Disciplines";
-import TheTeam from "./views/TheTeam/TheTeam";
-import GetInvolved from "./views/GetInvolved/GetInvolved";
+import DesktopNavBar from "./components/DesktopNavBar/DesktopNavBar";
 import Footer from "./components/Footer/Footer";
 import { ThemeProvider } from "styled-components";
 import { darkTheme } from "./global/themes/DarkTheme";
@@ -13,6 +8,7 @@ import { lightTheme } from "./global/themes/LightTheme";
 import SideMenu from "./components/SideMenu/SideMenu";
 import { PageName } from "./global/enums/global";
 import { useCycle } from "framer-motion";
+import ContentContainer from "./components/ContentContainer/ContentContainer";
 
 function App() {
   const [theme, cycleTheme] = useCycle(darkTheme, lightTheme);
@@ -27,18 +23,14 @@ function App() {
             setSelectedPageName(() => pageName)
           }
         />
-        <NavBar
+        <DesktopNavBar
           selectedPageName={selectedPageName}
           navigationEventHandler={(pageName) =>
             setSelectedPageName(() => pageName)
           }
           themeEventHandler={cycleTheme}
         />
-        <Home />
-        <LearnMore />
-        <Disciplines />
-        <TheTeam />
-        <GetInvolved />
+        <ContentContainer currentPage={selectedPageName} />
         <Footer />
       </AppContainer>
     </ThemeProvider>

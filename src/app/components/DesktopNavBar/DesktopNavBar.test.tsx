@@ -1,15 +1,15 @@
 import React from "react";
 import { render, RenderResult } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import NavBar from "./NavBar";
+import DesktopNavBar from "./DesktopNavBar";
 import { PageName } from "../../global/enums/global";
 
-describe("<NavBar />", () => {
+describe("<DesktopNavBar />", () => {
   let container: RenderResult;
 
   beforeAll(() => {
     container = render(
-      <NavBar
+      <DesktopNavBar
         selectedPageName={PageName.HOME}
         navigationEventHandler={() => {}}
         themeEventHandler={() => {}}
