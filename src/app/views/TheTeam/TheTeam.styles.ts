@@ -42,6 +42,18 @@ export const TeamContent = styled.div`
   .swiper {
     z-index: unset;
   }
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+
+  @media ${screenMediaQuery.mobilePortrait} {
+    visibility: visible;
+    opacity: 1;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+    visibility: visible;
+    opacity: 1;
+  }
 `;
 
 export const InnerCard = styled.div`
