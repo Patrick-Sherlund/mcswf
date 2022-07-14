@@ -2,7 +2,7 @@
   "name": "mcswf",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://patrick-sherlund.github.io/mcswf.github.io",
+  "homepage": "https://patrick-sherlund.github.io/mcswf",
   "dependencies": {
     "@types/node": "^16.11.41",
     "@types/react": "^18.0.14",
