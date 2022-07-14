@@ -10,7 +10,7 @@ const TheTeam: FC = () => (
     data-testid="TheTeam"
     id={"The-Team"}
   >
-    <SampleText>The Team Page</SampleText>
+    <SampleText></SampleText>
   </TheTeamContainer>
 );
 

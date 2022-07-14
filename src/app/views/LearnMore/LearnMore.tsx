@@ -10,7 +10,7 @@ const LearnMore: FC = () => (
     data-testid="learn-more-container"
     id={"Learn-More"}
   >
-    <SampleText>Learn More Page</SampleText>
+    <SampleText></SampleText>
   </LearnMoreContainer>
 );
 

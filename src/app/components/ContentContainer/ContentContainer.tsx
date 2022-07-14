@@ -19,12 +19,13 @@ const ContentContainer: FC<ContentContainerProps> = (
 ) => {
   const currentPage = contentContainerProps.currentPage;
   const animationControls = useAnimation();
-  const [elementRef, inView] = useInView();
+  const [elementRef, inView] = useInView({
+    threshold: 0,
+    rootMargin: "126px",
+  });
 
   useEffect(() => {
-    animationControls
-      .start(inView ? "hidden" : "visible")
-      .catch(() => console.log("An error has occurred"));
+    animationControls.start(inView ? "hidden" : "visible");
   }, [animationControls, inView]);
 
   return (

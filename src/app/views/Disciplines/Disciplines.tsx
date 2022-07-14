@@ -10,7 +10,7 @@ const Disciplines: FC = () => (
     data-testid="Disciplines"
     id={"Disciplines"}
   >
-    <SampleText>Disciplines Page</SampleText>
+    <SampleText></SampleText>
   </DisciplinesContainer>
 );
 
