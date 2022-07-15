@@ -1,7 +1,6 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import {
   TheTeamContainer,
-  SampleText,
   TeamCard,
   TeamContent,
   InnerCard,
@@ -10,15 +9,23 @@ import {
   BilletContainer,
   Divider,
   Billet,
+  LeadershipCount,
 } from "./TheTeam.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
-import teamPhoto from "../../../assets/profile.webp";
+import { ContactCard } from "../../models/interfaces/ContactCard";
 
-const TheTeam: FC = () => {
-  const card = ["card 1", "card 2", "card 3"];
+interface TeamProps {
+  billetCards: ContactCard[];
+}
+
+const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const billetCards: ContactCard[] = teamProps.billetCards;
+  const cardEffect = "cards";
+
   return (
     <TheTeamContainer
       initial={{ opacity: 0 }}
@@ -29,17 +36,23 @@ const TheTeam: FC = () => {
       id={"The-Team"}
     >
       <TeamContent>
-        <Swiper effect={"cards"} modules={[EffectCards]}>
-          {card.map((cardName, index) => {
+        <Swiper
+          effect={cardEffect}
+          modules={[EffectCards]}
+          onSlideChange={(direction) =>
+            setCurrentIndex(() => direction.activeIndex)
+          }
+        >
+          {billetCards.map((billetCard, index) => {
             return (
               <SwiperSlide key={"swiper-" + index}>
                 <TeamCard>
                   <InnerCard>
-                    <TeamPhoto src={teamPhoto} />
-                    <Title>LtCol Bahk, Charlie</Title>
+                    <TeamPhoto src={billetCard.photo} />
+                    <Title>{billetCard.title}</Title>
                     <BilletContainer>
                       <Divider />
-                      <Billet>Co-Director</Billet>
+                      <Billet>{billetCard.billet}</Billet>
                     </BilletContainer>
                   </InnerCard>
                 </TeamCard>
@@ -47,6 +60,9 @@ const TheTeam: FC = () => {
             );
           })}
         </Swiper>
+        <LeadershipCount>{`${currentIndex + 1} of ${
+          billetCards.length
+        }`}</LeadershipCount>
       </TeamContent>
     </TheTeamContainer>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import StatusBar from "./StatusBar";
-import { PageName } from "../../global/enums/global";
+import { PageName } from "../../constants/enums/global";
 
 describe("<StatusBar />", () => {
   test("it should mount", () => {

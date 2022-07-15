@@ -4,7 +4,7 @@ import { useDimensions } from "../../utils/hooks/useDimensions";
 import { useCycle } from "framer-motion";
 import MenuToggle from "./SideNav/MenuToggle/MenuToggle";
 import SideNav from "./SideNav/SideNav";
-import { PageName } from "../../global/enums/global";
+import { PageName } from "../../constants/enums/global";
 
 interface SideMenuProps {
   navigationEventHandler: (pageName: PageName) => void;

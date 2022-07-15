@@ -10,7 +10,7 @@ const GetInvolved: FC = () => (
     data-testid="GetInvolved"
     id={"Get-Involved"}
   >
-    <SampleText></SampleText>
+    <SampleText>Get Involved</SampleText>
   </GetInvolvedContainer>
 );
 

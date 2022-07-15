@@ -10,11 +10,11 @@ export const TheTeamContainer = styled(motion.div)`
   flex-direction: column;
 
   @media ${screenMediaQuery.mobilePortrait} {
-    margin-top: 10rem;
+    padding-top: 7rem !important;
     padding-top: 0;
   }
   @media ${screenMediaQuery.mobileLandscape} {
-    margin-top: 10rem;
+    padding-top: 7rem !important;
     padding-top: 0;
   }
 `;
@@ -103,4 +103,8 @@ export const Billet = styled.h3`
   font-weight: lighter;
   font-size: 0.9rem;
   margin: 0;
+`;
+
+export const LeadershipCount = styled.h2`
+  text-align: center;
 `;

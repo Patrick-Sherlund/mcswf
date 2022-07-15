@@ -1,7 +1,7 @@
 import { render, RenderResult } from "@testing-library/react";
 import React from "react";
 import MobileNavBar from "./MobileNavBar";
-import { PageName } from "../../global/enums/global";
+import { PageName } from "../../constants/enums/global";
 
 describe("<MobileNavBar />", () => {
   let container: RenderResult;

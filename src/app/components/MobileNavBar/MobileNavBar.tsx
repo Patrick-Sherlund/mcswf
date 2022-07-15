@@ -5,7 +5,7 @@ import {
   MobileNavBorder,
   MiniLogo,
 } from "./MobileNavBar.styles";
-import { PageName } from "../../global/enums/global";
+import { PageName } from "../../constants/enums/global";
 import { AnimationControls } from "framer-motion";
 import StatusBar from "../StatusBar/StatusBar";
 import logo from "../../../assets/logo.webp";

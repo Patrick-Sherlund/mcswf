@@ -7,7 +7,7 @@ import {
   MiniDivider,
   Link,
 } from "./MenuItem.styles";
-import { PageName } from "../../../../global/enums/global";
+import { PageName } from "../../../../constants/enums/global";
 import { Variants } from "framer-motion";
 
 interface MenuItemProps {

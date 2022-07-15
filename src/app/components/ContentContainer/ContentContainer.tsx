@@ -8,7 +8,8 @@ import GetInvolved from "../../views/GetInvolved/GetInvolved";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import MobileNavBar from "../MobileNavBar/MobileNavBar";
-import { PageName } from "../../global/enums/global";
+import { PageName } from "../../constants/enums/global";
+import { Leadership } from "../../constants/data/leadership";
 
 interface ContentContainerProps {
   currentPage: PageName;
@@ -37,7 +38,7 @@ const ContentContainer: FC<ContentContainerProps> = (
       <Home elementRef={elementRef} />
       <LearnMore />
       <Disciplines />
-      <TheTeam />
+      <TheTeam billetCards={Leadership} />
       <GetInvolved />
     </ContentContainerBody>
   );

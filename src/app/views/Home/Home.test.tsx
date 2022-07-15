@@ -3,7 +3,7 @@ import { render, RenderResult, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import Home from "./Home";
 import { ThemeProvider } from "styled-components";
-import { darkTheme } from "../../global/themes/DarkTheme";
+import { darkTheme } from "../../constants/themes/DarkTheme";
 
 describe("<Home />", () => {
   let container: RenderResult;

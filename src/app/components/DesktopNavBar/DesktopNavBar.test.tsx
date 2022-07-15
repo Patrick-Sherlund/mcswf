@@ -2,7 +2,7 @@ import React from "react";
 import { render, RenderResult } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import DesktopNavBar from "./DesktopNavBar";
-import { PageName } from "../../global/enums/global";
+import { PageName } from "../../constants/enums/global";
 
 describe("<DesktopNavBar />", () => {
   let container: RenderResult;

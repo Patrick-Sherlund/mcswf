@@ -9,7 +9,7 @@ import {
 } from "./SideNav.styles";
 import MenuItem from "./MenuItem/MenuItem";
 import logo from "../../../../assets/logo.webp";
-import { PageName } from "../../../global/enums/global";
+import { PageName } from "../../../constants/enums/global";
 import { Variants } from "framer-motion";
 
 interface SideNav {

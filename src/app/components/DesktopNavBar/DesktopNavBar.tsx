@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { PageName } from "../../global/enums/global";
+import { PageName } from "../../constants/enums/global";
 import logo from "../../../assets/logo.webp";
 import {
   Logo,
