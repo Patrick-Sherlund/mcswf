@@ -14,7 +14,7 @@ import {
 import StatusBar from "../StatusBar/StatusBar";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import { Moon, Sun } from "../ToggleSwitch/ToggleSwitch.styles";
-import { getStatusPercentageFromPageName } from "../../utils/Global";
+import { getStatusPercentageFromPageName } from "../../utils/helpers/ViewHelperFunctions";
 
 interface NavBarProps {
   themeEventHandler: () => void;

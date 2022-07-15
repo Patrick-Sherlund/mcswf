@@ -1,4 +1,4 @@
-import { PageName } from "../constants/enums/global";
+import { PageName } from "../../constants/enums/global";
 
 export const getStatusPercentageFromPageName = (pageName: PageName) => {
   return (

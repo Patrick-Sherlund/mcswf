@@ -9,7 +9,7 @@ import { PageName } from "../../constants/enums/global";
 import { AnimationControls } from "framer-motion";
 import StatusBar from "../StatusBar/StatusBar";
 import logo from "../../../assets/logo.webp";
-import { getStatusPercentageFromPageName } from "../../utils/Global";
+import { getStatusPercentageFromPageName } from "../../utils/helpers/ViewHelperFunctions";
 
 interface MobileNavBarProps {
   currentPage: PageName;
