@@ -1,21 +1,11 @@
 import React, { FC, useState } from "react";
-import {
-  TheTeamContainer,
-  TeamCard,
-  TeamContent,
-  InnerCard,
-  TeamPhoto,
-  Title,
-  BilletContainer,
-  Divider,
-  Billet,
-  LeadershipCount,
-} from "./TheTeam.styles";
+import { TheTeamContainer, TeamContent } from "./TheTeam.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
 import { ContactCard } from "../../models/interfaces/ContactCard";
+import LeadershipCard from "../../components/LeadershipCard/LeadershipCard";
 
 interface TeamProps {
   billetCards: ContactCard[];
@@ -44,25 +34,19 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
           }
         >
           {billetCards.map((billetCard, index) => {
+            const correctedIndex: number = index + 0.0001;
+            const statusPercentage: number =
+              correctedIndex / (billetCards.length - 1);
             return (
               <SwiperSlide key={"swiper-" + index}>
-                <TeamCard>
-                  <InnerCard>
-                    <TeamPhoto src={billetCard.photo} />
-                    <Title>{billetCard.title}</Title>
-                    <BilletContainer>
-                      <Divider />
-                      <Billet>{billetCard.billet}</Billet>
-                    </BilletContainer>
-                  </InnerCard>
-                </TeamCard>
+                <LeadershipCard
+                  statusPercentage={statusPercentage}
+                  billetCard={billetCard}
+                />
               </SwiperSlide>
             );
           })}
         </Swiper>
-        <LeadershipCount>{`${currentIndex + 1} of ${
-          billetCards.length
-        }`}</LeadershipCount>
       </TeamContent>
     </TheTeamContainer>
   );

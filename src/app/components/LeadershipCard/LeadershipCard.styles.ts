@@ -1,0 +1,69 @@
+import styled from "styled-components";
+import { motion } from "framer-motion";
+
+export const TeamCard = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: max-content;
+  background-color: #3e3e3e;
+  border: 0.5px solid #7e7e7e;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 0.4rem 0 0 0;
+`;
+
+export const InnerCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  height: 95%;
+  width: 95%;
+  margin: auto;
+  padding-bottom: 1rem;
+`;
+
+export const TeamPhoto = styled.img`
+  width: 95%;
+  height: fit-content;
+  margin: 0.4rem auto 0 auto;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+`;
+
+export const Title = styled.h2`
+  width: 95%;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0.5rem auto 0;
+`;
+
+export const BilletContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0.5rem auto 0;
+  align-items: center;
+`;
+
+export const Divider = styled.div`
+  width: 15px;
+  height: 0px;
+  background-color: #c20000;
+  border: 1px solid #c20000;
+  transform: rotate(90deg);
+`;
+
+export const Billet = styled.h3`
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin: 0;
+`;
+
+export const BarContainer = styled.div`
+  width: 100%;
+  padding: 0.2rem 0 0.1rem;
+`;

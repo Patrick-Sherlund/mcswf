@@ -9,6 +9,7 @@ import { PageName } from "../../constants/enums/global";
 import { AnimationControls } from "framer-motion";
 import StatusBar from "../StatusBar/StatusBar";
 import logo from "../../../assets/logo.webp";
+import { getStatusPercentageFromPageName } from "../../utils/Global";
 
 interface MobileNavBarProps {
   currentPage: PageName;
@@ -38,7 +39,9 @@ const MobileNavBar: FC<MobileNavBarProps> = (
         {currentPage}
         <MobileNavBorder />
       </MobileNavPageName>
-      <StatusBar pageName={currentPage} />
+      <StatusBar
+        statusPercentage={getStatusPercentageFromPageName(currentPage)}
+      />
     </MobileNavBarContainer>
   );
 };

@@ -6,7 +6,7 @@ import { PageName } from "../../constants/enums/global";
 
 describe("<StatusBar />", () => {
   test("it should mount", () => {
-    render(<StatusBar pageName={PageName.GET_INVOLVED} />);
+    render(<StatusBar statusPercentage={1} />);
 
     const statusBar = screen.getByTestId("StatusBar");
 

@@ -14,6 +14,7 @@ import {
 import StatusBar from "../StatusBar/StatusBar";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import { Moon, Sun } from "../ToggleSwitch/ToggleSwitch.styles";
+import { getStatusPercentageFromPageName } from "../../utils/Global";
 
 interface NavBarProps {
   themeEventHandler: () => void;
@@ -88,7 +89,9 @@ const DesktopNavBar: FC<NavBarProps> = React.memo(function NavBar({
           <Sun />
         </ToggleSwitch>
       </NavBarContainer>
-      <StatusBar pageName={selectedPageName} />
+      <StatusBar
+        statusPercentage={getStatusPercentageFromPageName(selectedPageName)}
+      />
     </DesktopNavBarBody>
   );
 });
