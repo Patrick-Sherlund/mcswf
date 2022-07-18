@@ -9,9 +9,10 @@ import SideMenu from "./components/SideMenu/SideMenu";
 import { PageName } from "./constants/enums/global";
 import { useCycle } from "framer-motion";
 import ContentContainer from "./components/ContentContainer/ContentContainer";
+import { marinesBlueTheme } from "./constants/themes/MarinesBlueTheme";
 
 function App() {
-  const [theme, cycleTheme] = useCycle(darkTheme, lightTheme);
+  const [theme, cycleTheme] = useCycle(darkTheme, marinesBlueTheme);
   const [selectedPageName, setSelectedPageName] = useState(PageName.HOME);
 
   return (

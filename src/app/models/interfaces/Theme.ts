@@ -3,6 +3,7 @@ export interface Theme {
   backgroundImage: string;
   textColor: string;
   inactiveTextColor: string;
+  borderRed: string;
   socials: {
     facebook: string;
     instagram: string;

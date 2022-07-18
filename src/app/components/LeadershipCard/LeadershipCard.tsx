@@ -66,6 +66,12 @@ const LeadershipCard: FC<LeadershipCardProps> = (
   leadershipCardProps: LeadershipCardProps
 ) => {
   const [isFlipped, toggleFlip] = useCycle(false, true);
+  const leadershipPhoto: string = leadershipCardProps.billetCard.photo;
+  const title: string = leadershipCardProps.billetCard.title;
+  const billet: string = leadershipCardProps.billetCard.billet;
+  const bio: string = leadershipCardProps.billetCard.bio;
+  const statusPercentage: number | undefined =
+    leadershipCardProps.statusPercentage;
 
   return (
     <TeamCard
@@ -77,11 +83,11 @@ const LeadershipCard: FC<LeadershipCardProps> = (
           variants={cardDisplayVariants}
           animate={isFlipped ? "hidden" : "shown"}
         >
-          <TeamPhoto src={leadershipCardProps.billetCard.photo} />
-          <Title>{leadershipCardProps.billetCard.title}</Title>
+          <TeamPhoto src={leadershipPhoto} />
+          <Title>{title}</Title>
           <BilletContainer>
             <Divider />
-            <Billet>{leadershipCardProps.billetCard.billet}</Billet>
+            <Billet>{billet}</Billet>
           </BilletContainer>
         </FrontCardContent>
         <BackCardContent
@@ -90,16 +96,16 @@ const LeadershipCard: FC<LeadershipCardProps> = (
           initial={{ opacity: 0 }}
         >
           <AboutTitle>
-            {leadershipCardProps.billetCard.billet}
+            {billet}
             <AboutTitleUnderline />
           </AboutTitle>
-          <AboutBody>{leadershipCardProps.billetCard.bio}</AboutBody>
+          <AboutBody>{bio}</AboutBody>
         </BackCardContent>
         <Information onClick={() => toggleFlip()} />
       </InnerCard>
-      {leadershipCardProps.statusPercentage && (
+      {statusPercentage && (
         <BarContainer>
-          <StatusBar statusPercentage={leadershipCardProps.statusPercentage} />
+          <StatusBar statusPercentage={statusPercentage} />
         </BarContainer>
       )}
     </TeamCard>

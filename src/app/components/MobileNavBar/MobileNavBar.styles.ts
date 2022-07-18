@@ -40,7 +40,7 @@ export const MobileNavPageName = styled.div`
 export const MobileNavBorder = styled.div`
   margin-top: 0.25rem;
   margin-left: -0.25rem;
-  border-bottom: 0.063rem solid #c20000;
+  border-bottom: 0.063rem solid ${(props) => props.theme.borderRed};
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
   width: calc(100% + 0.5rem);
 `;

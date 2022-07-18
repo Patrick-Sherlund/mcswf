@@ -53,8 +53,8 @@ export const BilletContainer = styled.div`
 export const Divider = styled.div`
   width: 15px;
   height: 0px;
-  background-color: #c20000;
-  border: 1px solid #c20000;
+  background-color: ${(props) => props.theme.borderRed};
+  border: 1px solid ${(props) => props.theme.borderRed};
   transform: rotate(90deg);
 `;
 
@@ -124,7 +124,7 @@ export const AboutBody = styled.div`
 export const AboutTitleUnderline = styled.div`
   margin-top: 0.25rem;
   margin-left: -0.25rem;
-  border-bottom: 0.063rem solid #c20000;
+  border-bottom: 0.063rem solid ${(props) => props.theme.borderRed};
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
   width: calc(100% + 0.5rem);
 `;

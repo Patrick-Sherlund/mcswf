@@ -48,7 +48,7 @@ export const SelectedItemText = styled(InactiveItemText)`
 export const MiniDivider = styled(motion.div)`
   height: 1.8rem;
   width: 0.11rem;
-  background-color: #c20000;
+  background-color: ${(props) => props.theme.borderRed};
   transition: width 500ms, height 500ms;
   margin-left: 2.8rem;
 `;

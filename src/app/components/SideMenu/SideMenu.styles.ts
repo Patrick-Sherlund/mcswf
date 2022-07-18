@@ -32,7 +32,7 @@ export const NavMenuBody = styled(motion.div)`
   max-width: 18.75rem;
   min-width: 16rem;
   background: ${(props) => props.theme.navMenu.backgroundColor};
-  border-right: 1px solid ${(props) => props.theme.navMenu.borderColor};
+  border-right: 1.5px solid ${(props) => props.theme.navMenu.borderColor};
   box-shadow: inset -4px 4px 8px rgba(0, 0, 0, 0.25);
   z-index: 22;
 `;

@@ -138,7 +138,7 @@ export const TitleTop = styled(StyledH2)`
 export const Divider = styled(motion.div)`
   height: 10rem;
   width: 0.15rem;
-  background-color: #c20000;
+  background-color: ${(props) => props.theme.borderRed};
   transition: width 500ms, height 500ms;
 
   @media screen and (max-width: 1315px) {

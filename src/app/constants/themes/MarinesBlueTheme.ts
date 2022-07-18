@@ -7,36 +7,36 @@ import twitterSvgDark from "../../../assets/svg/dark/twitter.svg";
 import youtubeSvgDark from "../../../assets/svg/dark/youtube.svg";
 import information from "../../../assets/svg/dark/information.svg";
 
-export const darkTheme: Theme = {
-  backgroundColor: "#181818",
-  backgroundImage: backgroundDark,
-  textColor: "#EDEDED",
-  inactiveTextColor: "#CFCFCF",
-  borderRed: "#C20000",
+export const marinesBlueTheme: Theme = {
+  backgroundColor: "#252933",
+  backgroundImage: "none",
+  textColor: "#FFFFFF",
+  inactiveTextColor: "#8d8d8d",
+  borderRed: "#B00D25",
   socials: {
     facebook: facebookSvgDark,
     instagram: instagramSvgDark,
     linkedin: linkedinSvgDark,
     twitter: twitterSvgDark,
     youtube: youtubeSvgDark,
-    backgroundColor: "#3E3E3E",
-    hoverBackgroundColor: "#4c4c4c",
-    borderColor: "#7D7D7D",
-    hoverBorderColor: "#8d8d8d",
+    backgroundColor: "#52555c",
+    hoverBackgroundColor: "#5c5f66",
+    borderColor: "#FFFFFF",
+    hoverBorderColor: "#FFFFFF",
   },
   navBar: {
-    backgroundColor: "#262626",
+    backgroundColor: "#000013",
     statusBar: {
-      backgroundColor: "#3E3E3E",
+      backgroundColor: "#191C22",
     },
   },
   navMenu: {
-    backgroundColor: "#2D2D2D",
-    borderColor: "#505050",
-    blurColor: "#2C2C2C7A",
-    selectedItemBackgroundColor: "#505050",
-    inactiveTextColor: "#c7c7c7",
-    menuSvgColor: "#EAEAEA",
+    backgroundColor: "#000013",
+    borderColor: "#B00D25",
+    blurColor: "#0000137A",
+    selectedItemBackgroundColor: "#262634",
+    inactiveTextColor: "#8d8d8d",
+    menuSvgColor: "#FFFFFF",
   },
   leadership: {
     infoButton: information,

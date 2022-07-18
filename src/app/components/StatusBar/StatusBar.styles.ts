@@ -26,10 +26,10 @@ export const StatusBarEmpty = styled(StatusBarOutline)`
       background-color: #dadada;
     }
     ::-moz-progress-bar {
-      background-color: #c20000;
+      background-color: ${(props) => props.theme.borderRed};
     }
     ::-webkit-progress-value {
-      background-color: #c20000;
+      background-color: ${(props) => props.theme.borderRed};
       -webkit-transition: width 0.2s ease;
       -moz-transition: width 0.2s ease;
       -o-transition: width 0.2s ease;

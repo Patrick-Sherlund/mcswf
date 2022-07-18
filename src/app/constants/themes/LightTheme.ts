@@ -12,6 +12,7 @@ export const lightTheme: Theme = {
   backgroundImage: backgroundLight,
   textColor: "#2E333F",
   inactiveTextColor: "#555353",
+  borderRed: "#C20000",
   socials: {
     facebook: facebookSvgLight,
     instagram: instagramSvgLight,
