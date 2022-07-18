@@ -11,6 +11,7 @@ describe("<LeadershipCard />", () => {
         billetCard={{
           title: "",
           billet: "",
+          bio: "",
           photo: "",
           email: "",
         }}

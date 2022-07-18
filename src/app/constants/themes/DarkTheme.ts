@@ -5,6 +5,7 @@ import instagramSvgDark from "../../../assets/svg/dark/instagram.svg";
 import linkedinSvgDark from "../../../assets/svg/dark/linkedin.svg";
 import twitterSvgDark from "../../../assets/svg/dark/twitter.svg";
 import youtubeSvgDark from "../../../assets/svg/dark/youtube.svg";
+import information from "../../../assets/svg/dark/information.svg";
 
 export const darkTheme: Theme = {
   backgroundColor: "#181818",
@@ -35,5 +36,8 @@ export const darkTheme: Theme = {
     selectedItemBackgroundColor: "#505050",
     inactiveTextColor: "#bfbfbf",
     menuSvgColor: "#EAEAEA",
+  },
+  leadership: {
+    infoButton: information,
   },
 };

@@ -28,4 +28,7 @@ export interface Theme {
     inactiveTextColor: string;
     menuSvgColor: string;
   };
+  leadership: {
+    infoButton: string;
+  };
 }

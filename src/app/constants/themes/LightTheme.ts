@@ -5,6 +5,7 @@ import instagramSvgLight from "../../../assets/svg/light/instagram.svg";
 import linkedinSvgLight from "../../../assets/svg/light/linkedin.svg";
 import twitterSvgLight from "../../../assets/svg/light/twitter.svg";
 import youtubeSvgLight from "../../../assets/svg/light/youtube.svg";
+import information from "../../../assets/svg/light/information.svg";
 
 export const lightTheme: Theme = {
   backgroundColor: "#c6c6c6",
@@ -35,5 +36,8 @@ export const lightTheme: Theme = {
     selectedItemBackgroundColor: "#e0e0e0",
     inactiveTextColor: "#3c404e",
     menuSvgColor: "#2E333F",
+  },
+  leadership: {
+    infoButton: information,
   },
 };

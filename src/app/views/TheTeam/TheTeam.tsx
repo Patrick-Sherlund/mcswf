@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { TheTeamContainer, TeamContent } from "./TheTeam.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -12,7 +12,6 @@ interface TeamProps {
 }
 
 const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const billetCards: ContactCard[] = teamProps.billetCards;
   const cardEffect = "cards";
 
@@ -26,13 +25,7 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
       id={"The-Team"}
     >
       <TeamContent>
-        <Swiper
-          effect={cardEffect}
-          modules={[EffectCards]}
-          onSlideChange={(direction) =>
-            setCurrentIndex(() => direction.activeIndex)
-          }
-        >
+        <Swiper effect={cardEffect} modules={[EffectCards]}>
           {billetCards.map((billetCard, index) => {
             const correctedIndex: number = index + 0.0001;
             const statusPercentage: number =

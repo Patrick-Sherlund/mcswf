@@ -307,7 +307,7 @@ export const SocialGroup = styled(motion.div)`
   align-content: space-evenly;
 `;
 
-const SocialButton = styled(motion.div)`
+export const SocialButton = styled(motion.div)`
   height: 4.25rem;
   width: 4.25rem;
   margin: 0 0.4rem;
