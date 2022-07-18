@@ -12,7 +12,7 @@ import ContentContainer from "./components/ContentContainer/ContentContainer";
 import { marinesBlueTheme } from "./constants/themes/MarinesBlueTheme";
 
 function App() {
-  const [theme, cycleTheme] = useCycle(darkTheme, marinesBlueTheme);
+  const [theme, cycleTheme] = useCycle(darkTheme, lightTheme, marinesBlueTheme);
   const [selectedPageName, setSelectedPageName] = useState(PageName.HOME);
 
   return (

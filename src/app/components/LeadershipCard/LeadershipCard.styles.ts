@@ -1,30 +1,49 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { screenMediaQuery } from "../../../index.styles";
 
 export const TeamCard = styled(motion.div)`
+  max-width: 20.375rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
   height: max-content;
-  background-color: #3e3e3e;
-  border: 0.5px solid #7e7e7e;
+  background-color: ${(props) =>
+    props.theme.leadership.cards.outer.backgroundColor};
+  border: 0.5px solid
+    ${(props) => props.theme.leadership.cards.outer.borderColor};
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-  transform-style: preserve-3d;
   border-radius: 5px;
-  padding: 0.4rem 0 0 0;
+  padding: 0.4rem 0 0.3rem 0;
+  justify-content: space-around;
+  flex: 1;
+  margin: 1rem 0 0 1rem;
+
+  @media ${screenMediaQuery.mobilePortrait} {
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    margin: 0;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    flex-basis: unset;
+    margin: 0;
+  }
 `;
 
 export const InnerCard = styled.div`
   display: flex;
   flex-direction: column;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-  background-color: #212121;
-  border-radius: 5px;
+  background-color: ${(props) =>
+    props.theme.leadership.cards.inner.backgroundColor};
+  border-radius: 5px 5px 0px 0px;
   padding-bottom: 0.5rem;
   height: 95%;
   max-height: 95%;
   width: 95%;
+  transform-style: preserve-3d;
 `;
 
 export const TeamPhoto = styled.img`
@@ -39,7 +58,32 @@ export const Title = styled.h2`
   width: 95%;
   font-weight: 600;
   font-size: 1.1rem;
+  color: ${(props) => props.theme.leadership.cards.inner.front.textColor};
   margin: 0.5rem auto 0;
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 0.9rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    font-size: 0.8rem;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+    font-size: 0.75rem;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+    font-size: 0.7rem;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+    font-size: 0.7rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    font-size: 0.6rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    font-size: 0.6rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    font-size: 0.6rem;
+  }
 `;
 
 export const BilletContainer = styled.div`
@@ -61,12 +105,38 @@ export const Divider = styled.div`
 export const Billet = styled.h3`
   font-weight: lighter;
   font-size: 0.9rem;
+  color: ${(props) => props.theme.leadership.cards.inner.front.textColor};
   margin: 0;
+
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 0.7rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    font-size: 0.7rem;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+    font-size: 0.7rem;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+    font-size: 0.65rem;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+    font-size: 0.65rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    font-size: 0.6rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    font-size: 0.6rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    font-size: 0.6rem;
+  }
 `;
 
 export const BarContainer = styled.div`
-  width: 95%;
-  padding: 0.2rem 0 0.1rem;
+  width: 94.5%;
+  padding: 0 0 0.1rem;
 `;
 
 export const Information = styled.button`
@@ -77,7 +147,8 @@ export const Information = styled.button`
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: width 500ms, height 500ms;
-  background-image: url(${(prop) => prop.theme.leadership.infoButton});
+  background-image: url(${(prop) =>
+    prop.theme.leadership.cards.inner.infoButton});
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 2.2rem;
@@ -85,6 +156,45 @@ export const Information = styled.button`
   border: none;
   align-self: flex-end;
   z-index: 2;
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin: 0 0.3rem 0 0.4rem;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 0 0.3rem 0 0.4rem;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 0 0.3rem 0 0.4rem;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 0 0.3rem 0 0.4rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 0 0.3rem 0 0.4rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 0 0.3rem 0 0.4rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin: 0 0.3rem 0 0.4rem;
+  }
 `;
 
 export const FrontCardContent = styled(motion.div)`
@@ -104,6 +214,7 @@ export const BackCardContent = styled(motion.div)`
 `;
 
 export const AboutTitle = styled(Title)`
+  color: ${(props) => props.theme.leadership.cards.inner.back.textColor};
   margin-bottom: 1rem;
   width: max-content;
 `;
@@ -112,10 +223,11 @@ export const AboutBody = styled.div`
   margin: 0 auto;
   position: relative;
   font-size: 0.85rem;
-  color: black;
+  color: ${(props) => props.theme.leadership.cards.inner.back.about.textColor};
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  background-color: #eaeaea;
+  background-color: ${(props) =>
+    props.theme.leadership.cards.inner.back.about.backgroundColor};
   padding: 0.5rem;
   overflow-y: scroll;
   height: 100%;

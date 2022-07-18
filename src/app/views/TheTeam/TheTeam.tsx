@@ -1,5 +1,11 @@
 import React, { FC } from "react";
-import { TheTeamContainer, TeamContent } from "./TheTeam.styles";
+import {
+  TheTeamContainer,
+  MobileTeamContent,
+  DesktopTeamContent,
+  LeadershipRowTop,
+  LeadershipRowBottom,
+} from "./TheTeam.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +18,15 @@ interface TeamProps {
 }
 
 const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
-  const billetCards: ContactCard[] = teamProps.billetCards;
+  const countLeadershipTopRow = 4;
+  const contractCardsTop: ContactCard[] = teamProps.billetCards.slice(
+    0,
+    countLeadershipTopRow
+  );
+  const contractCardsBottom: ContactCard[] = teamProps.billetCards.slice(
+    countLeadershipTopRow,
+    teamProps.billetCards.length
+  );
   const cardEffect = "cards";
 
   return (
@@ -24,14 +38,14 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
       data-testid="TheTeam"
       id={"The-Team"}
     >
-      <TeamContent>
+      <MobileTeamContent>
         <Swiper effect={cardEffect} modules={[EffectCards]}>
-          {billetCards.map((billetCard, index) => {
+          {contractCardsTop.map((billetCard, index) => {
             const correctedIndex: number = index + 0.0001;
             const statusPercentage: number =
-              correctedIndex / (billetCards.length - 1);
+              correctedIndex / (contractCardsTop.length - 1);
             return (
-              <SwiperSlide key={"swiper-" + index}>
+              <SwiperSlide key={`swiper-mobile-${index}`}>
                 <LeadershipCard
                   statusPercentage={statusPercentage}
                   billetCard={billetCard}
@@ -40,7 +54,29 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
             );
           })}
         </Swiper>
-      </TeamContent>
+      </MobileTeamContent>
+      <DesktopTeamContent>
+        <LeadershipRowTop>
+          {contractCardsTop.map((billetCard, index) => {
+            return (
+              <LeadershipCard
+                key={`leadership-desktop-top-${index}`}
+                billetCard={billetCard}
+              />
+            );
+          })}
+        </LeadershipRowTop>
+        <LeadershipRowBottom>
+          {contractCardsBottom.map((billetCard, index) => {
+            return (
+              <LeadershipCard
+                key={`leadership-desktop-bottom-${index}`}
+                billetCard={billetCard}
+              />
+            );
+          })}
+        </LeadershipRowBottom>
+      </DesktopTeamContent>
     </TheTeamContainer>
   );
 };

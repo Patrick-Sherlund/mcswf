@@ -6,6 +6,7 @@ import linkedinSvgLight from "../../../assets/svg/light/linkedin.svg";
 import twitterSvgLight from "../../../assets/svg/light/twitter.svg";
 import youtubeSvgLight from "../../../assets/svg/light/youtube.svg";
 import information from "../../../assets/svg/light/information.svg";
+import navigationArrow from "../../../assets/svg/red-arrow-marines.svg";
 
 export const lightTheme: Theme = {
   backgroundColor: "#c6c6c6",
@@ -13,6 +14,7 @@ export const lightTheme: Theme = {
   textColor: "#2E333F",
   inactiveTextColor: "#555353",
   borderRed: "#C20000",
+  navigationArrow: navigationArrow,
   socials: {
     facebook: facebookSvgLight,
     instagram: instagramSvgLight,
@@ -31,6 +33,10 @@ export const lightTheme: Theme = {
     },
   },
   navMenu: {
+    header: {
+      backgroundImage: backgroundLight,
+      backgroundColor: "#EAEAEA",
+    },
     backgroundColor: "#EAEAEA",
     borderColor: "#d9d9d9",
     blurColor: "#8d8d8d7A",
@@ -39,6 +45,25 @@ export const lightTheme: Theme = {
     menuSvgColor: "#2E333F",
   },
   leadership: {
-    infoButton: information,
+    cards: {
+      inner: {
+        backgroundColor: "#e0e0e0",
+        infoButton: information,
+        front: {
+          textColor: "#2E333F",
+        },
+        back: {
+          titleColor: "#2E333F",
+          about: {
+            textColor: "#2E333F",
+            backgroundColor: "#EAEAEA",
+          },
+        },
+      },
+      outer: {
+        backgroundColor: "#eaeaea",
+        borderColor: "#c9cbce",
+      },
+    },
   },
 };

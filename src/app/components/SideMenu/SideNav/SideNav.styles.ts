@@ -31,7 +31,9 @@ export const NavMenuHeader = styled(motion.div)`
   display: flex;
   flex-direction: row;
   padding: 0.5rem 0rem 1rem 0;
-  background-image: url("${(props) => props.theme.backgroundImage}");
+  background-image: url("${(props) =>
+    props.theme.navMenu.header.backgroundImage}");
+  background-color: ${(props) => props.theme.navMenu.header.backgroundColor};
   background-size: cover;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.35));
 `;

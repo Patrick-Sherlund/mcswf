@@ -4,6 +4,7 @@ export interface Theme {
   textColor: string;
   inactiveTextColor: string;
   borderRed: string;
+  navigationArrow: string;
   socials: {
     facebook: string;
     instagram: string;
@@ -22,6 +23,10 @@ export interface Theme {
     };
   };
   navMenu: {
+    header: {
+      backgroundImage: string;
+      backgroundColor: string;
+    };
     backgroundColor: string;
     borderColor: string;
     blurColor: string;
@@ -30,6 +35,25 @@ export interface Theme {
     menuSvgColor: string;
   };
   leadership: {
-    infoButton: string;
+    cards: {
+      inner: {
+        backgroundColor: string;
+        infoButton: string;
+        front: {
+          textColor: string;
+        };
+        back: {
+          titleColor: string;
+          about: {
+            textColor: string;
+            backgroundColor: string;
+          };
+        };
+      };
+      outer: {
+        backgroundColor: string;
+        borderColor: string;
+      };
+    };
   };
 }

@@ -1,6 +1,5 @@
 import styled from "styled-components/macro";
 import { motion } from "framer-motion";
-import navigationArrow from "../assets/svg/red-arrow.svg";
 import { screenMediaQuery } from "../index.styles";
 
 export const AppContainer = styled.div`
@@ -21,7 +20,7 @@ export const NavigationArrow = styled(motion.div)`
   width: 10rem;
   margin: 8% auto 0;
   cursor: pointer;
-  background-image: url(${navigationArrow});
+  background-image: url(${(props) => props.theme.navigationArrow});
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: width 500ms, height 500ms, margin 500ms;

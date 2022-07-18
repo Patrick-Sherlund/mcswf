@@ -19,6 +19,7 @@ export const MobileNavBarContainer = styled(motion.div)`
   box-shadow: inset -4px 4px 8px rgba(0, 0, 0, 0.25);
   position: fixed;
   display: none;
+  top: 0;
   z-index: 20;
 
   @media ${screenMediaQuery.mobilePortrait} {
