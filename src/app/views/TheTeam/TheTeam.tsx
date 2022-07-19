@@ -14,20 +14,21 @@ import { ContactCard } from "../../models/interfaces/ContactCard";
 import LeadershipCard from "../../components/LeadershipCard/LeadershipCard";
 
 interface TeamProps {
-  billetCards: ContactCard[];
+  contactCards: ContactCard[];
 }
 
 const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
-  const countLeadershipTopRow = 4;
-  const contractCardsTop: ContactCard[] = teamProps.billetCards.slice(
-    0,
-    countLeadershipTopRow
-  );
-  const contractCardsBottom: ContactCard[] = teamProps.billetCards.slice(
-    countLeadershipTopRow,
-    teamProps.billetCards.length
-  );
+  const topRowDisplayCount = 4;
   const cardEffect = "cards";
+  const contactCards: ContactCard[] = teamProps.contactCards;
+  const contractCardsTop: ContactCard[] = contactCards.slice(
+    0,
+    topRowDisplayCount
+  );
+  const contractCardsBottom: ContactCard[] = contactCards.slice(
+    topRowDisplayCount,
+    teamProps.contactCards.length
+  );
 
   return (
     <TheTeamContainer
@@ -40,10 +41,10 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
     >
       <MobileTeamContent>
         <Swiper effect={cardEffect} modules={[EffectCards]}>
-          {contractCardsTop.map((billetCard, index) => {
+          {contactCards.map((billetCard, index) => {
             const correctedIndex: number = index + 0.0001;
             const statusPercentage: number =
-              correctedIndex / (contractCardsTop.length - 1);
+              correctedIndex / (contactCards.length - 1);
             return (
               <SwiperSlide key={`swiper-mobile-${index}`}>
                 <LeadershipCard

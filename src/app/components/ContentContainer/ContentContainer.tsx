@@ -38,7 +38,7 @@ const ContentContainer: FC<ContentContainerProps> = (
       <Home elementRef={elementRef} />
       <LearnMore />
       <Disciplines />
-      <TheTeam billetCards={Leadership} />
+      <TheTeam contactCards={Leadership} />
       <GetInvolved />
     </ContentContainerBody>
   );

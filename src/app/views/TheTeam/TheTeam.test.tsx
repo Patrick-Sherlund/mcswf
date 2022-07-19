@@ -6,7 +6,7 @@ import { Leadership } from "../../constants/data/leadership";
 
 describe("<TheTeam />", () => {
   test("it should mount", () => {
-    render(<TheTeam billetCards={Leadership} />);
+    render(<TheTeam contactCards={Leadership} />);
 
     const theTeam = screen.getByTestId("TheTeam");
 
