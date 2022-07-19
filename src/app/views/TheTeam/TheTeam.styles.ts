@@ -24,6 +24,15 @@ export const LeadershipTitle = styled.h2`
   font-weight: 600;
   text-align: center;
   margin: 0 0 0.5rem;
+
+  @media ${screenMediaQuery.mobilePortrait} {
+    margin: 1rem 0 0.5rem;
+    font-size: 2.25rem;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+    margin: 1rem 0 0.5rem;
+    font-size: 2.25rem;
+  }
 `;
 
 export const MobileTeamContent = styled.div`
