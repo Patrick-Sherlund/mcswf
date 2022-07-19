@@ -13,6 +13,22 @@ export const AppContainer = styled.div`
   font-family: DINNextLTPro, Inter, Segoe UI, sans-serif;
   transition: background 0.5s;
   overflow-x: hidden;
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border: 1px solid #4d4d5b;
+    background-color: #11171a;
+    border-radius: 10px;
+  }
 `;
 
 export const NavigationArrow = styled(motion.div)`

@@ -1,5 +1,6 @@
 import { Theme } from "../../models/interfaces/Theme";
 import backgroundDark from "../../../assets/background-dark.webp";
+import headerBackgroundDark from "../../../assets/header-banner-dark.webp";
 import facebookSvgDark from "../../../assets/svg/dark/facebook.svg";
 import instagramSvgDark from "../../../assets/svg/dark/instagram.svg";
 import linkedinSvgDark from "../../../assets/svg/dark/linkedin.svg";
@@ -34,7 +35,7 @@ export const darkTheme: Theme = {
   },
   navMenu: {
     header: {
-      backgroundImage: backgroundDark,
+      backgroundImage: headerBackgroundDark,
       backgroundColor: "#2D2D2D",
     },
     backgroundColor: "#2D2D2D",

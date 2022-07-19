@@ -11,11 +11,11 @@ export const GetInvolvedContainer = styled(motion.div)`
   flex-direction: row;
 
   @media ${screenMediaQuery.mobilePortrait} {
-    margin-top: 10rem;
+    padding-top: 6rem !important;
     padding-top: 0;
   }
   @media ${screenMediaQuery.mobileLandscape} {
-    margin-top: 10rem;
+    padding-top: 7rem !important;
     padding-top: 0;
   }
 `;

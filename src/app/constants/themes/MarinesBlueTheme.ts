@@ -1,4 +1,6 @@
 import { Theme } from "../../models/interfaces/Theme";
+import headerBackgroundMarinesBlue from "../../../assets/header-banner-marines-blue.webp";
+import backgroundMarinesBlue from "../../../assets/marines-blue-background.webp";
 import facebookSvgDark from "../../../assets/svg/dark/facebook.svg";
 import instagramSvgDark from "../../../assets/svg/dark/instagram.svg";
 import linkedinSvgDark from "../../../assets/svg/dark/linkedin.svg";
@@ -9,7 +11,7 @@ import navigationArrow from "../../../assets/svg/red-arrow-marines.svg";
 
 export const marinesBlueTheme: Theme = {
   backgroundColor: "#252933",
-  backgroundImage: "none",
+  backgroundImage: backgroundMarinesBlue,
   textColor: "#FFFFFF",
   inactiveTextColor: "#afafaf",
   borderRed: "#B00D25",
@@ -33,7 +35,7 @@ export const marinesBlueTheme: Theme = {
   },
   navMenu: {
     header: {
-      backgroundImage: "none",
+      backgroundImage: headerBackgroundMarinesBlue,
       backgroundColor: "#262634",
     },
     backgroundColor: "#000013",

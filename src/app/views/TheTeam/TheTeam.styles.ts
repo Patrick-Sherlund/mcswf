@@ -10,13 +10,20 @@ export const TheTeamContainer = styled(motion.div)`
   flex-direction: column;
 
   @media ${screenMediaQuery.mobilePortrait} {
-    padding-top: 7rem !important;
+    padding-top: 6rem !important;
     padding-top: 0;
   }
   @media ${screenMediaQuery.mobileLandscape} {
     padding-top: 7rem !important;
     padding-top: 0;
   }
+`;
+
+export const LeadershipTitle = styled.h2`
+  font-size: 3.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 0.5rem;
 `;
 
 export const MobileTeamContent = styled.div`
@@ -77,4 +84,8 @@ export const LeadershipRowBottom = styled(motion.div)`
   max-width: 80vw;
   margin: auto;
   padding: 0 2rem;
+`;
+
+export const BottomCardContainer = styled.div`
+  max-width: 14.375rem;
 `;

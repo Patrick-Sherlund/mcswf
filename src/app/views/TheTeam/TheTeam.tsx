@@ -5,6 +5,8 @@ import {
   DesktopTeamContent,
   LeadershipRowTop,
   LeadershipRowBottom,
+  BottomCardContainer,
+  LeadershipTitle,
 } from "./TheTeam.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -21,11 +23,11 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
   const topRowDisplayCount = 4;
   const cardEffect = "cards";
   const contactCards: ContactCard[] = teamProps.contactCards;
-  const contractCardsTop: ContactCard[] = contactCards.slice(
+  const contactCardsTop: ContactCard[] = contactCards.slice(
     0,
     topRowDisplayCount
   );
-  const contractCardsBottom: ContactCard[] = contactCards.slice(
+  const contactCardsBottom: ContactCard[] = contactCards.slice(
     topRowDisplayCount,
     teamProps.contactCards.length
   );
@@ -39,6 +41,7 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
       data-testid="TheTeam"
       id={"The-Team"}
     >
+      <LeadershipTitle>Leadership</LeadershipTitle>
       <MobileTeamContent>
         <Swiper effect={cardEffect} modules={[EffectCards]}>
           {contactCards.map((billetCard, index) => {
@@ -58,7 +61,7 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
       </MobileTeamContent>
       <DesktopTeamContent>
         <LeadershipRowTop>
-          {contractCardsTop.map((billetCard, index) => {
+          {contactCardsTop.map((billetCard, index) => {
             return (
               <LeadershipCard
                 key={`leadership-desktop-top-${index}`}
@@ -68,12 +71,11 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
           })}
         </LeadershipRowTop>
         <LeadershipRowBottom>
-          {contractCardsBottom.map((billetCard, index) => {
+          {contactCardsBottom.map((billetCard, index) => {
             return (
-              <LeadershipCard
-                key={`leadership-desktop-bottom-${index}`}
-                billetCard={billetCard}
-              />
+              <BottomCardContainer key={`leadership-desktop-bottom-${index}`}>
+                <LeadershipCard billetCard={billetCard} />
+              </BottomCardContainer>
             );
           })}
         </LeadershipRowBottom>

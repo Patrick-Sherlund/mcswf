@@ -231,6 +231,30 @@ export const AboutBody = styled.div`
   padding: 0.5rem;
   overflow-y: scroll;
   height: 100%;
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 0.85rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    font-size: 0.7rem;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+    font-size: 0.6rem;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+    font-size: 0.5rem;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+    font-size: 0.6rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    font-size: 0.6rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    font-size: 0.55rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    font-size: 0.55rem;
+  }
 `;
 
 export const AboutTitleUnderline = styled.div`

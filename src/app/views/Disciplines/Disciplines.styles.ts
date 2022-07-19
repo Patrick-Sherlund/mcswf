@@ -11,11 +11,11 @@ export const DisciplinesContainer = styled(motion.div)`
   margin: 0 auto;
 
   @media ${screenMediaQuery.mobilePortrait} {
-    margin-top: 10rem;
+    padding-top: 6rem !important;
     padding-top: 0;
   }
   @media ${screenMediaQuery.mobileLandscape} {
-    margin-top: 10rem;
+    padding-top: 7rem !important;
     padding-top: 0;
   }
 `;
