@@ -67,13 +67,13 @@ export const Title = styled.h2`
     font-size: 0.8rem;
   }
   @media ${screenMediaQuery.iPadMiniPortrait} {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
-    font-size: 0.7rem;
+    font-size: 0.55rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
     font-size: 0.6rem;
@@ -115,22 +115,22 @@ export const Billet = styled.h3`
     font-size: 0.7rem;
   }
   @media ${screenMediaQuery.iPadMiniPortrait} {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
-    font-size: 0.65rem;
+    font-size: 0.5rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
     font-size: 0.6rem;
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
 `;
 
@@ -141,7 +141,7 @@ export const BarContainer = styled.div`
 
 export const Information = styled.button`
   appearance: none;
-  margin: 0 0.8rem 0 0.4rem;
+  margin: 0.4rem 0.8rem 0 0.4rem;
   border-radius: 4rem;
   background-color: ${(props) => props.theme.socials.backgroundColor};
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
@@ -163,37 +163,37 @@ export const Information = styled.button`
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
     height: 1.8rem;
     width: 1.8rem;
-    margin: 0 0.3rem 0 0.4rem;
+    margin: 0.4rem 0.3rem 0 0.4rem;
   }
   @media ${screenMediaQuery.iPadMiniPortrait} {
-    height: 1.4rem;
-    width: 1.4rem;
-    margin: 0 0.3rem 0 0.4rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 0.4rem 0.3rem 0 0.4rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
-    height: 1.4rem;
-    width: 1.4rem;
-    margin: 0 0.3rem 0 0.4rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 0.4rem 0.3rem 0 0.4rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
     height: 1.4rem;
     width: 1.4rem;
-    margin: 0 0.3rem 0 0.4rem;
+    margin: 0.4rem 0.3rem 0 0.4rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
     height: 1.4rem;
     width: 1.4rem;
-    margin: 0 0.3rem 0 0.4rem;
+    margin: 0.4rem 0.3rem 0 0.4rem;
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
     height: 1.4rem;
     width: 1.4rem;
-    margin: 0 0.3rem 0 0.4rem;
+    margin: 0.4rem 0.3rem 0 0.4rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
     height: 1.4rem;
     width: 1.4rem;
-    margin: 0 0.3rem 0 0.4rem;
+    margin: 0.4rem 0.3rem 0 0.4rem;
   }
 `;
 

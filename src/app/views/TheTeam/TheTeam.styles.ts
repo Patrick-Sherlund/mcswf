@@ -67,6 +67,7 @@ export const DesktopTeamContent = styled.div`
 export const LeadershipRowTop = styled(motion.div)`
   display: flex;
   flex-direction: row;
+  max-width: 85vw;
   margin: auto;
   padding: 0 2rem;
 `;
