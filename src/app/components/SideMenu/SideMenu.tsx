@@ -49,6 +49,7 @@ const SideMenu: FC<SideMenuProps> = React.memo(function SideMenu({
       custom={height}
       whileInView={{ height: isOpen ? "auto" : "0" }}
       ref={containerRef}
+      data-testid={"side-menu"}
     >
       <NavMenuBody variants={sidebar} />
       <SideNav

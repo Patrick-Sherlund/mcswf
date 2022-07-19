@@ -18,7 +18,7 @@ describe("<ToggleSwitch />", () => {
       />
     );
 
-    const toggleSwitch = screen.getByTestId("ToggleSwitch");
+    const toggleSwitch = screen.getByTestId("toggle-switch");
 
     expect(toggleSwitch).toBeInTheDocument();
   });

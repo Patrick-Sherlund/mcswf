@@ -22,6 +22,7 @@ const ToggleSwitch: FC<ToggleSwitchProps> = (props: ToggleSwitchProps) => {
           id={toggleId}
           type="checkbox"
           onChange={props.toggleEventHandler}
+          data-testid={"toggle-switch"}
         />
         <CheckBoxLabel htmlFor={toggleId}>{props.children}</CheckBoxLabel>
       </CheckBoxWrapper>

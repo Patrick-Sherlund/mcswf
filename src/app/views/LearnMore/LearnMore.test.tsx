@@ -7,7 +7,7 @@ describe("<LearnMore />", () => {
   test("it should mount", () => {
     render(<LearnMore />);
 
-    const learnMore = screen.getByTestId("LearnMore");
+    const learnMore = screen.getByTestId("learn-more-container");
 
     expect(learnMore).toBeInTheDocument();
   });

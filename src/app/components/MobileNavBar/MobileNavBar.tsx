@@ -33,6 +33,7 @@ const MobileNavBar: FC<MobileNavBarProps> = (
       animate={animationControls}
       initial="hidden"
       variants={navBarVariants}
+      data-testid={"mobile-nav-bar"}
     >
       <MiniLogo src={logo} />
       <MobileNavPageName>

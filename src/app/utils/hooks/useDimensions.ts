@@ -16,7 +16,7 @@ export const useDimensions = (
   });
 
   useEffect(() => {
-    if (!screenRef.current) return;
+    if (!screenRef || !screenRef.current) return;
     dimensions.current.width =
       screenRef.current.offsetWidth ?? dimensions.current.width;
     dimensions.current.height =

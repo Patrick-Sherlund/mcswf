@@ -10,7 +10,7 @@ const StatusBar: FC<StatusBarProps> = (statusBarProps: StatusBarProps) => {
   const statusPercentage: number = statusBarProps.statusPercentage;
   const denominator: number | undefined = statusBarProps.denominator;
   return (
-    <StatusBarOutline>
+    <StatusBarOutline data-testid={"status-bar"}>
       <StatusBarEmpty>
         <progress value={statusPercentage} max={denominator ?? 1} />
       </StatusBarEmpty>

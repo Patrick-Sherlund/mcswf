@@ -3,17 +3,23 @@ import { render, RenderResult } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import DesktopNavBar from "./DesktopNavBar";
 import { PageName } from "../../constants/enums/global";
+import { darkTheme } from "../../constants/themes/DarkTheme";
+import { ThemeProvider } from "styled-components";
+import Home from "../../views/Home/Home";
 
 describe("<DesktopNavBar />", () => {
   let container: RenderResult;
+  jest.setTimeout(30000);
 
-  beforeAll(() => {
+  beforeEach(() => {
     container = render(
-      <DesktopNavBar
-        selectedPageName={PageName.HOME}
-        navigationEventHandler={() => {}}
-        themeEventHandler={() => {}}
-      />
+      <ThemeProvider theme={darkTheme}>
+        <DesktopNavBar
+          selectedPageName={PageName.DISCIPLINES}
+          navigationEventHandler={() => {}}
+          themeEventHandler={() => {}}
+        />
+      </ThemeProvider>
     );
   });
 

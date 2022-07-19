@@ -75,6 +75,7 @@ const LeadershipCard: FC<LeadershipCardProps> = (
 
   return (
     <TeamCard
+      data-testid={"LeadershipCard"}
       variants={cardFlipVariants}
       animate={isFlipped ? "back" : "front"}
     >
