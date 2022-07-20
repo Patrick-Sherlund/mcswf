@@ -2,13 +2,10 @@ import React, { FC } from "react";
 import { LearnMoreContainer } from "./LearnMore.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards } from "swiper";
 import LearnMoreCard from "../../components/LearnMoreCard/LearnMoreCard";
+import { LearnMoreData } from "../../constants/data/learn-more";
 
 const LearnMore: FC = () => {
-  const cardEffect = "cards";
-
   return (
     <LearnMoreContainer
       initial={{ opacity: 0 }}
@@ -18,11 +15,11 @@ const LearnMore: FC = () => {
       data-testid="learn-more-container"
       id={"Learn-More"}
     >
-      <Swiper effect={cardEffect} modules={[EffectCards]}>
-        <SwiperSlide>
-          <LearnMoreCard title={""} body={""} />
-        </SwiperSlide>
-      </Swiper>
+      {LearnMoreData.map((data, index) => {
+        return (
+          <LearnMoreCard key={index} title={data.title} body={data.body} />
+        );
+      })}
     </LearnMoreContainer>
   );
 };

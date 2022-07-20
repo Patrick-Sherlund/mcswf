@@ -6,9 +6,10 @@ export const LearnMoreContainer = styled(motion.div)`
   padding-top: 10rem;
   margin-top: 0;
   height: 82vh;
-  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  transform-style: preserve-3d;
 
   @media ${screenMediaQuery.mobilePortrait} {
     margin-top: 10.5rem;
@@ -18,9 +19,4 @@ export const LearnMoreContainer = styled(motion.div)`
     margin-top: 10rem;
     padding-top: 0;
   }
-`;
-
-export const SampleText = styled.div`
-  text-align: center;
-  width: 100%;
 `;
