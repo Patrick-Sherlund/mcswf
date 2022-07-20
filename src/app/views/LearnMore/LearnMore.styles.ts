@@ -258,6 +258,7 @@ export const LearnMoreFooter = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  transition: width 500ms, height 500ms, margin 500ms;
 `;
 
 const SvgTemplate = styled.div`
@@ -265,12 +266,75 @@ const SvgTemplate = styled.div`
   height: 10rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  transition: width 500ms, height 500ms, margin 500ms;
+
+  @media ${screenMediaQuery.desktopXXLarge} {
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+  }
+  @media ${screenMediaQuery.mobilePortrait} {
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+  }
 `;
 
 const SvgButton = styled(SvgTemplate)`
   width: 24rem;
   height: 9rem;
   cursor: pointer;
+
+  @media ${screenMediaQuery.desktopXXLarge} {
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+  }
+  @media ${screenMediaQuery.mobilePortrait} {
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+  }
 `;
 
 export const MediaContainer = styled.div`
@@ -283,17 +347,112 @@ export const MediaTitle = styled.h2`
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
+  transition: font-size 500ms;
+
+  @media ${screenMediaQuery.desktopXXLarge} {
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+  }
+  @media ${screenMediaQuery.mobilePortrait} {
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+  }
 `;
 export const MediaSubTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: lighter;
   margin: 0;
+  transition: font-size 500ms;
+
+  @media ${screenMediaQuery.desktopXXLarge} {
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+  }
+  @media ${screenMediaQuery.mobilePortrait} {
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+  }
 `;
 
 export const Talent = styled(SvgTemplate)`
   width: 15rem;
   height: 10rem;
   background-image: url(${(prop) => prop.theme.learnMore.svg.talent});
+
+  @media ${screenMediaQuery.desktopXXLarge} {
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+  }
+  @media ${screenMediaQuery.mobilePortrait} {
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+  }
 `;
 export const RoundedTeams = styled(SvgTemplate)`
   background-image: url(${(prop) => prop.theme.learnMore.svg.roundedTeams});
@@ -302,6 +461,37 @@ export const Agile = styled(SvgTemplate)`
   width: 15rem;
   height: 10rem;
   background-image: url(${(prop) => prop.theme.learnMore.svg.agile});
+
+  @media ${screenMediaQuery.desktopXXLarge} {
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+  }
+  @media ${screenMediaQuery.mobilePortrait} {
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+  }
 `;
 export const Industry = styled(SvgTemplate)`
   background-image: url(${(prop) => prop.theme.learnMore.svg.industry});
@@ -309,4 +499,137 @@ export const Industry = styled(SvgTemplate)`
 export const InformationPacket = styled(SvgButton)`
   background-image: url(${(prop) =>
     prop.theme.learnMore.svg.informationPacket});
+`;
+
+export const DataCardContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const DataCard = styled.div`
+  position: relative;
+  padding: 1.825rem;
+  margin-left: 4rem;
+  height: 40%;
+  width: 40rem;
+  background-color: ${(props) => props.theme.dataCard.backgroundColor};
+  border: 1px solid ${(props) => props.theme.dataCard.borderColor};
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  transition: width 500ms, height 500ms, margin 500ms;
+
+  &,
+  &:before,
+  &:after {
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before {
+    right: 7px;
+    top: 5px;
+    z-index: -1;
+    border-radius: 4px;
+    background-color: ${(props) =>
+      props.theme.dataCard.firstShade.backgroundColor};
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  &:after {
+    right: 12px;
+    top: 10px;
+    z-index: -2;
+    border-radius: 4px;
+    background-color: ${(props) =>
+      props.theme.dataCard.secondShade.backgroundColor};
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  @media ${screenMediaQuery.desktopXXLarge} {
+    padding: 1.825rem;
+    margin-left: 4rem;
+    min-height: 27.2rem;
+    width: 32rem;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    padding: 1.825rem;
+    margin-left: 4rem;
+    min-height: 24.2rem;
+    width: 25rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    min-height: 24.2rem;
+    padding: 1.825rem;
+    margin-left: 3rem;
+    width: 18.5rem;
+  }
+
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    min-height: 19rem;
+    padding: 1.4rem;
+    margin: 2rem 0 0;
+    width: 24rem;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    min-height: 20.2rem;
+    padding: 1.6rem;
+    margin-left: 3rem;
+    width: 14rem;
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+    min-height: 20.2rem;
+    padding: 1.6rem;
+    margin-left: 3rem;
+    width: 14rem;
+  }
+  @media ${screenMediaQuery.iPadMiniLandscape} {
+    min-height: 20.2rem;
+    padding: 1.4rem;
+    margin-left: 3rem;
+    width: 14rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    min-height: 18rem;
+    padding: 1.4rem;
+    margin: 2rem 0 0;
+    width: 17rem;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+    min-height: 18.2rem;
+    height: 20%;
+    padding: 1.4rem;
+    margin: 2rem 0 0;
+    width: 15rem;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+    height: 30rem;
+    width: 24rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    margin: 0 auto;
+    height: 35rem;
+    width: 18rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+  }
+  @media ${screenMediaQuery.mobilePortrait} {
+    margin: 0 auto;
+    padding: 1rem;
+    height: 21rem;
+    width: 14rem;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+    margin: 0 auto;
+    padding: 1rem;
+    height: 16.5rem;
+    width: 16rem;
+  }
 `;
