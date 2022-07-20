@@ -15,7 +15,6 @@ import {
   MediaContainer,
   MediaTitle,
   MediaSubTitle,
-  DataCardContainer,
   DataCard,
 } from "./LearnMore.styles";
 import "swiper/css";
@@ -38,15 +37,13 @@ const LearnMore: FC = () => {
       >
         {LearnMoreData.map((data, index) => {
           return (
-            <DataCardContainer data-testid="data-card-container">
-              <DataCard key={`learn-more-desktop-${index}`}>
-                <Title>
-                  <VerticalDivider />
-                  {data.title}
-                </Title>
-                <Body>{data.body}</Body>
-              </DataCard>
-            </DataCardContainer>
+            <DataCard key={`learn-more-desktop-${index}`}>
+              <Title>
+                <VerticalDivider />
+                {data.title}
+              </Title>
+              <Body>{data.body}</Body>
+            </DataCard>
           );
         })}
       </DesktopContainer>
@@ -60,15 +57,13 @@ const LearnMore: FC = () => {
           {LearnMoreData.map((data, index) => {
             return (
               <SwiperSlide key={`learn-more-mobile-${index}`}>
-                <DataCardContainer data-testid="data-card-container">
-                  <DataCard key={`learn-more-desktop-${index}`}>
-                    <Title>
-                      <VerticalDivider />
-                      {data.title}
-                    </Title>
-                    <Body>{data.body}</Body>
-                  </DataCard>
-                </DataCardContainer>
+                <DataCard key={`learn-more-desktop-${index}`}>
+                  <Title>
+                    <VerticalDivider />
+                    {data.title}
+                  </Title>
+                  <Body>{data.body}</Body>
+                </DataCard>
               </SwiperSlide>
             );
           })}

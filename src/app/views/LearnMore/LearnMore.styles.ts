@@ -501,11 +501,6 @@ export const InformationPacket = styled(SvgButton)`
     prop.theme.learnMore.svg.informationPacket});
 `;
 
-export const DataCardContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
 export const DataCard = styled.div`
   position: relative;
   padding: 1.825rem;
