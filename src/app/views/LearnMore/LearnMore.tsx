@@ -6,6 +6,15 @@ import {
   Title,
   Body,
   VerticalDivider,
+  LearnMoreFooter,
+  Talent,
+  RoundedTeams,
+  Agile,
+  Industry,
+  InformationPacket,
+  MediaContainer,
+  MediaTitle,
+  MediaSubTitle,
 } from "./LearnMore.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -60,6 +69,32 @@ const LearnMore: FC = () => {
           })}
         </Swiper>
       </MobileContainer>
+      <LearnMoreFooter>
+        <MediaContainer>
+          <Talent />
+          <MediaTitle>World-Class Talent</MediaTitle>
+          <MediaSubTitle>Industry-Leading Engineers</MediaSubTitle>
+        </MediaContainer>
+
+        <MediaContainer>
+          <RoundedTeams />
+          <MediaTitle>Well-Rounded Teams</MediaTitle>
+          <MediaSubTitle>Developer, PM, UI/UX, Platform Engineer</MediaSubTitle>
+        </MediaContainer>
+        <InformationPacket />
+
+        <MediaContainer>
+          <Agile />
+          <MediaTitle>Agile DevSecOps</MediaTitle>
+          <MediaSubTitle>Continuously Build, Deploy & Operate</MediaSubTitle>
+        </MediaContainer>
+
+        <MediaContainer>
+          <Industry />
+          <MediaTitle>Industry Partners</MediaTitle>
+          <MediaSubTitle>Newest Tech-hub Meets Industry</MediaSubTitle>
+        </MediaContainer>
+      </LearnMoreFooter>
     </LearnMoreContainer>
   );
 };

@@ -8,6 +8,11 @@ import twitterSvgLight from "../../../assets/svg/light/twitter.svg";
 import youtubeSvgLight from "../../../assets/svg/light/youtube.svg";
 import information from "../../../assets/svg/light/information.svg";
 import navigationArrow from "../../../assets/svg/red-arrow-marines.svg";
+import agile from "../../../assets/svg/light/agile.svg";
+import industry from "../../../assets/svg/light/industry.svg";
+import roundedTeams from "../../../assets/svg/light/rounded-teams.svg";
+import talent from "../../../assets/svg/light/talent.svg";
+import informationPacket from "../../../assets/svg/light/information-packet.svg";
 
 export const lightTheme: Theme = {
   backgroundColor: "#c6c6c6",
@@ -80,5 +85,13 @@ export const lightTheme: Theme = {
       },
     },
   },
-  learnMore: {},
+  learnMore: {
+    svg: {
+      agile: agile,
+      industry: industry,
+      informationPacket: informationPacket,
+      roundedTeams: roundedTeams,
+      talent: talent,
+    },
+  },
 };

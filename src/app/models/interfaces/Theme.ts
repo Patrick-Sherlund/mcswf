@@ -70,5 +70,13 @@ export interface Theme {
     };
   };
 
-  learnMore: {};
+  learnMore: {
+    svg: {
+      agile: string;
+      industry: string;
+      informationPacket: string;
+      roundedTeams: string;
+      talent: string;
+    };
+  };
 }

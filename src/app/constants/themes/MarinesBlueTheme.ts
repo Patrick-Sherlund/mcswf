@@ -8,6 +8,11 @@ import twitterSvgDark from "../../../assets/svg/dark/twitter.svg";
 import youtubeSvgDark from "../../../assets/svg/dark/youtube.svg";
 import information from "../../../assets/svg/dark/information.svg";
 import navigationArrow from "../../../assets/svg/red-arrow-marines.svg";
+import agile from "../../../assets/svg/dark/agile.svg";
+import industry from "../../../assets/svg/dark/industry.svg";
+import informationPacket from "../../../assets/svg/dark/information-packet.svg";
+import roundedTeams from "../../../assets/svg/dark/rounded-teams.svg";
+import talent from "../../../assets/svg/dark/talent.svg";
 
 export const marinesBlueTheme: Theme = {
   backgroundColor: "#252933",
@@ -80,5 +85,13 @@ export const marinesBlueTheme: Theme = {
       },
     },
   },
-  learnMore: {},
+  learnMore: {
+    svg: {
+      agile: agile,
+      industry: industry,
+      informationPacket: informationPacket,
+      roundedTeams: roundedTeams,
+      talent: talent,
+    },
+  },
 };

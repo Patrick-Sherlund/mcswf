@@ -5,6 +5,10 @@ import { screenMediaQuery } from "../../../index.styles";
 export const LearnMoreContainer = styled(motion.div)`
   padding-top: 10rem;
   margin-top: 0;
+  display: flex;
+  flex-direction: column;
+
+  height: 82vh;
   @media ${screenMediaQuery.mobilePortrait} {
     margin-top: 14rem;
     padding-top: 6rem;
@@ -245,4 +249,64 @@ export const VerticalDivider = styled.div`
   }
   @media ${screenMediaQuery.mobileLandscape} {
   }
+`;
+
+export const LearnMoreFooter = styled.div`
+  width: 100%;
+  margin: auto 0 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
+const SvgTemplate = styled.div`
+  width: 10rem;
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+`;
+
+const SvgButton = styled(SvgTemplate)`
+  width: 24rem;
+  height: 9rem;
+  cursor: pointer;
+`;
+
+export const MediaContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const MediaTitle = styled.h2`
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+`;
+export const MediaSubTitle = styled.h3`
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 0;
+`;
+
+export const Talent = styled(SvgTemplate)`
+  width: 15rem;
+  height: 10rem;
+  background-image: url(${(prop) => prop.theme.learnMore.svg.talent});
+`;
+export const RoundedTeams = styled(SvgTemplate)`
+  background-image: url(${(prop) => prop.theme.learnMore.svg.roundedTeams});
+`;
+export const Agile = styled(SvgTemplate)`
+  width: 15rem;
+  height: 10rem;
+  background-image: url(${(prop) => prop.theme.learnMore.svg.agile});
+`;
+export const Industry = styled(SvgTemplate)`
+  background-image: url(${(prop) => prop.theme.learnMore.svg.industry});
+`;
+export const InformationPacket = styled(SvgButton)`
+  background-image: url(${(prop) =>
+    prop.theme.learnMore.svg.informationPacket});
 `;
