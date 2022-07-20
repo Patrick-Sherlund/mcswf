@@ -45,6 +45,19 @@ export const marinesBlueTheme: Theme = {
     inactiveTextColor: "#afafaf",
     menuSvgColor: "#FFFFFF",
   },
+  dataCard: {
+    titleTextColor: "#000000",
+    bodyTextColor: "#000000",
+    backgroundColor: "#f9f9f9",
+    borderColor: "#c0c2ca",
+    verticalBorderColor: "#B00D25",
+    firstShade: {
+      backgroundColor: "#505460",
+    },
+    secondShade: {
+      backgroundColor: "#414551",
+    },
+  },
   leadership: {
     cards: {
       inner: {
@@ -67,4 +80,5 @@ export const marinesBlueTheme: Theme = {
       },
     },
   },
+  learnMore: {},
 };

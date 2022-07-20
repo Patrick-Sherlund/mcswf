@@ -90,12 +90,13 @@ const screenSize = {
   mobileLandscape: "767px",
   tabletLandscape: "768px",
   samsungSurface: "911px",
-  iPadLandscape: "1024px",
-  laptop: "1025px",
+  iPadLandscape: "1023px",
+  laptop: "1024px",
   desktop: "1280px",
   desktopM: "1281px",
   desktopL: "1599px",
   desktopXL: "1600px",
+  desktopXXL: "2000px",
   tabletS: "600px",
   tabletSLandscape: "900px",
   tabletLargeLandscape: "1367px",
@@ -103,7 +104,6 @@ const screenSize = {
 // 1920
 
 export const screenMediaQuery = {
-  mobilePortraitXS: `(min-width: ${screenSize.mobileXS}) and (max-width: ${screenSize.mobileS}) and (orientation: portrait)`,
   mobilePortraitSmallHeight: `(min-width: ${screenSize.mobileXS}) and (max-width: ${screenSize.mobileL}) and (max-height: 667px) and (orientation: portrait)`,
   mobilePortrait: `(min-width: ${screenSize.mobileXS}) and (max-width: ${screenSize.mobileL}) and (orientation: portrait)`,
   mobileLandscape: `(min-width: ${screenSize.mobileXS}) and (max-width: ${screenSize.mobileXL}) and (max-height: 677px) and (orientation: landscape)`,
@@ -115,8 +115,11 @@ export const screenMediaQuery = {
   iPadMiniPortrait: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.samsungSurface}) and (orientation: portrait)`,
   iPadMiniLandscape: `(min-width: ${screenSize.iPadLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: landscape)`,
   tabletAndiPadPortrait: `(min-width: ${screenSize.tabletLandscape}) and (max-width: ${screenSize.iPadLandscape}) and (orientation: portrait)`,
+  iPadPro: `(min-width: ${screenSize.laptop}) and (max-width: ${screenSize.laptop}) and (orientation: portrait)`,
   laptopAndDesktop: `(min-width: ${screenSize.laptop}) and (max-width: ${screenSize.desktop})`,
   desktopMedium: `(min-width: ${screenSize.desktopM}) and (max-width: ${screenSize.tabletLargeLandscape})`,
-  tabletLarge: `(min-width: ${screenSize.tabletLargeLandscape}) and (max-width: ${screenSize.desktopL})`,
-  desktopLarge: `(min-width: ${screenSize.desktopXL})`,
+  tabletLarge: `(min-width: ${screenSize.tabletLargeLandscape}) and (max-width: ${screenSize.desktopL}) and (orientation: portrait)`,
+  desktopLarge: `(min-width: ${screenSize.desktop}) and (max-width: ${screenSize.desktopL})`,
+  desktopXLarge: `(min-width: ${screenSize.desktopXL}) and (max-width: ${screenSize.desktopXXL})`,
+  desktopXXLarge: `(min-width: ${screenSize.desktopXXL})`,
 };

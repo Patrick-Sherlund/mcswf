@@ -4,7 +4,6 @@ import { screenMediaQuery } from "../../../index.styles";
 
 export const DisciplinesContainer = styled(motion.div)`
   padding-top: 10rem;
-  height: 82vh;
   width: 100%;
   display: flex;
   flex-direction: row;

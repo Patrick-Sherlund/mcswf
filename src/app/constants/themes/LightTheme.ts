@@ -45,6 +45,19 @@ export const lightTheme: Theme = {
     inactiveTextColor: "#3c404e",
     menuSvgColor: "#2E333F",
   },
+  dataCard: {
+    titleTextColor: "#252933",
+    bodyTextColor: "#252933",
+    backgroundColor: "#FCFCFC",
+    borderColor: "#D0D0D0",
+    verticalBorderColor: "#C20000",
+    firstShade: {
+      backgroundColor: "#EBEBEB",
+    },
+    secondShade: {
+      backgroundColor: "#E9E9E9",
+    },
+  },
   leadership: {
     cards: {
       inner: {
@@ -67,4 +80,5 @@ export const lightTheme: Theme = {
       },
     },
   },
+  learnMore: {},
 };

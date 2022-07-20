@@ -52,6 +52,11 @@ export const NavigationArrow = styled(motion.div)`
     width: 9rem;
     margin: 7% auto 0;
   }
+  @media ${screenMediaQuery.iPadPro} {
+    height: 5.4rem;
+    width: 12rem;
+    margin: 28% auto 0;
+  }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
     height: 4.5rem;
     width: 10rem;

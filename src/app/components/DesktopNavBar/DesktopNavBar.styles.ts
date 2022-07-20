@@ -10,7 +10,7 @@ export const DesktopNavBarBody = styled(motion.div)`
   transition: width 500ms, height 500ms, visibility 0s, opacity 0s linear;
   opacity: 1;
   visibility: visible;
-  z-index: 1;
+  z-index: 20;
 
   @media ${screenMediaQuery.mobilePortrait} {
     opacity: 0;
@@ -68,6 +68,8 @@ export const Logo = styled(motion.img)`
     height: 6rem;
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    width: 5.3rem;
+    height: 6rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
     width: 5.76rem;
@@ -108,6 +110,8 @@ export const ListItem = styled(motion.li)`
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    margin: 0.5rem;
+    font-size: 0.7rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
   }

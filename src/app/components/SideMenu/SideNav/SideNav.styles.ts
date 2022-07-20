@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import styled from "styled-components/macro";
+import { screenMediaQuery } from "../../../../index.styles";
 
 export const NavMenuContainer = styled(motion.div)`
   position: inherit;
@@ -43,6 +44,10 @@ export const NavMenuLogo = styled(motion.img)`
   height: 5rem;
   transition: width 500ms, height 500ms;
   margin: 0.5rem 1rem 0 0.5rem;
+  @media ${screenMediaQuery.mobileLandscape} {
+    width: 4rem;
+    height: 4.475rem;
+  }
 `;
 
 export const NavMenuHeaderContent = styled(motion.div)`

@@ -17,6 +17,12 @@ export const TeamCard = styled(motion.div)`
   flex: 1;
   margin: 1rem 0 0 1rem;
 
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    margin: 0;
+  }
   @media ${screenMediaQuery.mobilePortrait} {
     flex-direction: column;
     align-items: center;
@@ -78,9 +84,6 @@ export const Title = styled.h2`
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
     font-size: 0.6rem;
   }
-  @media ${screenMediaQuery.tabletAndMobilePortrait} {
-    font-size: 0.6rem;
-  }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
     font-size: 0.6rem;
   }
@@ -125,9 +128,6 @@ export const Billet = styled.h3`
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
     font-size: 0.6rem;
-  }
-  @media ${screenMediaQuery.tabletAndMobilePortrait} {
-    font-size: 0.55rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
     font-size: 0.55rem;
@@ -181,11 +181,6 @@ export const Information = styled.button`
     margin: 0.4rem 0.3rem 0 0.4rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
-    height: 1.4rem;
-    width: 1.4rem;
-    margin: 0.4rem 0.3rem 0 0.4rem;
-  }
-  @media ${screenMediaQuery.tabletAndMobilePortrait} {
     height: 1.4rem;
     width: 1.4rem;
     margin: 0.4rem 0.3rem 0 0.4rem;
@@ -248,9 +243,6 @@ export const AboutBody = styled.div`
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
     font-size: 0.6rem;
-  }
-  @media ${screenMediaQuery.tabletAndMobilePortrait} {
-    font-size: 0.55rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
     font-size: 0.55rem;

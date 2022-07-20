@@ -16,6 +16,7 @@ import {
   TwitterButton,
   YoutubeButton,
   Logo,
+  NavLink,
 } from "./Home.styles";
 import { Link } from "../../components/DesktopNavBar/DesktopNavBar.styles";
 import logo from "../../../assets/logo.webp";
@@ -183,7 +184,7 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
           data-testid={"home-social-youtube"}
         />
       </SocialGroup>
-      <Link
+      <NavLink
         tab-index={10}
         ignoreCancelEvents={true}
         isDynamic={true}
@@ -210,7 +211,7 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
           whileTap={{ scale: 1 }}
           data-testid={"home-navigation-arrow"}
         />
-      </Link>
+      </NavLink>
     </HomeContainer>
   );
 };

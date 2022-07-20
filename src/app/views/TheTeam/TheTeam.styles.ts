@@ -4,11 +4,14 @@ import { screenMediaQuery } from "../../../index.styles";
 
 export const TheTeamContainer = styled(motion.div)`
   padding-top: 10rem;
-  height: 82vh;
   width: 100%;
   display: flex;
   flex-direction: column;
 
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    padding-top: 6rem !important;
+    padding-top: 0;
+  }
   @media ${screenMediaQuery.mobilePortrait} {
     padding-top: 6rem !important;
     padding-top: 0;
@@ -25,6 +28,10 @@ export const LeadershipTitle = styled.h2`
   text-align: center;
   margin: 0 0 0.5rem;
 
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    margin: 1rem 0 0.5rem;
+    font-size: 2.25rem;
+  }
   @media ${screenMediaQuery.mobilePortrait} {
     margin: 1rem 0 0.5rem;
     font-size: 2.25rem;
@@ -44,8 +51,16 @@ export const MobileTeamContent = styled.div`
   display: none;
   .swiper {
     z-index: unset;
+    .swiper-slide-shadow {
+      position: relative;
+    }
   }
 
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    display: unset;
+    visibility: visible;
+    opacity: 1;
+  }
   @media ${screenMediaQuery.mobilePortrait} {
     display: unset;
     visibility: visible;
@@ -68,6 +83,11 @@ export const DesktopTeamContent = styled.div`
   display: flex;
   flex-wrap: wrap;
 
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
   @media ${screenMediaQuery.mobilePortrait} {
     display: none;
     visibility: hidden;

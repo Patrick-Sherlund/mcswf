@@ -34,6 +34,19 @@ export interface Theme {
     inactiveTextColor: string;
     menuSvgColor: string;
   };
+  dataCard: {
+    titleTextColor: string;
+    bodyTextColor: string;
+    backgroundColor: string;
+    borderColor: string;
+    verticalBorderColor: string;
+    firstShade: {
+      backgroundColor: string;
+    };
+    secondShade: {
+      backgroundColor: string;
+    };
+  };
   leadership: {
     cards: {
       inner: {
@@ -56,4 +69,6 @@ export interface Theme {
       };
     };
   };
+
+  learnMore: {};
 }
