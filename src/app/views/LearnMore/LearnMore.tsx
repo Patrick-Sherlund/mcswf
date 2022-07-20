@@ -27,8 +27,8 @@ import {
 } from "../../constants/data/learn-more";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
-import { LeadershipData } from "../../constants/data/leadership";
 import BottomNavigator from "../../components/BottomNavigator/BottomNavigator";
+import { DisciplineData } from "../../constants/data/discipline";
 
 const LearnMore: FC = () => {
   const cardEffect = "cards";
@@ -147,7 +147,7 @@ const LearnMore: FC = () => {
         </MediaGroup>
       </LearnMoreFooter>
       <BottomNavigator
-        navigationLink={LeadershipData.navigationArrowLink}
+        navigationLink={DisciplineData.navigationArrowLink}
         desktopOffset={-50}
         mobileOffset={10}
       />

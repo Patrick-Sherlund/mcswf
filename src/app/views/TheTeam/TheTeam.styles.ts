@@ -21,6 +21,21 @@ export const TheTeamContainer = styled(motion.div)`
     padding-top: 7rem !important;
     padding-top: 0;
   }
+
+  @media ${screenMediaQuery.desktopMidXL} {
+    margin-top: 20rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    margin-top: 20rem;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    margin-top: 32rem;
+    padding-top: 5rem;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    margin-top: 28rem;
+    padding-top: 8rem;
+  }
 `;
 
 export const LeadershipTitle = styled.h2`
@@ -50,8 +65,10 @@ export const MobileTeamContent = styled.div`
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
   display: none;
+
   .swiper {
     z-index: unset;
+
     .swiper-slide-shadow {
       position: relative;
     }

@@ -23,6 +23,10 @@ export const LearnMoreContainer = styled(motion.div)`
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
     height: 82vh;
   }
+
+  @media ${screenMediaQuery.desktopLarge} {
+    height: 84vh;
+  }
 `;
 
 export const DesktopContainer = styled(motion.div)`
@@ -125,6 +129,9 @@ export const Title = styled.h2`
   @media ${screenMediaQuery.desktopLarge} {
     font-size: 1.8rem;
   }
+  @media ${screenMediaQuery.desktopMidXL} {
+    font-size: 1.8rem;
+  }
   @media ${screenMediaQuery.laptopAndDesktop} {
     font-size: 1.4rem;
   }
@@ -182,6 +189,9 @@ export const Body = styled.p`
     font-size: 1.75rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
+    font-size: 1.4rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
     font-size: 1.4rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
@@ -829,6 +839,7 @@ export const DataCard = styled.div`
       props.theme.dataCard.firstShade.backgroundColor};
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   }
+
   &:after {
     right: 12px;
     top: 10px;
@@ -864,6 +875,12 @@ export const DataCard = styled.div`
     width: 32rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
+    padding: 1.825rem;
+    margin-left: 4rem;
+    min-height: 24.2rem;
+    width: 25rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
     padding: 1.825rem;
     margin-left: 4rem;
     min-height: 24.2rem;
