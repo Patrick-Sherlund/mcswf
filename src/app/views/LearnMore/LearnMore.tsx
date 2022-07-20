@@ -3,10 +3,13 @@ import {
   DesktopContainer,
   LearnMoreContainer,
   MobileContainer,
+  Title,
+  Body,
+  VerticalDivider,
 } from "./LearnMore.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import LearnMoreCard from "../../components/DataCard/DataCard";
+import DataCard from "../../components/DataCard/DataCard";
 import { LearnMoreData } from "../../constants/data/learn-more";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -25,11 +28,13 @@ const LearnMore: FC = () => {
       >
         {LearnMoreData.map((data, index) => {
           return (
-            <LearnMoreCard
-              key={`learn-more-desktop-${index}`}
-              title={data.title}
-              body={data.body}
-            />
+            <DataCard key={`learn-more-desktop-${index}`}>
+              <Title>
+                <VerticalDivider />
+                {data.title}
+              </Title>
+              <Body>{data.body}</Body>
+            </DataCard>
           );
         })}
       </DesktopContainer>
@@ -43,11 +48,13 @@ const LearnMore: FC = () => {
           {LearnMoreData.map((data, index) => {
             return (
               <SwiperSlide key={`learn-more-mobile-${index}`}>
-                <LearnMoreCard
-                  key={index}
-                  title={data.title}
-                  body={data.body}
-                />
+                <DataCard key={index}>
+                  <Title>
+                    <VerticalDivider />
+                    {data.title}
+                  </Title>
+                  <Body>{data.body}</Body>
+                </DataCard>
               </SwiperSlide>
             );
           })}

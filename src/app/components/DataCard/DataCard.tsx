@@ -1,29 +1,14 @@
-import React, { FC } from "react";
-import {
-  Card,
-  DataCardContainer,
-  Title,
-  Body,
-  VerticalDivider,
-} from "./DataCard.styles";
+import React, { FC, ReactNode } from "react";
+import { Card, DataCardContainer } from "./DataCard.styles";
 
 interface DataCardProps {
-  title: string;
-  body: string;
+  children: ReactNode;
 }
 
-const DataCard: FC<DataCardProps> = (DataCardProps: DataCardProps) => {
-  const title = DataCardProps.title;
-  const body = DataCardProps.body;
+const DataCard: FC<DataCardProps> = (dataCardProps: DataCardProps) => {
   return (
     <DataCardContainer data-testid="data-card-container">
-      <Card>
-        <Title>
-          <VerticalDivider />
-          {title}
-        </Title>
-        <Body>{body}</Body>
-      </Card>
+      <Card>{dataCardProps.children}</Card>
     </DataCardContainer>
   );
 };
