@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://patrick-sherlund.github.io/mcswf/static/css/main.51ea1c73.css",
-    "main.js": "https://patrick-sherlund.github.io/mcswf/static/js/main.e4512dc4.js",
+    "main.js": "https://patrick-sherlund.github.io/mcswf/static/js/main.01f6ca02.js",
     "static/js/27.e324c768.chunk.js": "https://patrick-sherlund.github.io/mcswf/static/js/27.e324c768.chunk.js",
     "static/media/DINNextLTPro-Light.ttf": "https://patrick-sherlund.github.io/mcswf/static/media/DINNextLTPro-Light.9c9574dcc2bcc0dcbef6.ttf",
     "static/media/DINNextLTPro-LightCondensed.ttf": "https://patrick-sherlund.github.io/mcswf/static/media/DINNextLTPro-LightCondensed.2b31dcd01bc303eef330.ttf",
@@ -31,9 +31,14 @@
     "static/media/background-light.webp": "https://patrick-sherlund.github.io/mcswf/static/media/background-light.339420d486835582aec0.webp",
     "static/media/background-dark.webp": "https://patrick-sherlund.github.io/mcswf/static/media/background-dark.37e6e9323a80661c9c9b.webp",
     "static/media/logo.webp": "https://patrick-sherlund.github.io/mcswf/static/media/logo.7468374dc650ab15210b.webp",
+    "static/media/information-packet.svg": "https://patrick-sherlund.github.io/mcswf/static/media/information-packet.401ea1a949533c39e655e5c3de6d6755.svg",
     "static/media/header-banner-dark.webp": "https://patrick-sherlund.github.io/mcswf/static/media/header-banner-dark.8683362284a97feac451.webp",
+    "static/media/talent.svg": "https://patrick-sherlund.github.io/mcswf/static/media/talent.8bd223e0a1a67e2f670f30c3011e3aae.svg",
     "static/media/sun.svg": "https://patrick-sherlund.github.io/mcswf/static/media/sun.60aa2a79d38c6fa771907fc58e23552a.svg",
+    "static/media/agile.svg": "https://patrick-sherlund.github.io/mcswf/static/media/agile.68db1ab5710a7eb1078592ef48f388b1.svg",
+    "static/media/industry.svg": "https://patrick-sherlund.github.io/mcswf/static/media/industry.7dda458fa816f50e7b25a9b2b646a991.svg",
     "static/media/instagram.svg": "https://patrick-sherlund.github.io/mcswf/static/media/instagram.09512e6af2f0d641663ce122c22e80fc.svg",
+    "static/media/rounded-teams.svg": "https://patrick-sherlund.github.io/mcswf/static/media/rounded-teams.342738f32c234135c9ba885cda6ebbff.svg",
     "static/media/red-arrow-marines.svg": "https://patrick-sherlund.github.io/mcswf/static/media/red-arrow-marines.36f26a957fa42c6ff11674eb51db3561.svg",
     "static/media/red-arrow.svg": "https://patrick-sherlund.github.io/mcswf/static/media/red-arrow.feb1fe2550e42df5e810fb697d94ed13.svg",
     "static/media/moon.svg": "https://patrick-sherlund.github.io/mcswf/static/media/moon.9fcb92d05954b057611402d4115d8cf4.svg",
@@ -49,6 +54,6 @@
   },
   "entrypoints": [
     "static/css/main.51ea1c73.css",
-    "static/js/main.e4512dc4.js"
+    "static/js/main.01f6ca02.js"
   ]
 }
