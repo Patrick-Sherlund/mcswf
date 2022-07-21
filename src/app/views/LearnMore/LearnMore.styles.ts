@@ -8,14 +8,27 @@ export const LearnMoreContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
 
-  height: 82vh;
+  height: 100vh;
+
   @media ${screenMediaQuery.mobilePortrait} {
     margin-top: 14rem;
     padding-top: 6rem;
+    height: 82vh;
   }
   @media ${screenMediaQuery.mobileLandscape} {
     margin-top: 12rem;
     padding-top: 6rem;
+    height: 82vh;
+  }
+
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    height: 82vh;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+    padding: 6rem 2.7rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    padding: 6rem 2.7rem;
   }
 `;
 
@@ -112,7 +125,7 @@ export const Title = styled.h2`
     font-size: 1.8rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
     font-size: 1.6rem;
@@ -127,7 +140,7 @@ export const Title = styled.h2`
     font-size: 1.4rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
     font-size: 2rem;
@@ -135,7 +148,7 @@ export const Title = styled.h2`
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
   }
@@ -164,7 +177,7 @@ export const Body = styled.p`
     font-size: 1.25rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
     font-size: 1.1rem;
@@ -179,7 +192,7 @@ export const Body = styled.p`
     font-size: 1.05rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
     font-size: 1.4rem;
@@ -187,7 +200,7 @@ export const Body = styled.p`
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
   }
@@ -253,50 +266,90 @@ export const VerticalDivider = styled.div`
 
 export const LearnMoreFooter = styled.div`
   width: 100%;
-  margin: auto 0 8rem;
+  margin: auto 0 24rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   transition: width 500ms, height 500ms, margin 500ms;
+
+  @media ${screenMediaQuery.mobilePortrait} {
+    padding-top: 1rem;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+    padding-top: 1rem;
+    flex-direction: row;
+  }
 `;
 
-const SvgTemplate = styled.div`
+const SvgTemplate = styled(motion.div)`
   width: 10rem;
-  height: 10rem;
+  height: 9.5rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: width 500ms, height 500ms, margin 500ms;
 
   @media ${screenMediaQuery.desktopXXLarge} {
+    width: 10rem;
+    height: 10rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
+    width: 7.5rem;
+    height: 7.5rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.iPadMiniPortrait} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    width: 5rem;
+    height: 5rem;
   }
   @media ${screenMediaQuery.mobilePortrait} {
+    width: 3.5rem;
+    height: 3.5rem;
   }
   @media ${screenMediaQuery.mobileLandscape} {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 `;
 
@@ -306,34 +359,64 @@ const SvgButton = styled(SvgTemplate)`
   cursor: pointer;
 
   @media ${screenMediaQuery.desktopXXLarge} {
+    width: 24rem;
+    height: 9rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
+    width: 20rem;
+    height: 7.5rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
+    width: 14rem;
+    height: 5.25rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
+    width: 20rem;
+    height: 7.5rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
+    width: 14rem;
+    height: 5.25rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
+    width: 14rem;
+    height: 5.25rem;
   }
   @media ${screenMediaQuery.iPadMiniPortrait} {
+    width: 14rem;
+    height: 5.25rem;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    width: 14rem;
+    height: 5.25rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
+    width: 14rem;
+    height: 5.25rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
+    width: 14rem;
+    height: 5.25rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    width: 14rem;
+    height: 5.25rem;
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    width: 12rem;
+    height: 4.5rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    width: 12rem;
+    height: 4.5rem;
   }
   @media ${screenMediaQuery.mobilePortrait} {
+    width: 9.8rem;
+    height: 3.675rem;
   }
   @media ${screenMediaQuery.mobileLandscape} {
+    width: 9.8rem;
+    height: 3.675rem;
   }
 `;
 
@@ -341,6 +424,15 @@ export const MediaContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media ${screenMediaQuery.desktopXXLarge} {
+    margin: 0 2.5rem;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    margin: 0 2.5rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    margin: 0 0.8rem;
+  }
 `;
 
 export const MediaTitle = styled.h2`
@@ -350,34 +442,49 @@ export const MediaTitle = styled.h2`
   transition: font-size 500ms;
 
   @media ${screenMediaQuery.desktopXXLarge} {
+    font-size: 2rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
+    font-size: 1.4rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
+    font-size: 1.4rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 1.4rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
+    font-size: 1.4rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
+    font-size: 1.4rem;
   }
   @media ${screenMediaQuery.iPadMiniPortrait} {
+    font-size: 1.4rem;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    font-size: 1.4rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
+    font-size: 1.2rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
+    font-size: 1.2rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    font-size: 1.2rem;
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    font-size: 1rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    font-size: 1.2rem;
   }
   @media ${screenMediaQuery.mobilePortrait} {
+    font-size: 1rem;
   }
   @media ${screenMediaQuery.mobileLandscape} {
+    font-size: 1rem;
   }
 `;
 export const MediaSubTitle = styled.h3`
@@ -387,34 +494,49 @@ export const MediaSubTitle = styled.h3`
   transition: font-size 500ms;
 
   @media ${screenMediaQuery.desktopXXLarge} {
+    font-size: 1.5rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
+    font-size: 1rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
+    font-size: 1rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 1rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
+    font-size: 1rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
+    font-size: 1rem;
   }
   @media ${screenMediaQuery.iPadMiniPortrait} {
+    font-size: 1rem;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    font-size: 1rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
+    font-size: 0.8rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
+    font-size: 0.8rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    font-size: 0.8rem;
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    font-size: 0.6rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    font-size: 0.8rem;
   }
   @media ${screenMediaQuery.mobilePortrait} {
+    font-size: 0.6rem;
   }
   @media ${screenMediaQuery.mobileLandscape} {
+    font-size: 0.6rem;
   }
 `;
 
@@ -424,34 +546,64 @@ export const Talent = styled(SvgTemplate)`
   background-image: url(${(prop) => prop.theme.learnMore.svg.talent});
 
   @media ${screenMediaQuery.desktopXXLarge} {
+    width: 15rem;
+    height: 10rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
+    width: 10.5rem;
+    height: 7rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.iPadMiniPortrait} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.mobilePortrait} {
+    width: 7rem;
+    height: 3.262rem;
   }
   @media ${screenMediaQuery.mobileLandscape} {
+    width: 7rem;
+    height: 3.262rem;
   }
 `;
 export const RoundedTeams = styled(SvgTemplate)`
@@ -463,42 +615,109 @@ export const Agile = styled(SvgTemplate)`
   background-image: url(${(prop) => prop.theme.learnMore.svg.agile});
 
   @media ${screenMediaQuery.desktopXXLarge} {
+    width: 15rem;
+    height: 10rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
+    width: 10.5rem;
+    height: 7rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.iPadMiniPortrait} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    width: 7rem;
+    height: 4.66rem;
   }
   @media ${screenMediaQuery.mobilePortrait} {
+    width: 7rem;
+    height: 3.262rem;
   }
   @media ${screenMediaQuery.mobileLandscape} {
+    width: 7rem;
+    height: 3.262rem;
   }
 `;
+
 export const Industry = styled(SvgTemplate)`
   background-image: url(${(prop) => prop.theme.learnMore.svg.industry});
 `;
-export const InformationPacket = styled(SvgButton)`
+export const DesktopInformationPacket = styled(SvgButton)`
   background-image: url(${(prop) =>
     prop.theme.learnMore.svg.informationPacket});
+
+  @media ${screenMediaQuery.mobilePortrait} {
+    display: none;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+    display: none;
+  }
+`;
+
+export const MobileInformationPacket = styled(DesktopInformationPacket)`
+  margin: 0.5rem auto 0;
+  display: none;
+  @media ${screenMediaQuery.mobilePortrait} {
+    display: flex;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+    display: flex;
+  }
+`;
+
+export const MediaGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media ${screenMediaQuery.desktopXXLarge} {
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    flex-direction: column;
+  }
 `;
 
 export const DataCard = styled.div`
@@ -558,24 +777,24 @@ export const DataCard = styled.div`
     min-height: 24.2rem;
     width: 25rem;
   }
-  @media ${screenMediaQuery.desktopLarge} {
-    min-height: 24.2rem;
-    padding: 1.825rem;
-    margin-left: 3rem;
-    width: 18.5rem;
-  }
 
   @media ${screenMediaQuery.laptopAndDesktop} {
-    min-height: 19rem;
+    min-height: 14rem !important;
     padding: 1.4rem;
-    margin: 2rem 0 0;
-    width: 24rem;
+    margin: 2rem 2rem 0;
+    width: 20rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
     min-height: 20.2rem;
     padding: 1.6rem;
     margin-left: 3rem;
     width: 14rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    min-height: 24.5rem;
+    padding: 1.825rem;
+    margin-left: 3rem;
+    width: 18.5rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
     min-height: 20.2rem;
@@ -596,11 +815,11 @@ export const DataCard = styled.div`
     width: 17rem;
   }
   @media ${screenMediaQuery.tabletSmallPortrait} {
-    min-height: 18.2rem;
+    min-height: 14.2rem;
     height: 20%;
     padding: 1.4rem;
-    margin: 2rem 0 0;
-    width: 15rem;
+    margin: 2rem 0.5rem 0;
+    width: 12rem;
   }
   @media ${screenMediaQuery.tabletSmallLandscape} {
     height: 30rem;
@@ -610,7 +829,7 @@ export const DataCard = styled.div`
   }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
     margin: 0 auto;
-    height: 35rem;
+    height: 25rem;
     width: 18rem;
   }
   @media ${screenMediaQuery.tabletAndMobileLandscape} {

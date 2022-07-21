@@ -4,18 +4,17 @@ import { screenMediaQuery } from "../../../index.styles";
 
 export const DisciplinesContainer = styled(motion.div)`
   padding-top: 10rem;
+  height: 82vh;
   width: 100%;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
 
   @media ${screenMediaQuery.mobilePortrait} {
-    padding-top: 6rem !important;
-    padding-top: 0;
+    margin-top: 6rem !important;
   }
   @media ${screenMediaQuery.mobileLandscape} {
-    padding-top: 7rem !important;
-    padding-top: 0;
+    margin-top: 7rem !important;
   }
 `;
 

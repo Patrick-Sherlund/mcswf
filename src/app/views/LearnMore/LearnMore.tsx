@@ -11,15 +11,20 @@ import {
   RoundedTeams,
   Agile,
   Industry,
-  InformationPacket,
+  DesktopInformationPacket,
   MediaContainer,
   MediaTitle,
   MediaSubTitle,
   DataCard,
+  MediaGroup,
+  MobileInformationPacket,
 } from "./LearnMore.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
-import { LearnMoreData } from "../../constants/data/learn-more";
+import {
+  LearnMoreCardData,
+  LearnMoreMediaData,
+} from "../../constants/data/learn-more";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -35,7 +40,7 @@ const LearnMore: FC = () => {
         transition={{ delay: 0.3 }}
         viewport={{ once: true }}
       >
-        {LearnMoreData.map((data, index) => {
+        {LearnMoreCardData.map((data, index) => {
           return (
             <DataCard key={`learn-more-desktop-${index}`}>
               <Title>
@@ -54,7 +59,7 @@ const LearnMore: FC = () => {
         viewport={{ once: true }}
       >
         <Swiper effect={cardEffect} modules={[EffectCards]}>
-          {LearnMoreData.map((data, index) => {
+          {LearnMoreCardData.map((data, index) => {
             return (
               <SwiperSlide key={`learn-more-mobile-${index}`}>
                 <DataCard key={`learn-more-desktop-${index}`}>
@@ -68,32 +73,54 @@ const LearnMore: FC = () => {
             );
           })}
         </Swiper>
+        <MobileInformationPacket
+          whileHover={{
+            scale: 1.1,
+            transition: { ease: "easeInOut", duration: 0.2, delay: 0 },
+          }}
+          whileTap={{ scale: 0.9 }}
+        />
       </MobileContainer>
       <LearnMoreFooter>
-        <MediaContainer>
-          <Talent />
-          <MediaTitle>World-Class Talent</MediaTitle>
-          <MediaSubTitle>Industry-Leading Engineers</MediaSubTitle>
-        </MediaContainer>
+        <MediaGroup>
+          <MediaContainer>
+            <Talent />
+            <MediaTitle>{LearnMoreMediaData.talent.title}</MediaTitle>
+            <MediaSubTitle>{LearnMoreMediaData.talent.subTitle}</MediaSubTitle>
+          </MediaContainer>
 
-        <MediaContainer>
-          <RoundedTeams />
-          <MediaTitle>Well-Rounded Teams</MediaTitle>
-          <MediaSubTitle>Developer, PM, UI/UX, Platform Engineer</MediaSubTitle>
-        </MediaContainer>
-        <InformationPacket />
+          <MediaContainer>
+            <RoundedTeams />
+            <MediaTitle>{LearnMoreMediaData.roundedTeams.title}</MediaTitle>
+            <MediaSubTitle>
+              {LearnMoreMediaData.roundedTeams.subTitle}
+            </MediaSubTitle>
+          </MediaContainer>
+        </MediaGroup>
 
-        <MediaContainer>
-          <Agile />
-          <MediaTitle>Agile DevSecOps</MediaTitle>
-          <MediaSubTitle>Continuously Build, Deploy & Operate</MediaSubTitle>
-        </MediaContainer>
+        <DesktopInformationPacket
+          whileHover={{
+            scale: 1.1,
+            transition: { ease: "easeInOut", duration: 0.2, delay: 0 },
+          }}
+          whileTap={{ scale: 0.9 }}
+        />
 
-        <MediaContainer>
-          <Industry />
-          <MediaTitle>Industry Partners</MediaTitle>
-          <MediaSubTitle>Newest Tech-hub Meets Industry</MediaSubTitle>
-        </MediaContainer>
+        <MediaGroup>
+          <MediaContainer>
+            <Agile />
+            <MediaTitle>{LearnMoreMediaData.agile.title}</MediaTitle>
+            <MediaSubTitle>{LearnMoreMediaData.agile.subTitle}</MediaSubTitle>
+          </MediaContainer>
+
+          <MediaContainer>
+            <Industry />
+            <MediaTitle>{LearnMoreMediaData.industry.title}</MediaTitle>
+            <MediaSubTitle>
+              {LearnMoreMediaData.industry.subTitle}
+            </MediaSubTitle>
+          </MediaContainer>
+        </MediaGroup>
       </LearnMoreFooter>
     </LearnMoreContainer>
   );

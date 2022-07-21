@@ -57,7 +57,7 @@ const DesktopNavBar: FC<NavBarProps> = React.memo(function NavBar({
               to={pageName.replace(" ", "-")}
               spy={true}
               smooth={"easeInQuad"}
-              offset={-70}
+              offset={-50}
               delay={-500}
               duration={300}
             >
