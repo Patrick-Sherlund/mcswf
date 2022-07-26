@@ -5,7 +5,7 @@ export default defineConfig({
       require("@bahmutov/cypress-code-coverage/plugin")(on, config);
       return config;
     },
-    supportFile: "cypress/support/index.js",
+    supportFile: "cypress/support/index.ts",
     supportFolder: "cypress/support",
     fixturesFolder: "cypress/fixtures",
   },
@@ -14,7 +14,7 @@ export default defineConfig({
       require("@bahmutov/cypress-code-coverage/plugin")(on, config);
       return config;
     },
-    supportFile: "cypress/support/index.js",
+    supportFile: "cypress/support/index.ts",
     supportFolder: "cypress/support",
     fixturesFolder: "cypress/fixtures",
     devServer: {

@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
@@ -7,9 +8,15 @@
     "lib": ["es5", "dom"],
     "target": "ES5",
     "noEmit": true,
-    "types": ["cypress", "@testing-library/cypress"],
+    "allowJs": true,
+    "types": ["cypress", "@testing-library/cypress", ""],
+    "typeRoots": [""],
     "isolatedModules": false
   },
-  "include": ["../node_modules/cypress", "./*/*.ts"],
+  "include": ["../node_modules/cypress", "cypress/*/*.ts","./*/*.ts",
+    "support/*.ts",
+    "component/*.ts",
+    "component/views/*.ts",
+    "e2e/*.ts"],
 
 }

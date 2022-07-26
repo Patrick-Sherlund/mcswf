@@ -51,10 +51,10 @@ Table of Contents
       <ul>
         <li><a href="#app">App</a></li>
         <li><a href="#components">Components</a></li>
-        <li><a href="#global">Global</a></li>
+        <li><a href="#global">constants</a></li>
         <li><a href="#models">Models</a></li>
-        <li><a href="#views">Views</a></li>
         <li><a href="#utils">Utils</a></li>
+        <li><a href="#views">Views</a></li>
         <li><a href="#assets">Assets</a></li>
       </ul>
     </li>
@@ -62,7 +62,7 @@ Table of Contents
       <a href="#test-driven-development">Test Driven Development</a>
       <ul>
         <li><a href="#integration-testing-through-cypress">Integration Testing Through Cypress</a></li>
-        <li><a href="#unit-testing-through-jest">Unit Testing Through Jest</a></li>
+        <li><a href="#component-unit-testing-through-cypress">Component Unit Testing Through Cypress</a></li>
         <li><a href="#device-compatibility-testing">Device Compatibility Testing</a></li>
         <li><a href="#manual-regression-testing">Manual Regression Testing</a></li>
       </ul>
@@ -141,7 +141,19 @@ Download the Current or LTS version of Node.JS and Git
    ```sh
    npm install
    ```
-3. Run the application
+3. Setup Prettier with IDE
+   ```sh
+   JetBrains: File -> Settings -> Languages & Frameworks -> Javascript ->
+              Prettier -> {Select the prettier package in node modules} ->
+              Check 'On Reformat Code Action'
+              Check 'On Save'
+   ```
+4. Setup Eslint
+   ```sh
+   1. Right click .eslintrc in the root dir
+   2. Apply ESLint Code Style Rules
+   ```
+5. Run the application
    ```sh
    npm start
    ```
@@ -185,15 +197,16 @@ MCSWF
 ├── src
 │   ├── app
 │   │   ├── components
-│   │   ├── global
+│   │   ├── constants
+│   │   │   ├── data
 │   │   │   ├── enums
-│   │   │   ├── themes
-│   │   │   └── types
+│   │   │   └── themes
 │   │   ├── models
-│   │   │   ├── classes
 │   │   │   └── interfaces
-│   │   ├── views
-│   │   └── utils
+│   │   ├── utils
+│   │   │   ├── helpers
+│   │   │   └── hooks
+│   │   └── views
 └   └── assets
 ```
 * ### 'app' 
@@ -201,14 +214,14 @@ MCSWF
     It also serves as the root directory for the app component_
 * ### 'components' 
     _This section contains all reusable components, all components within this section are built with usability in mind._
-* ### 'global'
-    _This section contains any type of global declaration, we use this for enums, themes and types._
+* ### 'constants'
+    _This section contains any type constant declaration, we use this for enums, themes and data used on views._
 * ### 'models' 
     _This section contains any type of object model, whether it's an Interface, or a Class._
+* ### 'utils'
+  _This section contains any utility function that could be reused across different components._
 * ### 'views' 
     _This section contains all the pages/views the app uses, for example 'Home', 'About', 'Contact' etc._
-* ### 'utils' 
-    _This section contains any utility function that could be reused across different components._
 * ### 'assets' 
     _This section contains any assets (i.e. images, svg, videos, downloads etc.) that would be used across the application._
 
@@ -217,12 +230,16 @@ MCSWF
 * ### [Integration Testing Through Cypress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
 Cypress Run Command
 ```sh
-npm run e2e
+npm run cypress:e2e:open
+--OR--
+npm run cypress:e2e:run
 ```
-* ### [Unit Testing Through Jest](https://jestjs.io/docs/tutorial-react)
+* ### [Component Unit Testing Through Cypress](https://docs.cypress.io/guides/component-testing/writing-your-first-component-test)
   Jest Run Command
 ```sh
-npm run test
+npm run cypress:component:open
+--OR--
+npm run cypress:component:run
 ```
 * ### Device Compatibility Testing
   [Click this Figma Link](https://www.figma.com/file/26FduvNae6jlmGjJie37AL/Marine-Corps-Software-Factory?node-id=808%3A784) to be directed to the compatibility testing page.
@@ -347,6 +364,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 # Acknowledgments
 
-* [N/A]()
+* Designed and Developed by: 
+  * Staff Sergeant Patrick R. Sherlund
+  * Gunnery Sergeant Justin N. McLinn
 
 <p align="right">(<a href="#top">back to top</a>)</p>

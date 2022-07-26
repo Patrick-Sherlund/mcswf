@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import { motion } from "framer-motion";
-import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
+import { screenMediaQuery } from "../../constants/data/MediaQueries";
 import { Link } from "../DesktopNavBar/DesktopNavBar.styles";
 
 export const DesktopNavLink = styled(Link)`

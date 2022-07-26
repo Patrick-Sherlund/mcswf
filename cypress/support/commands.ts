@@ -35,3 +35,17 @@
 //     }
 //   }
 // }
+
+/// <reference path="../global.d.ts" />
+// @ts-nocheck
+Cypress.Commands.add("getBySel", (selector, ...args) => {
+  return cy.get(`[data-test=${selector}]`, ...args);
+});
+
+Cypress.Commands.add("mount", (jsxElement, ...args) => {
+  return cy.mount(jsxElement, ...args);
+});
+
+Cypress.Commands.add("getBySelLike", (selector, ...args) => {
+  return cy.get(`[data-test*=${selector}]`, ...args);
+});

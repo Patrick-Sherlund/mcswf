@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styled from "styled-components/macro";
-import { screenMediaQuery } from "../../../utils/helpers/MediaQueries";
+import { screenMediaQuery } from "../../../constants/data/MediaQueries";
 
 export const NavMenuContainer = styled(motion.div)`
   position: inherit;

@@ -143,13 +143,14 @@ describe("Home Page", () => {
         HomeData.titles.subMessageBold
       );
 
-      if (!!cy.get(desktopNavTestId)) {
-        cy.get(desktopNavTestId).click();
-      } else {
-        cy.get(mobileNavTestId).click();
-      }
+      cy.get(desktopNavTestId).then(($desktopNav) => {
+        $desktopNav.click();
+      });
+      cy.get(mobileNavTestId).then(($element) => {
+        $element.click();
+      });
 
-      cy.wait(1000);
+      cy.wait(1100);
 
       cy.get("[data-testid=learn-more-container]").should(
         "have.css",
