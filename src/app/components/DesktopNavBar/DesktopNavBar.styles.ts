@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 import * as Scroll from "react-scroll";
 import { motion } from "framer-motion";
-import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
+import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const DesktopNavBarBody = styled(motion.div)`
   position: fixed;

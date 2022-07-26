@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { screenMediaQuery } from "../../../index.styles";
-import { DataCard } from "../LearnMore/LearnMore.styles";
+import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -79,7 +78,7 @@ export const DisciplinesDataCard = styled.div`
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   }
 
-  @media ${screenMediaQuery.desktopXXLarge} {
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
     padding: 1.825rem;
     margin-left: 4rem;
     min-height: 55rem;
@@ -192,7 +191,7 @@ export const DisciplinePrimaryTitle = styled.h2`
   font-weight: 600;
   transition: font-size 500ms;
 
-  @media ${screenMediaQuery.desktopXXLarge} {
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
     font-size: 2.1rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
@@ -247,7 +246,7 @@ export const DisciplineSecondaryTitle = styled.h2`
   font-weight: 600;
   transition: font-size 500ms;
 
-  @media ${screenMediaQuery.desktopXXLarge} {
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
     font-size: 2.1rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
@@ -311,7 +310,7 @@ export const Subtitle = styled.h4`
   font-weight: 600;
   transition: font-size 500ms;
 
-  @media ${screenMediaQuery.desktopXXLarge} {
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
     font-size: 1.8rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
@@ -364,7 +363,7 @@ export const VerticalDivider = styled.div`
   transform: rotate(90deg);
   transition: width 500ms, height 500ms, margin 500ms;
 
-  @media ${screenMediaQuery.desktopXXLarge} {
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
     width: 27px;
   }
   @media ${screenMediaQuery.desktopXLarge} {
@@ -436,7 +435,7 @@ export const Body = styled.div`
   transition: font-size 500ms;
   min-height: 31rem;
 
-  @media ${screenMediaQuery.desktopXXLarge} {
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
     font-size: 1.75rem;
     min-height: 31rem;
   }
@@ -488,7 +487,7 @@ export const SecondBody = styled.div`
   font-weight: lighter;
   transition: font-size 500ms;
 
-  @media ${screenMediaQuery.desktopXXLarge} {
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
     font-size: 1.75rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {

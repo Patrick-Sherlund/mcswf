@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 import moon from "../../../assets/svg/dark/moon.svg";
 import sun from "../../../assets/svg/light/sun.svg";
-import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
+import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const ToggleSwitchContainer = styled.div`
   position: absolute;

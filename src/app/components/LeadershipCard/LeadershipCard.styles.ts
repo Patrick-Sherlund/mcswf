@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
+import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const TeamCard = styled(motion.div)`
   max-width: 20.375rem;

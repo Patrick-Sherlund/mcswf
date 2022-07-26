@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
+import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const TheTeamContainer = styled(motion.div)`
   padding-top: 10rem;

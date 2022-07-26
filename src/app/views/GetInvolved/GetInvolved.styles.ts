@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { VerticalDivider } from "../LearnMore/LearnMore.styles";
-import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
+import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const GetInvolvedContainer = styled(motion.div)`
   padding-top: 10rem;
