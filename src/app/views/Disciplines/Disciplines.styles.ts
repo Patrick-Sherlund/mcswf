@@ -6,6 +6,13 @@ export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 0 2rem 0;
+
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    margin: 0 0 2.8rem 0;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    margin: 0 0 3rem 0;
+  }
 `;
 
 export const HeaderTitleContainer = styled.div`
@@ -37,7 +44,7 @@ export const DisciplinesDataCard = styled.div`
   padding: 1.825rem;
   margin-left: 4rem;
   height: 100%;
-  width: 100%;
+  width: 50rem;
   background-color: ${(props) => props.theme.dataCard.backgroundColor};
   border: 1px solid ${(props) => props.theme.dataCard.borderColor};
   box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.25);
@@ -159,6 +166,16 @@ export const DisciplinesDataCard = styled.div`
     height: 16.5rem;
     width: 16rem;
   }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    width: 42rem;
+  }
+
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    height: 70rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    width: 31rem;
+  }
 `;
 
 export const FirstDisciplineHeader = styled.h3`
@@ -166,6 +183,19 @@ export const FirstDisciplineHeader = styled.h3`
   text-align: center;
   font-weight: lighter;
   margin: 0;
+
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 4rem;
+  }
+
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 3rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 2.4rem;
+  }
 `;
 
 export const SecondDisciplineHeader = styled.h3`
@@ -173,6 +203,16 @@ export const SecondDisciplineHeader = styled.h3`
   text-align: center;
   font-weight: 400;
   margin: 0;
+
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 4rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 3rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 2.4rem;
+  }
 `;
 
 export const DisciplineTitle = styled.div`
@@ -234,6 +274,15 @@ export const DisciplinePrimaryTitle = styled.h2`
   @media ${screenMediaQuery.mobileLandscape} {
     font-size: 1.4rem;
   }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 4rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 3rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 3rem;
+  }
 `;
 
 export const DisciplineSecondaryTitle = styled.h2`
@@ -288,6 +337,16 @@ export const DisciplineSecondaryTitle = styled.h2`
   }
   @media ${screenMediaQuery.mobileLandscape} {
     font-size: 1.4rem;
+  }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 4rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 3rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 2.8rem;
+    margin: 0 0 0 4rem;
   }
 `;
 
@@ -353,6 +412,75 @@ export const Subtitle = styled.h4`
   @media ${screenMediaQuery.mobileLandscape} {
     font-size: 1.4rem;
   }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 2.8rem;
+    padding-top: 2rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 2.25rem;
+    padding-top: 1.5rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 2rem;
+  }
+`;
+
+export const TitleVerticalDivider = styled.div`
+  width: 40px;
+  height: 0px;
+  background-color: ${(props) => props.theme.dataCard.verticalBorderColor};
+  border: 1px solid ${(props) => props.theme.dataCard.verticalBorderColor};
+  transform: rotate(90deg);
+  transition: width 500ms, height 500ms, margin 500ms;
+
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    width: 27px;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    width: 27px;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    width: 27px;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    width: 22px;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    width: 22px;
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+    width: 22px;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+    width: 18px;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    width: 20px;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+    width: 18px;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+    width: 27px;
+  }
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    width: 27px;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+  }
+  @media ${screenMediaQuery.mobilePortrait} {
+    width: 18px;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+  }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    width: 80px;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    width: 60px;
+  }
 `;
 
 export const VerticalDivider = styled.div`
@@ -405,6 +533,9 @@ export const VerticalDivider = styled.div`
   }
   @media ${screenMediaQuery.mobileLandscape} {
   }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    width: 40px;
+  }
 `;
 
 export const HorizontalDivider = styled.div`
@@ -412,16 +543,26 @@ export const HorizontalDivider = styled.div`
   height: 0px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #c20000;
-  border: 1px solid #c20000;
+  background-color: #940000;
+  border: 4px solid #940000;
   transition: width 500ms, height 500ms, margin 500ms;
+  box-shadow: inset 0px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 `;
 
 export const DisciplineList = styled.ul``;
-export const DisciplineListItem = styled.li``;
+export const DisciplineListItem = styled.li`
+  ::marker {
+    color: #940000;
+  }
+`;
 
 export const SecondDisciplineList = styled.ul``;
-export const SecondDisciplineListItem = styled.li``;
+export const SecondDisciplineListItem = styled.li`
+  ::marker {
+    color: #940000;
+  }
+`;
 
 export const DisciplineBodyContainer = styled.div`
   display: flex;
@@ -479,6 +620,17 @@ export const Body = styled.div`
   @media ${screenMediaQuery.mobileLandscape} {
     font-size: 1rem;
   }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 2.4rem;
+    min-height: 40rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 2.2rem;
+    min-height: 38rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    min-height: 34rem;
+  }
 `;
 
 export const SecondBody = styled.div`
@@ -529,6 +681,12 @@ export const SecondBody = styled.div`
   }
   @media ${screenMediaQuery.mobileLandscape} {
     font-size: 1rem;
+  }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 2.2rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 2.2rem;
   }
 `;
 

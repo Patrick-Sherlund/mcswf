@@ -19,6 +19,7 @@ import {
   SecondDisciplineList,
   SecondDisciplineListItem,
   Subtitle,
+  TitleVerticalDivider,
   VerticalDivider,
 } from "./Disciplines.styles";
 import { DisciplineData } from "../../constants/data/discipline";
@@ -30,11 +31,10 @@ const Disciplines: FC = () => {
       <HeaderContainer>
         <HeaderTitleContainer>
           <FirstDisciplineHeader>Explore Disciplines</FirstDisciplineHeader>
-          <VerticalDivider />
+          <TitleVerticalDivider />
           <SecondDisciplineHeader>Find Your Best Fit</SecondDisciplineHeader>
         </HeaderTitleContainer>
       </HeaderContainer>
-
       <DesktopContainer
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
