@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 import { motion } from "framer-motion";
 import * as Scroll from "react-scroll";
-import { screenMediaQuery } from "../../../../../index.styles";
+import { screenMediaQuery } from "../../../../utils/helpers/MediaQueries";
 
 export const MenuListItem = styled(motion.li)`
   width: 100%;

@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 import moon from "../../../assets/svg/dark/moon.svg";
 import sun from "../../../assets/svg/light/sun.svg";
-import { screenMediaQuery } from "../../../index.styles";
+import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
 
 export const ToggleSwitchContainer = styled.div`
   position: absolute;
@@ -106,7 +106,7 @@ export const CheckBox = styled.input`
       height: 1.55rem;
       background: #323232;
       border: 1px solid #eaeaea;
-      box-shadow: inset 0px 0px 16px rgba(255, 255, 255, 0.55);
+      box-shadow: inset 0 0 16px rgba(255, 255, 255, 0.55);
       transition: 0.2s;
       margin-left: 2.2rem;
     }

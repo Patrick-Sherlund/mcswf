@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { screenMediaQuery } from "../../../index.styles";
-import { Link } from "../../components/DesktopNavBar/DesktopNavBar.styles";
+import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
 
 export const HomeContainer = styled(motion.div)`
   position: relative;
   padding-top: 12rem;
   margin-top: 0;
-  height: 82vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -28,6 +27,15 @@ export const HomeHeader = styled.header`
   transition: width 500ms, height 500ms, margin 500ms;
   margin: 5% auto 0;
 
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    margin: 8% auto 0;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    margin: 6% auto 0;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    margin: 4% auto 0;
+  }
   @media ${screenMediaQuery.desktopLarge} {
     margin: 8% auto 0;
   }
@@ -80,6 +88,14 @@ export const StyledH2 = styled(motion.h2)`
   @media screen and (max-width: 1315px) {
     font-size: 3rem;
   }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 6.5rem;
+    margin-bottom: 1.5rem;
+  }
   @media ${screenMediaQuery.desktopLarge} {
     font-size: 4rem;
     margin-bottom: 1.5rem;
@@ -120,6 +136,7 @@ export const StyledH2 = styled(motion.h2)`
     margin-bottom: 1rem;
   }
   @media ${screenMediaQuery.mobilePortraitSmallHeight} {
+    padding: 0 0.5rem;
     font-size: 1.1rem;
     margin-bottom: 1rem;
   }
@@ -141,6 +158,12 @@ export const Divider = styled(motion.div)`
 
   @media screen and (max-width: 1315px) {
     height: 6rem;
+  }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    height: 14.5rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    height: 11.5rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
     height: 8rem;
@@ -183,6 +206,15 @@ export const HomeContent = styled.div`
   flex-direction: row;
   transition: width 500ms, height 500ms, margin 500ms;
 
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    margin: 0 auto 6%;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    margin: 0 auto 5%;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    margin: 0 auto 3%;
+  }
   @media ${screenMediaQuery.desktopLarge} {
     margin: 0 auto 2%;
   }
@@ -238,6 +270,14 @@ export const StyledH3 = styled(motion.h3)`
     font-size: 1.25rem;
     padding-left: 0.4rem;
   }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 2.6rem;
+    padding-left: 0.6rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 2.6rem;
+    padding-left: 0.6rem;
+  }
   @media ${screenMediaQuery.desktopMedium} {
     font-size: 1.6rem;
     padding-left: 0.4rem;
@@ -292,14 +332,14 @@ export const SocialGroup = styled(motion.div)`
   align-content: space-evenly;
 `;
 
-export const SocialButton = styled(motion.div)`
+export const SocialButton = styled(motion.a)`
   height: 4.25rem;
   width: 4.25rem;
   margin: 0 0.4rem;
   border-radius: 4rem;
   background-color: ${(props) => props.theme.socials.backgroundColor};
   border: 0.175rem solid ${(props) => props.theme.socials.borderColor};
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: width 500ms, height 500ms;
 
@@ -311,6 +351,14 @@ export const SocialButton = styled(motion.div)`
   @media screen and (max-width: 1315px) {
     height: 3.5rem;
     width: 3.5rem;
+  }
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    height: 5.4rem;
+    width: 5.4rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
     height: 3rem;
@@ -345,11 +393,6 @@ export const SocialButton = styled(motion.div)`
     height: 2.7rem;
     width: 2.7rem;
   }
-`;
-
-export const NavLink = styled(Link)`
-  margin: auto 0 0;
-  padding-bottom: 2rem;
 `;
 
 export const FacebookButton = styled(SocialButton)`
@@ -396,5 +439,51 @@ export const Logo = styled(motion.img)`
 
   @media ${screenMediaQuery.mobilePortrait} {
     display: inherit;
+  }
+`;
+
+export const BottomNavContainer = styled.div`
+  margin: 8% auto 0;
+  display: inherit;
+
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    margin: 8% auto 0;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    margin: 6% auto 0;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    margin: 7% auto 0;
+  }
+  @media ${screenMediaQuery.iPadPro} {
+    margin: 28% auto 0;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    margin: 35% auto 0;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+    margin: 28% auto 0;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+    margin: 35% auto 0;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+    margin: 7% auto 0;
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    margin: 5% auto 0;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+    margin: 5% auto 0;
+  }
+
+  @media ${screenMediaQuery.mobilePortrait} {
+    margin: 0 auto auto;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+    margin: 0 auto auto;
+  }
+  @media ${screenMediaQuery.mobilePortraitSmallHeight} {
+    margin: 0 auto auto;
   }
 `;

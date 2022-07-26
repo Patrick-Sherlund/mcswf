@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { screenMediaQuery } from "../../../index.styles";
+import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
 
 export const TheTeamContainer = styled(motion.div)`
   padding-top: 10rem;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -44,7 +45,7 @@ export const LeadershipTitle = styled.h2`
 
 export const MobileTeamContent = styled.div`
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
@@ -76,12 +77,12 @@ export const MobileTeamContent = styled.div`
 
 export const DesktopTeamContent = styled.div`
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.5s linear;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
     display: none;

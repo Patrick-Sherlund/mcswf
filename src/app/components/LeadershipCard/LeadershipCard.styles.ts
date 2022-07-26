@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { screenMediaQuery } from "../../../index.styles";
+import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
 
 export const TeamCard = styled(motion.div)`
   max-width: 20.375rem;
@@ -10,13 +10,25 @@ export const TeamCard = styled(motion.div)`
     props.theme.leadership.cards.outer.backgroundColor};
   border: 0.5px solid
     ${(props) => props.theme.leadership.cards.outer.borderColor};
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   padding: 0.4rem 0 0.3rem 0;
   justify-content: space-around;
   flex: 1;
   margin: 1rem 0 0 1rem;
 
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    max-width: 50rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    max-width: 27.375rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    max-width: 27.375rem;
+  }
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    max-width: 27.375rem;
+  }
   @media ${screenMediaQuery.tabletAndMobilePortrait} {
     flex-direction: column;
     align-items: center;
@@ -41,10 +53,10 @@ export const TeamCard = styled(motion.div)`
 export const InnerCard = styled.div`
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
   background-color: ${(props) =>
     props.theme.leadership.cards.inner.backgroundColor};
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0 0;
   padding-bottom: 0.5rem;
   height: 95%;
   max-height: 95%;
@@ -56,7 +68,7 @@ export const TeamPhoto = styled.img`
   width: 95%;
   height: fit-content;
   margin: 0.4rem auto 0;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 `;
 
@@ -66,6 +78,18 @@ export const Title = styled.h2`
   font-size: 1.1rem;
   color: ${(props) => props.theme.leadership.cards.inner.front.textColor};
   margin: 0.5rem auto 0;
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 1.3rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 1.3rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 1.3rem;
+  }
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    font-size: 1.3rem;
+  }
   @media ${screenMediaQuery.laptopAndDesktop} {
     font-size: 0.9rem;
   }
@@ -99,7 +123,7 @@ export const BilletContainer = styled.div`
 
 export const Divider = styled.div`
   width: 15px;
-  height: 0px;
+  height: 0;
   background-color: ${(props) => props.theme.borderRed};
   border: 1px solid ${(props) => props.theme.borderRed};
   transform: rotate(90deg);
@@ -110,7 +134,18 @@ export const Billet = styled.h3`
   font-size: 0.9rem;
   color: ${(props) => props.theme.leadership.cards.inner.front.textColor};
   margin: 0;
-
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 1.3rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 1.3rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 1.2rem;
+  }
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    font-size: 1.2rem;
+  }
   @media ${screenMediaQuery.laptopAndDesktop} {
     font-size: 0.7rem;
   }
@@ -144,7 +179,7 @@ export const Information = styled.button`
   margin: 0.4rem 0.8rem 0 0.4rem;
   border-radius: 4rem;
   background-color: ${(props) => props.theme.socials.backgroundColor};
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: width 500ms, height 500ms;
   background-image: url(${(prop) =>
@@ -156,6 +191,22 @@ export const Information = styled.button`
   border: none;
   align-self: flex-end;
   z-index: 2;
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
   @media ${screenMediaQuery.laptopAndDesktop} {
     height: 1.8rem;
     width: 1.8rem;
@@ -200,7 +251,7 @@ export const FrontCardContent = styled(motion.div)`
 export const BackCardContent = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: auto 0.3rem;
   align-self: center;
   position: fixed;
@@ -219,13 +270,25 @@ export const AboutBody = styled.div`
   position: relative;
   font-size: 0.85rem;
   color: ${(props) => props.theme.leadership.cards.inner.back.about.textColor};
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   background-color: ${(props) =>
     props.theme.leadership.cards.inner.back.about.backgroundColor};
   padding: 0.5rem;
   overflow-y: scroll;
   height: 100%;
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    font-size: 1.3rem;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    font-size: 1.3rem;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    font-size: 1.25rem;
+  }
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    font-size: 1rem;
+  }
   @media ${screenMediaQuery.laptopAndDesktop} {
     font-size: 0.85rem;
   }

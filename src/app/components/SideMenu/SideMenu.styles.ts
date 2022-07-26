@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import { motion } from "framer-motion";
-import { screenMediaQuery } from "../../../index.styles";
+import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
 
 export const NavMenu = styled(motion.nav)`
   position: fixed;

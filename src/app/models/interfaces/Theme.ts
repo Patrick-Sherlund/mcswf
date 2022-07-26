@@ -69,7 +69,6 @@ export interface Theme {
       };
     };
   };
-
   learnMore: {
     svg: {
       agile: string;
@@ -77,6 +76,11 @@ export interface Theme {
       informationPacket: string;
       roundedTeams: string;
       talent: string;
+    };
+  };
+  getInvolved: {
+    svg: {
+      joinTeamButton: string;
     };
   };
 }

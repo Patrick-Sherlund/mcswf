@@ -44,7 +44,10 @@ const MenuToggle: FC<MenuToggleProps> = (menuToggleProps: MenuToggleProps) => {
   const toggleEventHandler: () => void = menuToggleProps.toggleEventHandler;
 
   return (
-    <MenuButton onClick={() => toggleEventHandler()}>
+    <MenuButton
+      onClick={() => toggleEventHandler()}
+      data-testid={"mobile-menu-toggle"}
+    >
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path variants={getSvgPathEffect("M 2 2.5 L 20 2.5")} />
         <Path

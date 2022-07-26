@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { DisciplinesContainer, SampleText } from "./Disciplines.styles";
+import { DisciplinesContainer } from "./Disciplines.styles";
 
 const Disciplines: FC = () => (
   <DisciplinesContainer
@@ -9,9 +9,7 @@ const Disciplines: FC = () => (
     viewport={{ once: true }}
     data-testid="Disciplines"
     id={"Disciplines"}
-  >
-    <SampleText>Descipline</SampleText>
-  </DisciplinesContainer>
+  ></DisciplinesContainer>
 );
 
 export default Disciplines;

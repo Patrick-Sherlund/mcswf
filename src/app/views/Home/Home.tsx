@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { NavigationArrow } from "../../App.styles";
 import {
   HomeContainer,
   TitleTop,
@@ -16,10 +15,12 @@ import {
   TwitterButton,
   YoutubeButton,
   Logo,
-  NavLink,
+  BottomNavContainer,
 } from "./Home.styles";
-import { Link } from "../../components/DesktopNavBar/DesktopNavBar.styles";
 import logo from "../../../assets/logo.webp";
+import { HomeData } from "../../constants/data/home";
+import { LearnMoreData } from "../../constants/data/learn-more";
+import BottomNavigator from "../../components/BottomNavigator/BottomNavigator";
 
 interface HomeProps {
   elementRef: (node?: Element | null | undefined) => void;
@@ -27,11 +28,6 @@ interface HomeProps {
 
 const Home: FC<HomeProps> = (homeProps: HomeProps) => {
   const elementRef = homeProps.elementRef;
-  const titleTopPrimary = "U.S. Marine Corps";
-  const titleTopSecondary = "Software Factory";
-  const subMessageLight = "World-Class Software Engineered";
-  const subMessageBold = "By Marines, For Marines.";
-  const navigationArrowLink = "Learn-More";
 
   return (
     <HomeContainer
@@ -62,7 +58,7 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
           viewport={{ once: true }}
           data-testid={"home-title-top-primary"}
         >
-          {titleTopPrimary}
+          {HomeData.titles.titleTopPrimary}
         </TitleTop>
         <Divider
           initial={{ opacity: 0 }}
@@ -84,7 +80,7 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
           viewport={{ once: true }}
           data-testid={"home-title-top-secondary"}
         >
-          {titleTopSecondary}
+          {HomeData.titles.titleTopSecondary}
         </StyledH2>
       </HomeHeader>
       <HomeContent>
@@ -95,7 +91,7 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
           viewport={{ once: true }}
           data-testid={"home-content-light"}
         >
-          {subMessageLight}
+          {HomeData.titles.subMessageLight}
         </LightContent>
         <BoldContent
           initial={{ opacity: 0 }}
@@ -104,7 +100,7 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
           viewport={{ once: true }}
           data-testid={"home-content-bold"}
         >
-          {subMessageBold}
+          {HomeData.titles.subMessageBold}
         </BoldContent>
       </HomeContent>
       <SocialGroup>
@@ -121,6 +117,8 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
             transition: { delay: 2.7, duration: 0.7 },
           }}
           viewport={{ once: true }}
+          href={HomeData.socialMediaLinks.facebook}
+          target={"_blank"}
           data-testid={"home-social-facebook"}
         />
         <InstagramButton
@@ -136,6 +134,8 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
             transition: { delay: 2.76, duration: 0.7 },
           }}
           viewport={{ once: true }}
+          href={HomeData.socialMediaLinks.instagram}
+          target={"_blank"}
           data-testid={"home-social-instagram"}
         />
         <LinkedInButton
@@ -151,6 +151,8 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
             transition: { delay: 2.82, duration: 0.7 },
           }}
           viewport={{ once: true }}
+          href={HomeData.socialMediaLinks.linkedin}
+          target={"_blank"}
           data-testid={"home-social-linkedin"}
         />
         <TwitterButton
@@ -166,6 +168,8 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
             transition: { delay: 2.88, duration: 0.7 },
           }}
           viewport={{ once: true }}
+          href={HomeData.socialMediaLinks.twitter}
+          target={"_blank"}
           data-testid={"home-social-twitter"}
         />
         <YoutubeButton
@@ -181,37 +185,19 @@ const Home: FC<HomeProps> = (homeProps: HomeProps) => {
             transition: { delay: 2.92, duration: 0.7 },
           }}
           viewport={{ once: true }}
+          href={HomeData.socialMediaLinks.youtube}
+          target={"_blank"}
           data-testid={"home-social-youtube"}
         />
       </SocialGroup>
-      <NavLink
-        tab-index={10}
-        ignoreCancelEvents={true}
-        isDynamic={true}
-        spy={true}
-        smooth={"easeInQuad"}
-        offset={-30}
-        delay={-500}
-        duration={300}
-        to={navigationArrowLink}
-        data-testid={"home-navigation-arrow-link"}
-      >
-        <NavigationArrow
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { delay: 2.92, duration: 1 } }}
-          viewport={{ once: true }}
-          animate={{
-            y: [10, 40, 0, 40, 0, 40, 0],
-            transition: { delay: 3.3, duration: 3 },
-          }}
-          whileHover={{
-            scale: 1.12,
-            transition: { ease: "easeInOut", duration: 0.2, delay: 0 },
-          }}
-          whileTap={{ scale: 1 }}
-          data-testid={"home-navigation-arrow"}
+      <BottomNavContainer>
+        <BottomNavigator
+          navigationLink={LearnMoreData.navigationArrowLink}
+          desktopOffset={-50}
+          mobileOffset={-10}
+          delay={2.92}
         />
-      </NavLink>
+      </BottomNavContainer>
     </HomeContainer>
   );
 };

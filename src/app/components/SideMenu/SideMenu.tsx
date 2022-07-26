@@ -62,6 +62,7 @@ const SideMenu: FC<SideMenuProps> = React.memo(function SideMenu({
         id={"nav-menu-blur"}
         variants={sidebar}
         onClick={() => toggleOpen()}
+        data-testid={"mobile-menu-blur"}
       />
       <MenuToggle tab-index={1} toggleEventHandler={() => toggleOpen()} />
     </NavMenu>

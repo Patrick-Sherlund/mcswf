@@ -14,6 +14,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
 import { ContactCard } from "../../models/interfaces/ContactCard";
 import LeadershipCard from "../../components/LeadershipCard/LeadershipCard";
+import BottomNavigator from "../../components/BottomNavigator/BottomNavigator";
+import { GetInvolvedData } from "../../constants/data/get-involved";
 
 interface TeamProps {
   contactCards: ContactCard[];
@@ -80,6 +82,11 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
           })}
         </LeadershipRowBottom>
       </DesktopTeamContent>
+      <BottomNavigator
+        navigationLink={GetInvolvedData.navigationArrowLink}
+        desktopOffset={-50}
+        mobileOffset={-10}
+      />
     </TheTeamContainer>
   );
 };

@@ -37,6 +37,7 @@ const framerMotionVariants: Variants = {
 
 const MenuItem: FC<MenuItemProps> = (menuItemProps: MenuItemProps) => {
   const pageName: PageName = menuItemProps.pageName;
+  const correctedPageName: string = pageName.replace(" ", "-");
   const tabIndex: number = Object.values(PageName).indexOf(pageName);
   const isSelected: boolean = menuItemProps.isSelected ?? false;
   const navigationEventHandler: (pageName: PageName) => void =
@@ -50,13 +51,14 @@ const MenuItem: FC<MenuItemProps> = (menuItemProps: MenuItemProps) => {
       isDynamic={true}
       key={"link-" + pageName + "side-nav"}
       onSetActive={() => navigationEventHandler(pageName)}
-      to={pageName.replace(" ", "-")}
+      to={correctedPageName}
       onClick={closeModalHandler}
       spy={true}
       smooth={"easeInQuad"}
       offset={-5}
       delay={400}
       duration={300}
+      data-testid={`mobile-link-${correctedPageName}`}
     >
       {isSelected ? (
         <SelectedListItem

@@ -23,31 +23,40 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import {
   LearnMoreCardData,
-  LearnMoreMediaData,
+  LearnMoreData,
 } from "../../constants/data/learn-more";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
+import { LeadershipData } from "../../constants/data/leadership";
+import BottomNavigator from "../../components/BottomNavigator/BottomNavigator";
 
 const LearnMore: FC = () => {
   const cardEffect = "cards";
   return (
-    <LearnMoreContainer id={"Learn-More"} data-testid="learn-more-container">
-      <DesktopContainer
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-        viewport={{ once: true }}
-      >
+    <LearnMoreContainer
+      id={"Learn-More"}
+      data-testid="learn-more-container"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.3 }}
+      viewport={{ once: true }}
+    >
+      <DesktopContainer>
         {LearnMoreCardData.map((data, index) => {
           return (
-            <DataCard key={`learn-more-desktop-${index}`}>
-              <Title>
+            <DataCard
+              key={`learn-more-desktop-${index}`}
+              data-testid={`desktop-learn-more-card-${index}`}
+            >
+              <Title data-testid={`desktop-learn-more-card-title-${index}`}>
                 <VerticalDivider />
                 {data.title}
               </Title>
-              <Body>{data.body}</Body>
+              <Body data-testid={`desktop-learn-more-card-body-${index}`}>
+                {data.body}
+              </Body>
             </DataCard>
           );
         })}
@@ -62,12 +71,14 @@ const LearnMore: FC = () => {
           {LearnMoreCardData.map((data, index) => {
             return (
               <SwiperSlide key={`learn-more-mobile-${index}`}>
-                <DataCard key={`learn-more-desktop-${index}`}>
-                  <Title>
+                <DataCard data-testid={`mobile-learn-more-card-${index}`}>
+                  <Title data-testid={`mobile-learn-more-card-title-${index}`}>
                     <VerticalDivider />
                     {data.title}
                   </Title>
-                  <Body>{data.body}</Body>
+                  <Body data-testid={`mobile-learn-more-card-body-${index}`}>
+                    {data.body}
+                  </Body>
                 </DataCard>
               </SwiperSlide>
             );
@@ -79,21 +90,30 @@ const LearnMore: FC = () => {
             transition: { ease: "easeInOut", duration: 0.2, delay: 0 },
           }}
           whileTap={{ scale: 0.9 }}
+          data-testid={`mobile-learn-more-footer-information-packet-svg`}
         />
       </MobileContainer>
       <LearnMoreFooter>
         <MediaGroup>
           <MediaContainer>
-            <Talent />
-            <MediaTitle>{LearnMoreMediaData.talent.title}</MediaTitle>
-            <MediaSubTitle>{LearnMoreMediaData.talent.subTitle}</MediaSubTitle>
+            <Talent data-testid={`learn-more-footer-talent-svg`} />
+            <MediaTitle data-testid={`learn-more-footer-talent-title`}>
+              {LearnMoreData.talent.title}
+            </MediaTitle>
+            <MediaSubTitle data-testid={`learn-more-footer-talent-sub-title`}>
+              {LearnMoreData.talent.subTitle}
+            </MediaSubTitle>
           </MediaContainer>
 
           <MediaContainer>
-            <RoundedTeams />
-            <MediaTitle>{LearnMoreMediaData.roundedTeams.title}</MediaTitle>
-            <MediaSubTitle>
-              {LearnMoreMediaData.roundedTeams.subTitle}
+            <RoundedTeams data-testid={`learn-more-footer-rounded-teams-svg`} />
+            <MediaTitle data-testid={`learn-more-footer-rounded-teams-title`}>
+              {LearnMoreData.roundedTeams.title}
+            </MediaTitle>
+            <MediaSubTitle
+              data-testid={`learn-more-footer-rounded-teams-sub-title`}
+            >
+              {LearnMoreData.roundedTeams.subTitle}
             </MediaSubTitle>
           </MediaContainer>
         </MediaGroup>
@@ -104,24 +124,36 @@ const LearnMore: FC = () => {
             transition: { ease: "easeInOut", duration: 0.2, delay: 0 },
           }}
           whileTap={{ scale: 0.9 }}
+          data-testid={`desktop-learn-more-footer-information-packet-svg`}
         />
 
         <MediaGroup>
           <MediaContainer>
-            <Agile />
-            <MediaTitle>{LearnMoreMediaData.agile.title}</MediaTitle>
-            <MediaSubTitle>{LearnMoreMediaData.agile.subTitle}</MediaSubTitle>
+            <Agile data-testid={`learn-more-footer-agile-svg`} />
+            <MediaTitle data-testid={`learn-more-footer-agile-title`}>
+              {LearnMoreData.agile.title}
+            </MediaTitle>
+            <MediaSubTitle data-testid={`learn-more-footer-agile-sub-title`}>
+              {LearnMoreData.agile.subTitle}
+            </MediaSubTitle>
           </MediaContainer>
 
           <MediaContainer>
-            <Industry />
-            <MediaTitle>{LearnMoreMediaData.industry.title}</MediaTitle>
-            <MediaSubTitle>
-              {LearnMoreMediaData.industry.subTitle}
+            <Industry data-testid={`learn-more-footer-industry-svg`} />
+            <MediaTitle data-testid={`learn-more-footer-industry-title`}>
+              {LearnMoreData.industry.title}
+            </MediaTitle>
+            <MediaSubTitle data-testid={`learn-more-footer-industry-sub-title`}>
+              {LearnMoreData.industry.subTitle}
             </MediaSubTitle>
           </MediaContainer>
         </MediaGroup>
       </LearnMoreFooter>
+      <BottomNavigator
+        navigationLink={LeadershipData.navigationArrowLink}
+        desktopOffset={-50}
+        mobileOffset={10}
+      />
     </LearnMoreContainer>
   );
 };

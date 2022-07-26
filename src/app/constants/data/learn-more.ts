@@ -13,7 +13,8 @@ export const LearnMoreCardData = [
   },
 ];
 
-export const LearnMoreMediaData = {
+export const LearnMoreData = {
+  navigationArrowLink: "Learn-More",
   talent: {
     title: "World-Class Talent",
     subTitle: "Industry-Leading Engineers",

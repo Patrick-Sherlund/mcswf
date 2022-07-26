@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { screenMediaQuery } from "../../../index.styles";
+import { screenMediaQuery } from "../../utils/helpers/MediaQueries";
 
 export const FooterContainer = styled.div`
   padding-top: 8rem;

@@ -1,7 +1,11 @@
 import { ContactCard } from "../../models/interfaces/ContactCard";
 import ContactPicture from "../../../assets/profile.webp";
 
-export const Leadership: ContactCard[] = [
+export const LeadershipData = {
+  navigationArrowLink: "The-Team",
+};
+
+export const LeadershipContactCards: ContactCard[] = [
   {
     photo: ContactPicture,
     title: "LtCol Charlie Bahk",

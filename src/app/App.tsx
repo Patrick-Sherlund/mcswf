@@ -8,7 +8,7 @@ import { lightTheme } from "./constants/themes/LightTheme";
 import SideMenu from "./components/SideMenu/SideMenu";
 import { PageName } from "./constants/enums/global";
 import { useCycle } from "framer-motion";
-import ContentContainer from "./components/ContentContainer/ContentContainer";
+import AppContent from "./components/ContentContainer/AppContent";
 import { marinesBlueTheme } from "./constants/themes/MarinesBlueTheme";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppContainer>
+      <AppContainer data-testid={"AppContainer"}>
         <SideMenu
           selectedPageName={selectedPageName}
           navigationEventHandler={(pageName) =>
@@ -31,7 +31,7 @@ function App() {
           }
           themeEventHandler={cycleTheme}
         />
-        <ContentContainer currentPage={selectedPageName} />
+        <AppContent currentPage={selectedPageName} />
         <Footer />
       </AppContainer>
     </ThemeProvider>

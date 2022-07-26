@@ -13,6 +13,7 @@ import industry from "../../../assets/svg/dark/industry.svg";
 import informationPacket from "../../../assets/svg/marinesBlue/information-packet.svg";
 import roundedTeams from "../../../assets/svg/dark/rounded-teams.svg";
 import talent from "../../../assets/svg/dark/talent.svg";
+import joinTeam from "../../../assets/svg/marinesBlue/join-team-button.svg";
 
 export const marinesBlueTheme: Theme = {
   backgroundColor: "#252933",
@@ -35,7 +36,7 @@ export const marinesBlueTheme: Theme = {
   navBar: {
     backgroundColor: "#000013",
     statusBar: {
-      backgroundColor: "#191C22",
+      backgroundColor: "#5C6372",
     },
   },
   navMenu: {
@@ -92,6 +93,11 @@ export const marinesBlueTheme: Theme = {
       informationPacket: informationPacket,
       roundedTeams: roundedTeams,
       talent: talent,
+    },
+  },
+  getInvolved: {
+    svg: {
+      joinTeamButton: joinTeam,
     },
   },
 };

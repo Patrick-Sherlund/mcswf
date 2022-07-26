@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from "react";
-import { ContentContainerBody } from "./ContentContainer.styles";
+import { ContentContainerBody } from "./AppContent.styles";
 import Home from "../../views/Home/Home";
 import LearnMore from "../../views/LearnMore/LearnMore";
 import Disciplines from "../../views/Disciplines/Disciplines";
@@ -9,16 +9,14 @@ import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import MobileNavBar from "../MobileNavBar/MobileNavBar";
 import { PageName } from "../../constants/enums/global";
-import { Leadership } from "../../constants/data/leadership";
+import { LeadershipContactCards } from "../../constants/data/leadership";
 
-interface ContentContainerProps {
+interface AppContentProps {
   currentPage: PageName;
 }
 
-const ContentContainer: FC<ContentContainerProps> = (
-  contentContainerProps: ContentContainerProps
-) => {
-  const currentPage = contentContainerProps.currentPage;
+const AppContent: FC<AppContentProps> = (appContentProps: AppContentProps) => {
+  const currentPage = appContentProps.currentPage;
   const animationControls = useAnimation();
   const [elementRef, inView] = useInView({
     threshold: 0,
@@ -26,7 +24,9 @@ const ContentContainer: FC<ContentContainerProps> = (
   });
 
   useEffect(() => {
-    animationControls.start(inView ? "hidden" : "visible");
+    animationControls
+      .start(inView ? "hidden" : "visible")
+      .catch((error) => console.log(`An error has occurred: ${error}`));
   }, [animationControls, inView]);
 
   return (
@@ -38,10 +38,10 @@ const ContentContainer: FC<ContentContainerProps> = (
       <Home elementRef={elementRef} />
       <LearnMore />
       <Disciplines />
-      <TheTeam contactCards={Leadership} />
+      <TheTeam contactCards={LeadershipContactCards} />
       <GetInvolved />
     </ContentContainerBody>
   );
 };
 
-export default ContentContainer;
+export default AppContent;

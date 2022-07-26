@@ -13,6 +13,7 @@ import industry from "../../../assets/svg/light/industry.svg";
 import roundedTeams from "../../../assets/svg/light/rounded-teams.svg";
 import talent from "../../../assets/svg/light/talent.svg";
 import informationPacket from "../../../assets/svg/light/information-packet.svg";
+import joinTeam from "../../../assets/svg/light/join-team-button.svg";
 
 export const lightTheme: Theme = {
   backgroundColor: "#c6c6c6",
@@ -92,6 +93,11 @@ export const lightTheme: Theme = {
       informationPacket: informationPacket,
       roundedTeams: roundedTeams,
       talent: talent,
+    },
+  },
+  getInvolved: {
+    svg: {
+      joinTeamButton: joinTeam,
     },
   },
 };
