@@ -33,6 +33,7 @@ const DesktopNavBar: FC<NavBarProps> = React.memo(function NavBar({
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1 }}
       viewport={{ once: true }}
+      data-testid={"Desktop-Nav-Bar"}
     >
       <NavBarContainer data-testid={"NavBar"}>
         <Logo
@@ -67,9 +68,9 @@ const DesktopNavBar: FC<NavBarProps> = React.memo(function NavBar({
                 {selectedPageName === pageName ? (
                   <SelectedListItem
                     key={pageName + index}
-                    data-testid={pageName}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 1 }}
+                    data-testid={"desktop-nav-bar-selected-item"}
                   >
                     {pageName}
                     <UnderLine />
@@ -77,7 +78,7 @@ const DesktopNavBar: FC<NavBarProps> = React.memo(function NavBar({
                 ) : (
                   <ListItem
                     key={pageName + index}
-                    data-testid={pageName}
+                    data-testid={pageName.replace(" ", "-")}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 1 }}
                   >

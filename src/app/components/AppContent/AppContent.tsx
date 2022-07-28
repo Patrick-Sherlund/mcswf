@@ -30,13 +30,12 @@ const AppContent: FC<AppContentProps> = (appContentProps: AppContentProps) => {
   }, [animationControls, inView]);
 
   return (
-    <ContentContainerBody>
+    <ContentContainerBody data-testid={"app-content"}>
       <MobileNavBar
         currentPage={currentPage}
         animationControls={animationControls}
       />
-      <Home elementRef={elementRef} />
-      <LearnMore />
+      <Home elementRef={elementRef} /> <LearnMore />
       <Disciplines />
       <TheTeam contactCards={LeadershipContactCards} />
       <GetInvolved />

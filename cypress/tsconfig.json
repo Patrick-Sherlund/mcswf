@@ -17,6 +17,7 @@
     "support/*.ts",
     "component/*.ts",
     "component/views/*.ts",
-    "e2e/*.ts"],
+    "e2e/*.ts",
+    "helpers/*.ts"],
 
 }

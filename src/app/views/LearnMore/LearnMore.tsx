@@ -126,7 +126,6 @@ const LearnMore: FC = () => {
           whileTap={{ scale: 0.9 }}
           data-testid={`desktop-learn-more-footer-information-packet-svg`}
         />
-
         <MediaGroup>
           <MediaContainer>
             <Agile data-testid={`learn-more-footer-agile-svg`} />

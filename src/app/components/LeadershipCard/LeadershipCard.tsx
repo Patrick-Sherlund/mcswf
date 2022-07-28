@@ -95,6 +95,7 @@ const LeadershipCard: FC<LeadershipCardProps> = (
           variants={cardDisplayVariants}
           animate={isFlipped ? "shown" : "hidden"}
           initial={{ opacity: 0 }}
+          data-testid={`back-content`}
         >
           <AboutTitle>
             {billet}
@@ -102,7 +103,10 @@ const LeadershipCard: FC<LeadershipCardProps> = (
           </AboutTitle>
           <AboutBody>{bio}</AboutBody>
         </BackCardContent>
-        <Information onClick={() => toggleFlip()} />
+        <Information
+          data-testid={`information-button`}
+          onClick={() => toggleFlip()}
+        />
       </InnerCard>
       {statusPercentage && (
         <BarContainer>

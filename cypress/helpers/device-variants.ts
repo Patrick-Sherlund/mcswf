@@ -58,6 +58,22 @@ export const TabletTestData: CypressTestDevice[] = [
 ];
 export const DesktopTestData: CypressTestDevice[] = [
   {
+    testDescription: "an iPad mini / small tablet device.",
+    device: "ipad-mini",
+  },
+  {
+    testDescription: "an iPad / medium tablet device.",
+    device: "ipad-2",
+  },
+  {
+    testDescription: "a Macbook 11 / laptop device.",
+    device: "macbook-11",
+  },
+  {
+    testDescription: "a Macbook 13 / laptop device.",
+    device: "macbook-13",
+  },
+  {
     testDescription: "a Macbook 15 / laptop device.",
     device: "macbook-15",
   },

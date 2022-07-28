@@ -8,7 +8,7 @@ import { lightTheme } from "./constants/themes/LightTheme";
 import SideMenu from "./components/SideMenu/SideMenu";
 import { PageName } from "./constants/enums/global";
 import { useCycle } from "framer-motion";
-import AppContent from "./components/ContentContainer/AppContent";
+import AppContent from "./components/AppContent/AppContent";
 import { marinesBlueTheme } from "./constants/themes/MarinesBlueTheme";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   const [selectedPageName, setSelectedPageName] = useState(PageName.HOME);
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider data-testid={"theme-provider"} theme={theme}>
       <AppContainer data-testid={"AppContainer"}>
         <SideMenu
           selectedPageName={selectedPageName}

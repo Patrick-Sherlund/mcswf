@@ -45,7 +45,11 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
     >
       <LeadershipTitle>Leadership</LeadershipTitle>
       <MobileTeamContent>
-        <Swiper effect={cardEffect} modules={[EffectCards]}>
+        <Swiper
+          data-testid={"swiper-leadership"}
+          effect={cardEffect}
+          modules={[EffectCards]}
+        >
           {contactCards.map((billetCard, index) => {
             const correctedIndex: number = index + 0.0001;
             const statusPercentage: number =
@@ -72,7 +76,7 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
             );
           })}
         </LeadershipRowTop>
-        <LeadershipRowBottom>
+        <LeadershipRowBottom data-testid={"leadership-cards"}>
           {contactCardsBottom.map((billetCard, index) => {
             return (
               <BottomCardContainer key={`leadership-desktop-bottom-${index}`}>
