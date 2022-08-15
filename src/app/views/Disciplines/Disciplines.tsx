@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import {
-  Body,
+  BulletPoints,
   DesktopContainer,
   DisciplineBodyContainer,
   DisciplineList,
@@ -11,10 +11,12 @@ import {
   DisciplineSecondaryTitle,
   DisciplineTitle,
   FirstDisciplineHeader,
+  Group,
+  GroupContainer,
   HeaderContainer,
   HeaderTitleContainer,
   HorizontalDivider,
-  SecondBody,
+  SecondBulletPoints,
   SecondDisciplineHeader,
   SecondDisciplineList,
   SecondDisciplineListItem,
@@ -22,8 +24,24 @@ import {
   TitleVerticalDivider,
   VerticalDivider,
 } from "./Disciplines.styles";
-import { DisciplineData } from "../../constants/data/discipline";
-import { LeadershipTitle, TheTeamContainer } from "../TheTeam/TheTeam.styles";
+import {
+  DisciplineCardSetOne,
+  DisciplineCardSetTwo,
+} from "../../constants/data/discipline";
+
+/*interface DataCardProps {
+  data: string[];
+}
+
+const DataCards: FC<DataCardProps> = (props) => {
+  return (
+    <Group>
+      {props.data.map((data) => {
+        return <Card>data</Card>;
+      })}
+    </Group>
+  );
+};*/
 
 const Disciplines: FC = () => {
   return (
@@ -41,60 +59,124 @@ const Disciplines: FC = () => {
         transition={{ delay: 0.3 }}
         viewport={{ once: true }}
       >
-        {DisciplineData.map((disciplineData, disciplineIndex) => {
-          return (
-            <DisciplinesDataCard key={`discipline-desktop-${disciplineIndex}`}>
-              <DisciplineTitle>
-                <DisciplinePrimaryTitle>
-                  <VerticalDivider />
-                  {disciplineData.primaryTitle}
-                </DisciplinePrimaryTitle>
-                <DisciplineSecondaryTitle>
-                  {disciplineData.secondaryTitle}
-                </DisciplineSecondaryTitle>
-              </DisciplineTitle>
-              <HorizontalDivider />
-              {disciplineData.primaryList.map((dataList) => {
-                return (
-                  <DisciplineBodyContainer>
-                    <Subtitle>{dataList.title}</Subtitle>
-                    <Body>
-                      <DisciplineList>
-                        {dataList.body.map((data, index) => {
-                          return (
-                            <DisciplineListItem key={`listItem-${index}`}>
-                              {data}
-                            </DisciplineListItem>
-                          );
-                        })}
-                      </DisciplineList>
-                    </Body>
-                  </DisciplineBodyContainer>
-                );
-              })}
-              {disciplineData.secondaryList.map((secondaryDataList) => {
-                return (
-                  <DisciplineBodyContainer>
-                    <Subtitle>{secondaryDataList.title}</Subtitle>
-                    <SecondBody>
-                      <SecondDisciplineList>
-                        {secondaryDataList.body.map((data, index) => {
-                          return (
-                            <SecondDisciplineListItem
-                              key={`secondListItem-${index}`}
-                            >
-                              {data}
-                            </SecondDisciplineListItem>
-                          );
-                        })}
-                      </SecondDisciplineList>
-                    </SecondBody>
-                  </DisciplineBodyContainer>
-                );
-              })}
-            </DisciplinesDataCard>
-          );
-        })}
+        <Group>
+          <GroupContainer>
+            {DisciplineCardSetOne.map((disciplineData, disciplineIndex) => {
+              return (
+                <DisciplinesDataCard
+                  key={`discipline-desktop-${disciplineIndex}`}
+                >
+                  <DisciplineTitle>
+                    <DisciplinePrimaryTitle>
+                      <VerticalDivider />
+                      {disciplineData.primaryTitle}
+                    </DisciplinePrimaryTitle>
+                    <DisciplineSecondaryTitle>
+                      {disciplineData.secondaryTitle}
+                    </DisciplineSecondaryTitle>
+                  </DisciplineTitle>
+                  <HorizontalDivider />
+                  {disciplineData.primaryList.map((dataList) => {
+                    return (
+                      <DisciplineBodyContainer>
+                        <Subtitle>{dataList.title}</Subtitle>
+                        <BulletPoints>
+                          <DisciplineList>
+                            {dataList.body.map((data, index) => {
+                              return (
+                                <DisciplineListItem key={`listItem-${index}`}>
+                                  {data}
+                                </DisciplineListItem>
+                              );
+                            })}
+                          </DisciplineList>
+                        </BulletPoints>
+                      </DisciplineBodyContainer>
+                    );
+                  })}
+                  {disciplineData.secondaryList.map((secondaryDataList) => {
+                    return (
+                      <DisciplineBodyContainer>
+                        <Subtitle>{secondaryDataList.title}</Subtitle>
+                        <SecondBulletPoints>
+                          <SecondDisciplineList>
+                            {secondaryDataList.body.map((data, index) => {
+                              return (
+                                <SecondDisciplineListItem
+                                  key={`secondListItem-${index}`}
+                                >
+                                  {data}
+                                </SecondDisciplineListItem>
+                              );
+                            })}
+                          </SecondDisciplineList>
+                        </SecondBulletPoints>
+                      </DisciplineBodyContainer>
+                    );
+                  })}
+                </DisciplinesDataCard>
+              );
+            })}
+          </GroupContainer>
+          <GroupContainer>
+            {DisciplineCardSetTwo.map((disciplineData, disciplineIndex) => {
+              return (
+                <DisciplinesDataCard
+                  key={`discipline-desktop-${disciplineIndex}`}
+                >
+                  <DisciplineTitle>
+                    <DisciplinePrimaryTitle>
+                      <VerticalDivider />
+                      {disciplineData.primaryTitle}
+                    </DisciplinePrimaryTitle>
+                    <DisciplineSecondaryTitle>
+                      {disciplineData.secondaryTitle}
+                    </DisciplineSecondaryTitle>
+                  </DisciplineTitle>
+                  <HorizontalDivider />
+                  {disciplineData.primaryList.map((dataList) => {
+                    return (
+                      <DisciplineBodyContainer>
+                        <Subtitle>{dataList.title}</Subtitle>
+                        <BulletPoints>
+                          <DisciplineList>
+                            {dataList.body.map((data, index) => {
+                              return (
+                                <DisciplineListItem key={`listItem-${index}`}>
+                                  {data}
+                                </DisciplineListItem>
+                              );
+                            })}
+                          </DisciplineList>
+                        </BulletPoints>
+                      </DisciplineBodyContainer>
+                    );
+                  })}
+                  {disciplineData.secondaryList.map((secondaryDataList) => {
+                    return (
+                      <DisciplineBodyContainer>
+                        <Subtitle>{secondaryDataList.title}</Subtitle>
+                        <SecondBulletPoints>
+                          <SecondDisciplineList>
+                            {secondaryDataList.body.map((data, index) => {
+                              return (
+                                <SecondDisciplineListItem
+                                  key={`secondListItem-${index}`}
+                                >
+                                  {data}
+                                </SecondDisciplineListItem>
+                              );
+                            })}
+                          </SecondDisciplineList>
+                        </SecondBulletPoints>
+                      </DisciplineBodyContainer>
+                    );
+                  })}
+                </DisciplinesDataCard>
+              );
+            })}
+          </GroupContainer>
+        </Group>
       </DesktopContainer>
     </DisciplinesContainer>
   );

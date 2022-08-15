@@ -1,4 +1,4 @@
-export const DisciplineData = [
+export const DisciplineCardSetOne = [
   {
     primaryTitle: "Software",
     secondaryTitle: "Engineer",
@@ -54,6 +54,9 @@ export const DisciplineData = [
       },
     ],
   },
+];
+
+export const DisciplineCardSetTwo = [
   {
     primaryTitle: "Platform",
     secondaryTitle: "Engineer",

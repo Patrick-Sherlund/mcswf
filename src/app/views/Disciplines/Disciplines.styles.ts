@@ -12,11 +12,28 @@ export const DisciplinesContainer = styled(motion.div)`
   align-items: center;
   margin: 0 auto;
 
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    padding-top: 40rem;
+  }
+
   @media ${screenMediaQuery.mobileLandscape} {
     margin-top: 7rem !important;
   }
   @media ${screenMediaQuery.mobilePortrait} {
     margin-top: 6rem !important;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    height: 120vh;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    height: 135vh;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    padding-top: 5rem;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    height: 130vh;
+    padding-top: 6rem;
   }
 `;
 
@@ -31,6 +48,22 @@ export const HeaderContainer = styled.div`
 
   @media ${screenMediaQuery.desktopQuadHighDefinition} {
     margin: 0 0 3rem 0;
+  }
+
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    margin: 0 0 3rem 2rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    margin: 0 0 3rem 3rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    margin: 0 0 1rem 2.5rem;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    margin: 0 0 3rem 2.5rem;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    margin: 0 0 0.5rem 0;
   }
 `;
 
@@ -57,6 +90,25 @@ export const FirstDisciplineHeader = styled.h3`
   @media ${screenMediaQuery.desktopQuadHighDefinition} {
     font-size: 2.4rem;
   }
+
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    font-size: 1.8rem;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.iPadMiniPortrait} {
+    font-size: 2rem;
+  }
 `;
 
 export const TitleVerticalDivider = styled.div`
@@ -74,22 +126,22 @@ export const TitleVerticalDivider = styled.div`
     width: 60px;
   }
   @media ${screenMediaQuery.desktopFullHighDefinition} {
-    width: 27px;
+    width: 29px;
   }
   @media ${screenMediaQuery.desktopXLarge} {
     width: 27px;
   }
   @media ${screenMediaQuery.desktopLarge} {
-    width: 27px;
+    width: 35px;
   }
   @media ${screenMediaQuery.tabletLarge} {
     width: 22px;
   }
   @media ${screenMediaQuery.desktopMedium} {
-    width: 22px;
+    width: 24px;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
-    width: 22px;
+    width: 26px;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
     width: 20px;
@@ -125,6 +177,21 @@ export const SecondDisciplineHeader = styled.h3`
   }
   @media ${screenMediaQuery.desktopQuadHighDefinition} {
     font-size: 2.4rem;
+  }
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    font-size: 1.8rem;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 2rem;
   }
 `;
 
@@ -166,6 +233,72 @@ export const DesktopContainer = styled(motion.div)`
   }
   @media ${screenMediaQuery.tabletAndiPadLandscape} {
     display: none;
+  }
+`;
+
+export const Group = styled.div`
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    display: flex;
+    flex-direction: row;
+  }
+`;
+
+export const GroupContainer = styled.div`
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopQuadHighDefinition} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    display: flex;
+    flex-direction: row;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    display: flex;
+    flex-direction: row;
   }
 `;
 
@@ -215,48 +348,57 @@ export const DisciplinesDataCard = styled.div`
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   }
 
+  @media ${screenMediaQuery.desktopUltraHighDefinition} {
+    width: 48rem;
+  }
   @media ${screenMediaQuery.desktopWideQuadHighDefinition} {
     width: 42rem;
   }
   @media ${screenMediaQuery.desktopQuadHighDefinition} {
     width: 31rem;
   }
-
   @media ${screenMediaQuery.desktopFullHighDefinition} {
-    padding: 1.825rem;
-    margin-left: 4rem;
-    min-height: 55rem;
-    width: 32rem;
+    width: 21rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
     padding: 1.825rem;
     margin-left: 4rem;
     min-height: 24.2rem;
-    width: 25rem;
+    width: 21rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    padding: 1.825rem;
+    margin-left: 4rem;
+    margin-bottom: 2.5rem;
+    width: 38rem;
+    max-height: 50rem;
+    min-height: 30rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
-    min-height: 24.5rem;
+    max-height: 50rem;
+    min-height: 30rem;
     padding: 1.825rem;
     margin-left: 3rem;
-    width: 18.5rem;
+    width: 35rem;
+    margin-bottom: 2.5rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
     min-height: 20.2rem;
     padding: 1.6rem;
     margin-left: 3rem;
-    width: 14rem;
+    width: 40rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
     min-height: 20.2rem;
     padding: 1.6rem;
     margin-left: 3rem;
-    width: 14rem;
+    width: 32rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
-    min-height: 14rem !important;
+    max-height: 60rem;
     padding: 1.4rem;
     margin: 2rem 2rem 0;
-    width: 20rem;
+    width: 26rem;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
     min-height: 18rem;
@@ -326,22 +468,25 @@ export const DisciplinePrimaryTitle = styled.h2`
     font-size: 3rem;
   }
   @media ${screenMediaQuery.desktopFullHighDefinition} {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
-    font-size: 2rem;
+    font-size: 1.9rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    font-size: 2.5rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
     font-size: 1.6rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
   @media ${screenMediaQuery.tabletAndiPadPortrait} {
     font-size: 1.4rem;
@@ -378,49 +523,6 @@ export const DisciplineSecondaryTitle = styled.h2`
   font-weight: 600;
   transition: font-size 500ms;
 
-  @media ${screenMediaQuery.desktopFullHighDefinition} {
-    font-size: 2.1rem;
-  }
-  @media ${screenMediaQuery.desktopXLarge} {
-    font-size: 2rem;
-  }
-  @media ${screenMediaQuery.desktopLarge} {
-    font-size: 1.8rem;
-  }
-  @media ${screenMediaQuery.laptopAndDesktop} {
-    font-size: 1.6rem;
-  }
-  @media ${screenMediaQuery.desktopMedium} {
-    font-size: 1.6rem;
-  }
-  @media ${screenMediaQuery.tabletLarge} {
-    font-size: 1.6rem;
-  }
-  @media ${screenMediaQuery.iPadMiniLandscape} {
-    font-size: 1.6rem;
-  }
-  @media ${screenMediaQuery.tabletAndiPadPortrait} {
-    font-size: 1.4rem;
-  }
-  @media ${screenMediaQuery.tabletSmallPortrait} {
-    font-size: 1.6rem;
-  }
-  @media ${screenMediaQuery.tabletSmallLandscape} {
-    font-size: 2rem;
-  }
-  @media ${screenMediaQuery.tabletAndiPadLandscape} {
-  }
-  @media ${screenMediaQuery.tabletAndMobilePortrait} {
-    font-size: 2rem;
-  }
-  @media ${screenMediaQuery.tabletAndMobileLandscape} {
-  }
-  @media ${screenMediaQuery.mobilePortrait} {
-    font-size: 1.4rem;
-  }
-  @media ${screenMediaQuery.mobileLandscape} {
-    font-size: 1.4rem;
-  }
   @media ${screenMediaQuery.desktopUltraHighDefinition} {
     font-size: 4rem;
   }
@@ -430,6 +532,55 @@ export const DisciplineSecondaryTitle = styled.h2`
   @media ${screenMediaQuery.desktopQuadHighDefinition} {
     font-size: 2.8rem;
     margin: 0 0 0 4rem;
+  }
+  @media ${screenMediaQuery.desktopFullHighDefinition} {
+    font-size: 1.9rem;
+    margin: 0 0 0 3rem;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    font-size: 1.9rem;
+    margin: 0 0 0 3rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    font-size: 2.5rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    font-size: 2.5rem;
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+    font-size: 1.6rem;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    font-size: 2.4rem;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 2.4rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    font-size: 1.4rem;
+  }
+  @media ${screenMediaQuery.iPadMiniLandscape} {
+    font-size: 1.6rem;
+  }
+  @media ${screenMediaQuery.tabletSmallPortrait} {
+    font-size: 1.6rem;
+  }
+  @media ${screenMediaQuery.tabletSmallLandscape} {
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.tabletAndMobileLandscape} {
+  }
+  @media ${screenMediaQuery.tabletAndMobilePortrait} {
+    font-size: 2rem;
+  }
+  @media ${screenMediaQuery.mobileLandscape} {
+    font-size: 1.4rem;
+  }
+  @media ${screenMediaQuery.mobilePortrait} {
+    font-size: 1.4rem;
+  }
+
+  @media ${screenMediaQuery.tabletAndiPadLandscape} {
   }
 `;
 
@@ -450,14 +601,17 @@ export const VerticalDivider = styled.div`
   @media ${screenMediaQuery.desktopXLarge} {
     width: 27px;
   }
+  @media ${screenMediaQuery.desktopMidXL} {
+    width: 30px;
+  }
   @media ${screenMediaQuery.desktopLarge} {
-    width: 27px;
+    width: 30px;
   }
   @media ${screenMediaQuery.tabletLarge} {
     width: 22px;
   }
   @media ${screenMediaQuery.desktopMedium} {
-    width: 22px;
+    width: 26px;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
     width: 22px;
@@ -527,13 +681,16 @@ export const Subtitle = styled.h4`
     font-size: 2rem;
   }
   @media ${screenMediaQuery.desktopFullHighDefinition} {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
-    font-size: 2rem;
+    font-size: 1.4rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    font-size: 1.4rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
     font-size: 1.6rem;
@@ -573,7 +730,7 @@ export const Subtitle = styled.h4`
   }
 `;
 
-export const Body = styled.div`
+export const BulletPoints = styled.div`
   font-size: 1.75rem;
   color: ${(props) => props.theme.dataCard.bodyTextColor};
   font-weight: lighter;
@@ -592,23 +749,30 @@ export const Body = styled.div`
     min-height: 34rem;
   }
   @media ${screenMediaQuery.desktopFullHighDefinition} {
-    font-size: 1.75rem;
+    font-size: 1.28rem;
     min-height: 31rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
     font-size: 1.4rem;
+    min-height: 33rem;
+  }
+  @media ${screenMediaQuery.desktopMidXL} {
+    font-size: 1.6rem;
+    min-height: 25rem;
   }
   @media ${screenMediaQuery.desktopLarge} {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
+    min-height: 25rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
     font-size: 1.1rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    min-height: 36rem;
   }
   @media ${screenMediaQuery.iPadMiniLandscape} {
     font-size: 1rem;
@@ -646,7 +810,7 @@ export const DisciplineListItem = styled.li`
   }
 `;
 
-export const SecondBody = styled.div`
+export const SecondBulletPoints = styled.div`
   font-size: 1.75rem;
   color: ${(props) => props.theme.dataCard.bodyTextColor};
   font-weight: lighter;
@@ -659,22 +823,25 @@ export const SecondBody = styled.div`
     font-size: 2.2rem;
   }
   @media ${screenMediaQuery.desktopFullHighDefinition} {
-    font-size: 1.75rem;
+    font-size: 1.28rem;
   }
   @media ${screenMediaQuery.desktopXLarge} {
     font-size: 1.4rem;
   }
+  @media ${screenMediaQuery.desktopMidXL} {
+    font-size: 1.6rem;
+  }
   @media ${screenMediaQuery.desktopLarge} {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
   }
   @media ${screenMediaQuery.tabletLarge} {
     font-size: 1.1rem;
   }
   @media ${screenMediaQuery.desktopMedium} {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
   @media ${screenMediaQuery.iPadMiniLandscape} {
     font-size: 1rem;
