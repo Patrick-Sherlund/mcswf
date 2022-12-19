@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const DisciplinesContainer = styled(motion.div)`
+  margin-top: 10rem;
   padding-top: 10rem;
   padding-bottom: 20rem;
   height: 82vh;
@@ -32,8 +33,8 @@ export const DisciplinesContainer = styled(motion.div)`
     padding-top: 5rem;
   }
   @media ${screenMediaQuery.laptopAndDesktop} {
-    height: 130vh;
-    padding-top: 6rem;
+    padding-top: 8rem;
+    padding-bottom: 90rem;
   }
 `;
 

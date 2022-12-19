@@ -4,6 +4,7 @@ import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const LearnMoreContainer = styled(motion.div)`
   padding-top: 10rem;
+  padding-bottom: 20rem;
   height: 100vh;
   width: 100%;
   display: flex;

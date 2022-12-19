@@ -28,6 +28,9 @@ import {
   DisciplineCardSetOne,
   DisciplineCardSetTwo,
 } from "../../constants/data/discipline";
+import BottomNavigator from "../../components/BottomNavigator/BottomNavigator";
+import { LearnMoreData } from "../../constants/data/learn-more";
+import { LeadershipData } from "../../constants/data/leadership";
 
 /*interface DataCardProps {
   data: string[];
@@ -177,6 +180,12 @@ const Disciplines: FC = () => {
             })}
           </GroupContainer>
         </Group>
+        <BottomNavigator
+          navigationLink={LeadershipData.navigationArrowLink}
+          desktopOffset={-50}
+          mobileOffset={-10}
+          delay={2.92}
+        />
       </DesktopContainer>
     </DisciplinesContainer>
   );

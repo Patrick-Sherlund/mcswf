@@ -1,3 +1,7 @@
+export const DisciplineData = {
+  navigationArrowLink: "Disciplines",
+};
+
 export const DisciplineCardSetOne = [
   {
     primaryTitle: "Software",

@@ -86,6 +86,7 @@ const TheTeam: FC<TeamProps> = (teamProps: TeamProps) => {
         navigationLink={GetInvolvedData.navigationArrowLink}
         desktopOffset={-50}
         mobileOffset={-10}
+        delay={2.92}
       />
     </TheTeamContainer>
   );

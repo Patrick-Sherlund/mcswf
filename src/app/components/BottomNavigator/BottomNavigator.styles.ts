@@ -82,6 +82,7 @@ export const BottomNavigationArrow = styled(motion.div)`
   @media ${screenMediaQuery.laptopAndDesktop} {
     height: 4.05rem;
     width: 9rem;
+    padding-top: 12rem;
   }
   @media ${screenMediaQuery.iPadPro} {
     height: 5.4rem;

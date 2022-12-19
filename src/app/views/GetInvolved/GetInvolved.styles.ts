@@ -5,7 +5,7 @@ import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const GetInvolvedContainer = styled(motion.div)`
   padding-top: 10rem;
-  margin-top: 0;
+  margin-top: 75px;
   height: 82vh;
   width: 100%;
   display: flex;

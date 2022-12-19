@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { screenMediaQuery } from "../../constants/data/MediaQueries";
 
 export const TheTeamContainer = styled(motion.div)`
-  padding-top: 10rem;
+  margin-top: 5rem;
+  padding-top: 7rem;
   height: 100vh;
   width: 100%;
   display: flex;
