@@ -19,6 +19,28 @@ export const GetInvolvedContainer = styled(motion.div)`
     padding-top: 7rem !important;
     padding-top: 0;
   }
+
+  @media ${screenMediaQuery.altDesktopFullHighDefinition} {
+    padding-bottom: 40rem;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    padding-bottom: 37rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    padding-bottom: 34rem;
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+    padding-bottom: 34rem;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    padding-bottom: 34rem;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    padding-bottom: 20rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    padding-bottom: 5rem;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -31,6 +53,30 @@ export const ContentContainer = styled.div`
   margin: 0 6rem;
 
   @media ${screenMediaQuery.altDesktopFullHighDefinition} {
+    flex-direction: column;
+    height: auto;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    flex-direction: column;
+    height: auto;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    flex-direction: column;
+    height: auto;
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+    flex-direction: column;
+    height: auto;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    flex-direction: column;
+    height: auto;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    flex-direction: column;
+    height: auto;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
     flex-direction: column;
   }
 `;
@@ -50,7 +96,31 @@ export const InfoCard = styled.div`
   overflow-x: hidden;
 
   @media ${screenMediaQuery.altDesktopFullHighDefinition} {
-    width: 75%;
+    width: 85%;
+    margin: 0 0 0 1.2rem;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    width: 85%;
+    margin: 0 0 0 1.2rem;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    width: 85%;
+    margin: 0 0 0 1.2rem;
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+    width: 85%;
+    margin: 0 0 0 1.2rem;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    width: 90%;
+    margin: 0 0 0 1.2rem;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    width: 90%;
+    margin: 0 0 0 1.2rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    width: 90%;
     margin: 0 0 0 1.2rem;
   }
 `;
@@ -66,9 +136,6 @@ export const InnerCard = styled(InfoCard)`
   background: #f9f9f9;
   box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px 4px 0 0;
-
-  @media ${screenMediaQuery.altDesktopFullHighDefinition} {
-  }
 `;
 
 export const BannerContainer = styled(motion.div)`
@@ -79,7 +146,25 @@ export const BannerContainer = styled(motion.div)`
   height: 100%;
   margin: 0 1rem;
   @media ${screenMediaQuery.altDesktopFullHighDefinition} {
-    width: 75%;
+    width: 85%;
+  }
+  @media ${screenMediaQuery.desktopXLarge} {
+    width: 85%;
+  }
+  @media ${screenMediaQuery.desktopLarge} {
+    width: 85%;
+  }
+  @media ${screenMediaQuery.tabletLarge} {
+    width: 85%;
+  }
+  @media ${screenMediaQuery.desktopMedium} {
+    width: 90%;
+  }
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    width: 90%;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    width: 90%;
   }
 `;
 
@@ -175,6 +260,13 @@ export const ContentTitle = styled.h2`
   font-weight: 600;
   color: black;
   font-size: 2.5rem;
+
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 2.25rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    font-size: 1.825rem;
+  }
 `;
 
 export const ContentBody = styled.h3`
@@ -183,6 +275,13 @@ export const ContentBody = styled.h3`
   color: black;
   font-size: 1.6rem;
   overflow-y: scroll;
+
+  @media ${screenMediaQuery.laptopAndDesktop} {
+    font-size: 1.25rem;
+  }
+  @media ${screenMediaQuery.tabletAndiPadPortrait} {
+    font-size: 1rem;
+  }
 `;
 
 export const JoinTeamButton = styled(motion.div)`
