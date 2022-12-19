@@ -2,14 +2,14 @@ import React, { FC } from "react";
 import { PageName } from "../../constants/enums/global";
 import logo from "../../../assets/logo.webp";
 import {
-  Logo,
   DesktopNavBarBody,
-  NavBarContainer,
-  List,
-  SelectedListItem,
-  ListItem,
-  UnderLine,
   Link,
+  List,
+  ListItem,
+  Logo,
+  NavBarContainer,
+  SelectedListItem,
+  UnderLine,
 } from "./DesktopNavBar.styles";
 import StatusBar from "../StatusBar/StatusBar";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";

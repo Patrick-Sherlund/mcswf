@@ -29,6 +29,10 @@ export const ContentContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 6rem;
+
+  @media ${screenMediaQuery.altDesktopFullHighDefinition} {
+    flex-direction: column;
+  }
 `;
 
 export const InfoCard = styled.div`
@@ -44,6 +48,11 @@ export const InfoCard = styled.div`
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   overflow-x: hidden;
+
+  @media ${screenMediaQuery.altDesktopFullHighDefinition} {
+    width: 75%;
+    margin: 0 0 0 1.2rem;
+  }
 `;
 
 export const InnerCard = styled(InfoCard)`
@@ -57,6 +66,9 @@ export const InnerCard = styled(InfoCard)`
   background: #f9f9f9;
   box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.25);
   border-radius: 4px 4px 0 0;
+
+  @media ${screenMediaQuery.altDesktopFullHighDefinition} {
+  }
 `;
 
 export const BannerContainer = styled(motion.div)`
@@ -66,6 +78,9 @@ export const BannerContainer = styled(motion.div)`
   width: 90%;
   height: 100%;
   margin: 0 1rem;
+  @media ${screenMediaQuery.altDesktopFullHighDefinition} {
+    width: 75%;
+  }
 `;
 
 export const Header = styled.div`

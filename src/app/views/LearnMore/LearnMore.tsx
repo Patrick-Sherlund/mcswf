@@ -1,23 +1,23 @@
 import React, { FC } from "react";
 import {
-  DesktopContainer,
-  LearnMoreContainer,
-  MobileContainer,
-  Title,
-  Body,
-  VerticalDivider,
-  LearnMoreFooter,
-  Talent,
-  RoundedTeams,
   Agile,
-  Industry,
-  DesktopInformationPacket,
-  MediaContainer,
-  MediaTitle,
-  MediaSubTitle,
+  Body,
   DataCard,
+  DesktopContainer,
+  DesktopInformationPacket,
+  Industry,
+  LearnMoreContainer,
+  LearnMoreFooter,
+  MediaContainer,
   MediaGroup,
+  MediaSubTitle,
+  MediaTitle,
+  MobileContainer,
   MobileInformationPacket,
+  RoundedTeams,
+  Talent,
+  Title,
+  VerticalDivider,
 } from "./LearnMore.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -25,8 +25,6 @@ import {
   LearnMoreCardData,
   LearnMoreData,
 } from "../../constants/data/learn-more";
-import "swiper/css";
-import "swiper/css/effect-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
 import { LeadershipData } from "../../constants/data/leadership";

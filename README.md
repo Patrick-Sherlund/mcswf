@@ -190,8 +190,9 @@ Download the Current or LTS version of Node.JS and Git
 3. View changes at the [Marine Corps Software Factory Static Site](https://patrick-sherlund.github.io/MCSWF.github.io/)
 
 # App Directory Structure
+
 _The current Directory structure logically separates different areas of the application, to help organize development._
-    
+
 ```
 MCSWF
 ├── src
@@ -209,69 +210,88 @@ MCSWF
 │   │   └── views
 └   └── assets
 ```
-* ### 'app' 
-    _This section encapsulates the 'components', 'global', 'models', 'views' and 'utils'. 
-    It also serves as the root directory for the app component_
-* ### 'components' 
-    _This section contains all reusable components, all components within this section are built with usability in mind._
+
+* ### 'app'
+  _This section encapsulates the 'components', 'global', 'models', 'views' and 'utils'.
+  It also serves as the root directory for the app component_
+* ### 'components'
+  _This section contains all reusable components, all components within this section are built with usability in mind._
 * ### 'constants'
-    _This section contains any type constant declaration, we use this for enums, themes and data used on views._
-* ### 'models' 
-    _This section contains any type of object model, whether it's an Interface, or a Class._
+  _This section contains any type constant declaration, we use this for enums, themes and data used on views._
+* ### 'models'
+  _This section contains any type of object model, whether it's an Interface, or a Class._
 * ### 'utils'
   _This section contains any utility function that could be reused across different components._
-* ### 'views' 
-    _This section contains all the pages/views the app uses, for example 'Home', 'About', 'Contact' etc._
-* ### 'assets' 
-    _This section contains any assets (i.e. images, svg, videos, downloads etc.) that would be used across the application._
+* ### 'views'
+  _This section contains all the pages/views the app uses, for example 'Home', 'About', 'Contact' etc._
+* ### 'assets'
+  _This section contains any assets (i.e. images, svg, videos, downloads etc.) that would be used across the
+  application._
 
 # [Test Driven Development](https://www.agilealliance.org/glossary/tdd/)
 
 * ### [Integration Testing Through Cypress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
+
 Cypress Run Command
+
 ```sh
 npm run cypress:e2e:open
 --OR--
 npm run cypress:e2e:run
 ```
+
 * ### [Component Unit Testing Through Cypress](https://docs.cypress.io/guides/component-testing/writing-your-first-component-test)
   Jest Run Command
+
 ```sh
 npm run cypress:component:open
 --OR--
 npm run cypress:component:run
 ```
+
 * ### Device Compatibility Testing
-  [Click this Figma Link](https://www.figma.com/file/26FduvNae6jlmGjJie37AL/Marine-Corps-Software-Factory?node-id=808%3A784) to be directed to the compatibility testing page.
+  [Click this Figma Link](https://www.figma.com/file/26FduvNae6jlmGjJie37AL/Marine-Corps-Software-Factory?node-id=808%3A784)
+  to be directed to the compatibility testing page.
 
 * ### [Manual Regression Testing](https://smartbear.com/learn/automated-testing/what-is-regression-testing/)
 
 # Feature Branching
-_The process that the MCSWF uses for feature branching is pretty simple. Below you'll find the steps we take throughout the workflow_
+
+_The process that the MCSWF uses for feature branching is pretty simple. Below you'll find the steps we take throughout
+the workflow_
 
 ## Steps
 
-### Pull the latest from the master branch 
+### Pull the latest from the master branch
+
 ```sh
     git checkout master
     git pull origin master
 ```
-_The process will reduce the amount of conflicts dealt with when the feature branch is merged back in to the master branch._
+
+_The process will reduce the amount of conflicts dealt with when the feature branch is merged back in to the master
+branch._
 
 ### Checkout the feature branch
+
 _The naming convention for feature branches will be: 'MCSWF-STORY#', i.e. 'MCSWF-1'_
 
 ```sh
     git checkout -b MCSWF-#
 ```
+
 ### Validate branch status before coding
+
 _This is just insurance that the branch was created successfully and that git is pointed towards that branch_
 
 ```sh
     git status
 ```
+
 ### (Optional) Rebase with origin/master daily
-_In order to reduce the amount of conflicts dealt with when the feature branch is ready to be merged in to master, we will rebase the feature branch with the latest code from origin/master._
+
+_In order to reduce the amount of conflicts dealt with when the feature branch is ready to be merged in to master, we
+will rebase the feature branch with the latest code from origin/master._
 
 ```sh
     git checkout master
@@ -279,10 +299,13 @@ _In order to reduce the amount of conflicts dealt with when the feature branch i
     git checkout MCSWF-STORY#
     git rebase -i master
 ```
-If there are several commits that need to be picked / squashed, we will always pick the commit at the TOP of the list, and squash the rest via VIM
+
+If there are several commits that need to be picked / squashed, we will always pick the commit at the TOP of the list,
+and squash the rest via VIM
 <br/>
 <br/>
 _Example:_
+
 ```sh
     pick 0253dc894f WIP
     squash 5a1e86933c remove dependency
@@ -290,34 +313,51 @@ _Example:_
     squash 222fabf5e0 Removed unneeded logic
     squash 726a2f9a10 MCSWF-1: Create Homepage
 ```
+
 _There may be some conflicts when rebasing with master, you can resolve those conflicts and continue the rebasing_
 <br/>
 _Example: (After all conflicts are resolved)_
+
 ```sh
     git rebase --continue
 ```
-Once all conflicts are resolved, your feature branch has successfully been rebased with origin/master! You can then push your new code to remote.
+
+Once all conflicts are resolved, your feature branch has successfully been rebased with origin/master! You can then push
+your new code to remote.
 
 ### Merge the feature branch into master
-_Important: In order to reduce conflicts, ensure the above step (Rebasing origin/master into the feature branch) has been completed._
+
+_Important: In order to reduce conflicts, ensure the above step (Rebasing origin/master into the feature branch) has
+been completed._
 <br/>
+
 #### 1. Checkout origin/master and pull the latest code
+
 ```sh
     git checkout master
     git pull origin/master
 ```
+
 #### 2. Merge the feature branch into master
+
 ```sh
     git merge MCSWF-#
 ```
-_If there are any merge conflicts, you'll be asked to resolve. This should not happen if you've completed the rebasing step required before step 1._
+
+_If there are any merge conflicts, you'll be asked to resolve. This should not happen if you've completed the rebasing
+step required before step 1._
 <br/>
 <br/>
+
 #### 3. Re-run all test suites
-Re-running all test suites will ensure that there were no undiscovered issues during the merge, and that everything still performs appropriately. 
+
+Re-running all test suites will ensure that there were no undiscovered issues during the merge, and that everything
+still performs appropriately.
 
 #### 4. Push local master to origin/master
+
 The final step is to push the tested (local) master branch to origin/master.
+
 ```sh
     git push
 ```
@@ -364,8 +404,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 # Acknowledgments
 
-* Designed and Developed by: 
-  * Staff Sergeant Patrick R. Sherlund
-  * Gunnery Sergeant Justin N. McLinn
+* Designed and Developed by:
+    * Staff Sergeant Patrick R. Sherlund
+    * Gunnery Sergeant Justin N. McLinn
 
 <p align="right">(<a href="#top">back to top</a>)</p>

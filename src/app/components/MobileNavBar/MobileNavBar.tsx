@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import {
-  MobileNavBarContainer,
-  MobileNavPageName,
-  MobileNavBorder,
   MiniLogo,
+  MobileNavBarContainer,
+  MobileNavBorder,
+  MobileNavPageName,
 } from "./MobileNavBar.styles";
 import { PageName } from "../../constants/enums/global";
 import { AnimationControls } from "framer-motion";

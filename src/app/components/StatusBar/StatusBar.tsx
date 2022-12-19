@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { StatusBarOutline, StatusBarEmpty } from "./StatusBar.styles";
+import { StatusBarEmpty, StatusBarOutline } from "./StatusBar.styles";
 
 interface StatusBarProps {
   statusPercentage: number;

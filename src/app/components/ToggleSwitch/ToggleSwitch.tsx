@@ -1,9 +1,9 @@
 import React, { FC, ReactNode, useId } from "react";
 import {
-  ToggleSwitchContainer,
   CheckBox,
   CheckBoxLabel,
   CheckBoxWrapper,
+  ToggleSwitchContainer,
 } from "./ToggleSwitch.styles";
 
 interface ToggleSwitchProps {

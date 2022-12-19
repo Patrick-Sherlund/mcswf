@@ -8,7 +8,9 @@ declare namespace Cypress {
     window(options?: Partial<Loggable & Timeoutable>): Chainable<CustomWindow>;
 
     mount: typeof mount;
+
     getBySel(dataTestAttribute: string, args?: any): Chainable<Element>;
+
     getBySelLike(
       dataTestPrefixAttribute: string,
       args?: any

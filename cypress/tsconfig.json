@@ -5,19 +5,31 @@
     "rootDir": "../../",
     "baseUrl": "http://localhost:3000/mcswf",
     "jsx": "react",
-    "lib": ["es5", "dom"],
+    "lib": [
+      "es5",
+      "dom"
+    ],
     "target": "ES5",
     "noEmit": true,
     "allowJs": true,
-    "types": ["cypress", "@testing-library/cypress", ""],
-    "typeRoots": [""],
+    "types": [
+      "cypress",
+      "@testing-library/cypress",
+      ""
+    ],
+    "typeRoots": [
+      ""
+    ],
     "isolatedModules": false
   },
-  "include": ["../node_modules/cypress", "cypress/*/*.ts","./*/*.ts",
+  "include": [
+    "../node_modules/cypress",
+    "cypress/*/*.ts",
+    "./*/*.ts",
     "support/*.ts",
     "component/*.ts",
     "component/views/*.ts",
     "e2e/*.ts",
-    "helpers/*.ts"],
-
+    "helpers/*.ts"
+  ]
 }

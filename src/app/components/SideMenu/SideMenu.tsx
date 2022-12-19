@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useRef } from "react";
-import { NavMenu, NavMenuBody, NavMenuBlur } from "./SideMenu.styles";
+import { NavMenu, NavMenuBlur, NavMenuBody } from "./SideMenu.styles";
 import { useDimensions } from "../../utils/hooks/useDimensions";
 import { useCycle } from "framer-motion";
 import MenuToggle from "./SideNav/MenuToggle/MenuToggle";

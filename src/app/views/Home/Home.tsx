@@ -1,21 +1,21 @@
 import React, { FC } from "react";
 import {
-  HomeContainer,
-  TitleTop,
-  StyledH2,
-  Divider,
-  HomeHeader,
-  HomeContent,
-  LightContent,
   BoldContent,
-  SocialGroup,
+  BottomNavContainer,
+  Divider,
   FacebookButton,
+  HomeContainer,
+  HomeContent,
+  HomeHeader,
   InstagramButton,
+  LightContent,
   LinkedInButton,
+  Logo,
+  SocialGroup,
+  StyledH2,
+  TitleTop,
   TwitterButton,
   YoutubeButton,
-  Logo,
-  BottomNavContainer,
 } from "./Home.styles";
 import logo from "../../../assets/logo.webp";
 import { HomeData } from "../../constants/data/home";

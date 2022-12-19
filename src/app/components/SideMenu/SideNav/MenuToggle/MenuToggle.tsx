@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { MenuPath, MenuButton } from "./MenuToggle.styles";
+import { MenuButton, MenuPath } from "./MenuToggle.styles";
 import { SVGMotionProps, Variants } from "framer-motion";
 
 interface MenuToggleProps {

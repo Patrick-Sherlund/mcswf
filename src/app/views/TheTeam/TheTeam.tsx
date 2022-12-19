@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import {
-  TheTeamContainer,
-  MobileTeamContent,
-  DesktopTeamContent,
-  LeadershipRowTop,
-  LeadershipRowBottom,
   BottomCardContainer,
+  DesktopTeamContent,
+  LeadershipRowBottom,
+  LeadershipRowTop,
   LeadershipTitle,
+  MobileTeamContent,
+  TheTeamContainer,
 } from "./TheTeam.styles";
 import "swiper/css";
 import "swiper/css/effect-cards";

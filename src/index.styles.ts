@@ -33,7 +33,7 @@ export const FontStyles = createGlobalStyle`
     font-weight: 400;
     font-style: normal
   }
-  
+
   @font-face {
     font-family: DINNextLTPro;
     src: url(${DINNextLTProLightEot});

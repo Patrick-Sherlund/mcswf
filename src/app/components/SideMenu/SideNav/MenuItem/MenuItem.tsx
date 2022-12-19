@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 import {
-  MenuListItem,
-  SelectedListItem,
-  SelectedItemText,
   InactiveItemText,
-  MiniDivider,
   Link,
+  MenuListItem,
+  MiniDivider,
+  SelectedItemText,
+  SelectedListItem,
 } from "./MenuItem.styles";
 import { PageName } from "../../../../constants/enums/global";
 import { Variants } from "framer-motion";

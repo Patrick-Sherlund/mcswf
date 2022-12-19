@@ -1,8 +1,8 @@
 import React, { FC, Fragment } from "react";
 import {
   BottomNavigationArrow,
-  MobileNavLink,
   DesktopNavLink,
+  MobileNavLink,
 } from "./BottomNavigator.styles";
 
 interface BottomNavigatorProps {
