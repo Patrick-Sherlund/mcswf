@@ -205,6 +205,9 @@ export const DesktopContainer = styled(motion.div)`
   @media ${screenMediaQuery.desktopFullHighDefinition} {
     padding-bottom: 2rem;
   }
+  @media ${screenMediaQuery.desktopXLarge} {
+    padding-bottom: 8rem;
+  }
   @media ${screenMediaQuery.laptopAndDesktop} {
     display: flex;
     flex-wrap: wrap;
